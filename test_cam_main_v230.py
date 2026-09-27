@@ -34,7 +34,7 @@ logic=Path('cam_main_logic.lua').read_text()
 
 def fresh():
     lua=make(logic)
-    assert lua.eval('CAMMainHub.Version')=='3.2.4'
+    assert lua.eval('CAMMainHub.Version')=='3.3.0'
     assert lua.eval('CAMMainHub.State.autoParry')==False
     assert lua.eval('CAMMainHub.State.trainingMode')=='Instant (win signal)'
     return lua
@@ -157,9 +157,9 @@ assert muzan and board and claim
 print('PASS manual actions: PurchaseFromShop(WithOre), loadout save/load/rename, MuzanLairAssign, Ranked Board/Claim')
 
 # ---- 5. Structure ----
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 assert text.endswith(logic)
-assert 'Version="3.2.4"' in text
+assert 'Version="3.3.0"' in text
 for needle in ['server_skill_controller_signaler","Blocking","Hold"','"training_signaler",action','PurchaseFromShopWithOre','HandleLoadoutActions','MuzanLairAssign','RankedRequest','Auto Parry - block hostile attack anims','Instant (win signal)','Default (auto-play slider)']:
     assert needle in text,needle
 assert 'parry' not in Path.read_text(Path('CAM_Main_Hub_v2.2.0.lua')).split('NOT IMPLEMENTED')[1][:60]

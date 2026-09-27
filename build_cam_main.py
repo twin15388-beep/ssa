@@ -16,7 +16,7 @@ report=json.loads((root/'new_game_analysis/overview_received.json').read_text())
 for n in report['nodes']:
     if n['class']=='Model' and n['path'].startswith('ReplicatedStorage.Assets.Npcs.Bosses.') and n['path'].count('.')==4:
         bosses.add(n['name'])
-VERSION='3.2.4'
+VERSION='3.3.0'
 header=f'''-- CAM MAIN HUB {VERSION} | New CAM game, NOT the old NZL game.
 -- Place 136406881576517; catalog baseline 5354, removal bug captured on game version 5400.
 -- Standalone: embedded Lumen UI, no loadstring/HTTP downloads.

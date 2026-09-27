@@ -56,7 +56,7 @@ logic=Path('cam_main_logic.lua').read_text()
 
 def fresh():
     lua=make(logic)
-    assert lua.eval('CAMMainHub.Version')=='3.2.4'
+    assert lua.eval('CAMMainHub.Version')=='3.3.0'
     return lua
 
 # ---- 1. Inf Stamina (2.4.0 behaviour still onboard) ----
@@ -136,9 +136,9 @@ assert canc>=1
 print('PASS auto skills: Hold then Cancel emitted on server_skill_controller_signaler (010_Skill_Controller protocol)')
 
 # ---- 7. Structure ----
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 assert text.endswith(logic)
-for needle in ['Version="3.2.4"','killAuraTick','purgeDebuffs','server_skill_controller_signaler","Breathing Boost"','SIG_RE / CAM_RE: not in this game']:
+for needle in ['Version="3.3.0"','killAuraTick','purgeDebuffs','server_skill_controller_signaler","Breathing Boost"','SIG_RE / CAM_RE: not in this game']:
     assert needle in text,needle
 
 # ---- 9. Instant Kill: only network-owned mobs below threshold die ----
@@ -169,7 +169,7 @@ _mods.Combat_presets={Last_Punched=0,Last_Combo=0,attackSpeedMult=function(lp) r
 _path(_RS,{'CAM','Client','Controllers','Skills_Provider','CurPower'},'StringValue')
 _buttons['Connect native controls']();_runTasks()
 _toggles['Fast Attack (direct Combat_Service)'](true);_runTasks()
-for i=1,6 do _step(0.1) end
+for i=1,6 do _step(0.1);_drainDelayed() end -- v3.3.0: Combat_Service goes out after the preset swing delay (task.delay)
 ''')
 out=lua.execute(r'''
  local n=0;local combos={}
@@ -199,10 +199,10 @@ _toggles['Inf Dash + no skill cooldowns (client)'](true);_runTasks();_step(0.5)
 assert lua.eval('_shc:FindFirstChild("Dash_cd")==nil')==True
 print('PASS no cooldowns: SHC cooldown instances destroyed alongside lastUsed wipe')
 
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 for needle in ['instaKillTick','isnetworkowner','Fast Attack (direct Combat_Service)','network ownership (Health=0','ManageCD']:
     assert needle in text,needle
-print('PASS structure: 3.2.4 standalone carries instant kill / fast attack / manage_cd integration')
+print('PASS structure: 3.3.0 standalone carries instant kill / fast attack / manage_cd integration')
 # ---- 12. Direct auto farm: nearest mob -> stepped approach + raw Combat_Service; boss mode uses boss list ----
 lua=fresh()
 lua.execute(r'''
@@ -220,7 +220,7 @@ _buttons['Connect native controls']();_runTasks()
 _toggles['Attack mode']('Fast Attack (Combat_Service)')
 _toggles['Auto Farm (mob names below / nearest)'](true);_runTasks()
 _d0=_root.Position.Magnitude
-for i=1,6 do _step(0.2) end
+for i=1,6 do _step(0.2);_drainDelayed() end -- v3.3.0: swing delay before the Combat_Service packet
 _d1=_root.Position.Magnitude
 _sentCombat=0;for _,e in ipairs(_sentE) do if e.args[1]=="Combat_Service" then _sentCombat=_sentCombat+1 end end
 ''')
@@ -231,15 +231,15 @@ lua.execute(r'''
 _toggles['Auto Farm (mob names below / nearest)'](false);_runTasks()
 _sentCombat=0
 _toggles['Auto Boss (source-backed boss names)'](true);_runTasks()
-for i=1,4 do _step(0.2) end
+for i=1,4 do _step(0.2);_drainDelayed() end
 ''')
 assert lua.eval('_sentCombat')==0
 print('PASS auto farm: boss mode ignores plain mobs outside the boss list')
 
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 for needle in ['pickFarmTarget','isFarmDefending','farmGoalCF','direct farm core','Auto Boss (source-backed boss names)','farmStyle']:
     assert needle in text,needle
-print('PASS structure: 3.2.4 standalone carries the direct farm core + farm page toggles')
+print('PASS structure: 3.3.0 standalone carries the direct farm core + farm page toggles')
 for banned in ['#region example','Watermark("NZL Studio")']:
     assert banned not in text,banned
 # ---- 13. Hold M1 farm attack: Tool_Mouse remote Down while in range, Up when target dies ----
@@ -288,6 +288,6 @@ for i=1,8 do _step(0.2) end
 ''')
 assert lua.eval('_evtSends')>=1,'no remote sends via live Event resolution'
 print('PASS signal remote: SignalEvent/Event RemoteEvent resolved directly when the module load fails')
-print('PASS structure: 3.2.4 standalone has the lumen demo/intro block stripped (no watermark/welcome/demo window)')
-print('PASS structure: 3.2.4 standalone bundles the wave plus the honest SIG_RE verdict')
+print('PASS structure: 3.3.0 standalone has the lumen demo/intro block stripped (no watermark/welcome/demo window)')
+print('PASS structure: 3.3.0 standalone bundles the wave plus the honest SIG_RE verdict')
 print('Mock/static only; server-side caps unverified - flagged in UI copy.')

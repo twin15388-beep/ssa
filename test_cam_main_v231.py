@@ -32,7 +32,7 @@ logic=Path('cam_main_logic.lua').read_text()
 
 def fresh():
     lua=make(logic)
-    assert lua.eval('CAMMainHub.Version')=='3.2.4'
+    assert lua.eval('CAMMainHub.Version')=='3.3.0'
     return lua
 
 # ---- 1. Auto fishing: cast via native Tool activation, bite answered via portal protocol ----
@@ -116,12 +116,12 @@ assert lua.eval('_prompt.held')==True
 print('PASS prompt activator: nearest eligible prompt input-held')
 
 # ---- 5. Structure ----
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 assert text.endswith(logic)
-assert 'Version="3.2.4"' in text and '+ combat_service default, speed 300' in text
+assert 'Version="3.3.0"' in text and '+ working-script combat core' in text
 for needle in ['"FishingRod"','GauntletGiveSchematic','WarFansClue','QuestProgress",inst.Name','Auto Fishing - cast, catch, win','Activate nearest world prompt']:
     assert needle in text,needle
-print('PASS structure: 3.2.4 standalone contains fishing/quest/npc features; pending trimmed to genuinely unsourced items')
+print('PASS structure: 3.3.0 standalone contains fishing/quest/npc features; pending trimmed to genuinely unsourced items')
 print('Mock/static only; the portal answer uses exactly the protocol decompiled from the rod scripts (FireServer FishingRod,id,true).')
 
 # ---- 6. Skill tree spend (protocol captured live by probe 1.1) ----

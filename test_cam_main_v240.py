@@ -28,7 +28,7 @@ logic=Path('cam_main_logic.lua').read_text()
 
 def fresh():
     lua=make(logic)
-    assert lua.eval('CAMMainHub.Version')=='3.2.4'
+    assert lua.eval('CAMMainHub.Version')=='3.3.0'
     return lua
 
 # ---- 1. Inf Stamina pins the client replica to MaxValue ----
@@ -56,13 +56,13 @@ assert d==-9999 and sl==-9999,(d,sl)
 print('PASS inf dash/no cooldowns: lastUsed wiped to -9999 on the module table (manage_cd reads it locally)')
 
 # ---- 3. Structure ----
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
 assert text.endswith(logic)
-for needle in ['Version="3.2.4"','PlayerProfile','Inf Stamina (client replica)','skill_info','lastUsed=-9999','instant kill IS possible via network ownership']:
+for needle in ['Version="3.3.0"','PlayerProfile','Inf Stamina (client replica)','skill_info','lastUsed=-9999','instant kill IS possible via network ownership']:
     assert needle in text,needle
 sl=Path('CAM_Main_Hub_v2.3.2.lua').read_text()
 assert 'Version="2.3.2"' in sl
-print('PASS structure: 3.2.4 standalone contains combat assist; 2.3.2 build preserved')
+print('PASS structure: 3.3.0 standalone contains combat assist; 2.3.2 build preserved')
 
 # ---- 4. Rapid M1: presets zeroed, Last_Punched/Last_Combo cleared, restored on off ----
 lua=fresh()
@@ -81,9 +81,9 @@ lua.execute('''_toggles['Rapid M1 pace (client swing unlock)'](false);_runTasks(
 assert lua.eval('_mods.Combat_presets.Presets.Normal.default')==0.26
 assert lua.eval('_mods.Combat_presets.Presets.Heavy.default_before_swing')==0.25
 print('PASS rapid M1 off: original preset timing restored from snapshot')
-text=Path('CAM_Main_Hub_v3.2.4.lua').read_text()
-for needle in ['Version="3.2.4"','Combat_presets','Last_Punched','Rapid M1 pace']:
+text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
+for needle in ['Version="3.3.0"','Combat_presets','Last_Punched','Rapid M1 pace']:
     assert needle in text,needle
-print('PASS structure: 3.2.4 standalone contains rapid M1 unlock')
+print('PASS structure: 3.3.0 standalone contains rapid M1 unlock')
 
 print('Mock/static only;server-side swing timing unverified - flagged in UI copy.')

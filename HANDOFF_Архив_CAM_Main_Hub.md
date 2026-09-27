@@ -4,6 +4,17 @@
 
 ---
 
+## 0. Дополнение (сессия 2026-09-27, репозиторий `twin15388-beep/ssa`, ветка `arena/01a0e39d-ssa`)
+
+- Весь workspace архива лежит **в корне репозитория** (zip‑файлы убраны из дерева, остались в истории git, коммит 14413d7). Команды `python3 build_cam_main.py`, `python3 test_cam_main_v*.py` запускаются из корня. Перед ними — `pip -q install --break-system-packages lupa` (PEP 668 в песочнице).
+- Выпущен **CAM_Main_Hub_v3.3.0.lua** (421 579 B, sha256 `4a472e8585657e9c51037738156bd6dced5a387d00348d49969dc79288ffd96f`), подробности — `CAM_Main_v3.3.0_Обновление.md`; патч воспроизводим скриптом `cam_main_feature_v330.py`; новый набор `test_cam_main_v330.py` (14 PASS).
+- **Поправка к п. 8 ниже**: по `overview_received.json` `Signals.SignalEvent` — **ModuleScript с дочерним RemoteEvent `Event`** (не папка). Прямой `Event:FireServer` и `require(...).ToServer` — один и тот же ремоут; хаб теперь берёт живой `Event` первым.
+- Суть 3.3.0: `Combat_Service` уходит после свинг‑задержки пресета (опция Attack timing), комбо‑ресинк по атрибуту `last_combo` (если реплицируется), оружие best‑effort без блокировки боя, синхронная подгрузка модулей в тике фарма (Delta), смерть/ошибки колбэков больше не гасят тогглы, живая строка `Farm: …` + кнопка «Attack once (Combat_Service probe)» + `farm.direct` в отчёте.
+- **Реальный урон в игре по‑прежнему не подтверждён** — следующий шаг: получить от пользователя строку `Farm:` и отчёт диагностики (`farm.direct.lastReason`, `signalPath`, `serverLastCombo`).
+- Legacy‑наборы `test_cam_main_v201/210/220.py`, `test_cam_main.py` падают и на 3.2.4 (привязаны к старым версиям) — не регресс.
+
+---
+
 ## 1. Суть
 
 Пользователь ведёт разработку **standalone Lua-скрипта CAM Main Hub** для Roblox-игры **place 136406881576517** (игра «CAM» / Project Slayers-подобная, НЕ старая NZL). Скрипт вставляется целиком в исполнитель (executor) без loadstring/HTTP. Цель: рабочий авто-фарм мобов/боссов (подход + настоящие удары) + автолевел по квестам + сопутствующее хозяйство (combat assist, ESP, лут/рыбалка/магазин) в **штатном UI lumen-библиотеки** пользователя.

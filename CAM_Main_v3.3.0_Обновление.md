@@ -1,0 +1,76 @@
+# CAM Main Hub — v3.3.0
+
+Файл: **`CAM_Main_Hub_v3.3.0.lua`** (standalone, вставляется целиком в исполнитель; без loadstring/HTTP).
+Размер: **421 579 байт**, sha256: **`4a472e8585657e9c51037738156bd6dced5a387d00348d49969dc79288ffd96f`**.
+
+## v3.3.0 (фарм‑бой перестроен 1:1 по рабочему скрипту + честный живой статус)
+
+Что выяснилось при сверке хаба с рабочим скриптом (документ 3) и декомпилами игры (`readable/2_75_Combat.lua`,
+`Main_Combat_Script_Client`, `core_sources/003_Combat_presets.lua`, `oneclick_sources/013_Toolbar.lua`):
+
+- **`SignalEvent` в игре — ModuleScript с дочерним `Event` (RemoteEvent)**, а не «папка», как считалось в 3.2.2. Оба пути
+  (require‑модуль и живой `Event:FireServer`) заканчиваются одним и тем же ремоутом. Хаб теперь **сначала** берёт живой
+  `SignalEvent/Event` (канал рабочего скрипта), require — только запасной путь. Какой канал реально используется — видно в
+  диагностике (`farm.direct.signalPath`).
+- **Свинг‑задержка.** Клиент игры и рабочий скрипт шлют `Combat_Service` **после `delay_before_swing`** пресета (у Combat это
+  0.2 с), а хаб слал сразу. Сервер сверяет тайминги (`get_combat_cd_info`: `last_cmbat`/`last_combo`), поэтому добавлен
+  выбор **Attack timing**: «Game client (swing delay)» (по умолчанию, как игра) / «Instant (no swing delay)» (как было).
+- **Комбо‑синхронизация.** Сервер принимает удар только если `combo == last_combo+1` (или 1 после таймаута
+  `combo_duration`/финала). Если атрибут `last_combo` виден клиенту (персонаж/Player), хаб при расхождении пересылает
+  правильный номер (счётчик `comboResyncs`, лог «combo resync»). Если атрибута нет — работает прежний локальный счётчик.
+- **Оружие больше не блокирует бой.** Раньше фарм мог зависнуть на «Preparing weapon / Waiting for equipment acknowledgement»
+  и не ударить ни разу. Теперь `prepareWeapon()` — best effort: `Item_Equip` раз в 2 с (после 3 попыток — раз в 10 с),
+  `Toolbar_Equip(name,id)` раз в 3 с если оружие только в инвентаре, и **бой идёт в любом случае** текущим инструментом
+  (кулаки «Combat» — тоже боевой пресет). Порядок как в рабочем скрипте: `Items_Config.Equipped = слот` → `Item_Equip(слот)`.
+- **Синхронная подгрузка модулей для фарма.** На Delta `require` внутри `task.spawn` не гарантирован — фарм теперь сам
+  дотягивает `Combat_presets`/`Items`/`Character_info_provider` прямо в тике (раз в 3 с на модуль), лог «loaded (sync path)».
+- **Классический путь (`ensureEquipment`)**: модули ограничений (`ToolbarItemRestrictions`, `ItemRequirements`) стали
+  необязательными — без них решает сервер, фарм не замирает.
+- **Защищающаяся цель**: проверка `Blocking`/`PierceBlock` теперь и в `Player_Service.Values[<имя>]` (как
+  `Utility.getvaluesfolder`), не только в модели.
+- **Удар только в радиусе** `max(Farm distance+8, 12)` стадов и не по защищающейся цели; сервер бьёт хитбоксом от позиции
+  игрока, так что стрелять пакетами издалека бессмысленно — это отдельно видно в статусе («approaching»).
+- **Hold M1 честно подписан**: `Tool_Mouse Down/Up` — канал активации инструмента (зелья/удочка), **мечи им не машут**
+  (013_Toolbar шлёт его только для инструментов с серверным обработчиком мыши). Опция оставлена, по умолчанию Fast Attack.
+
+### Ничего больше не гасит все тогглы
+- **Смерть**: раньше в heartbeat стоял `stopAll("Death: all toggles OFF")` — вопреки правилу «функции не выключать при смерти».
+  Теперь при смерти сбрасываются только цель/комбо/движение, статус: «Died: toggles stay ON, waiting for respawn», после
+  респавна фарм продолжает сам.
+- **Ошибка в колбэке** (напр. один странный объект в `workspace.DescendantAdded`) — считается и логируется
+  (`farm.callbackErrors`, `farm.lastCallbackError`), автоматизация продолжает работать. Стоп только при лавине
+  (≥30 ошибок за 10 с) — с текстом причины.
+- **Ошибка кнопки** — уведомление + лог, без остановки всего.
+
+### Живой статус фарма (для отладки «не бьёт»)
+- На странице фарма новая строка **`Farm: …`**, обновляется раз в секунду:
+  `Farming <моб> <дист>st HP <hp> | Combat_Service Combat c3 | sent 17 | srv combo 2 | weapon: Tanto`
+  или причина простоя: `approaching`, `target defending - holding`, `swing pending`, `pacing 0.11s`,
+  `Combat_presets not loaded (…)`, `Signal remote missing (…)`, `No farm target within 300 studs (…)`.
+- Тот же текст — в главном статусе, когда включён только прямой фарм.
+- Кнопка **«Attack once (Combat_Service probe)»** — один удар текущим пресетом без включения фарма (подойди к мобу вплотную,
+  смотри на него): если HP моба не падает при `sent 1` и без причины в статусе — проблема на стороне сервера/пресета, и это
+  уже видно без долгих тестов.
+- Диагностический отчёт: `farm.direct = {status, attackMode, attackTiming, weaponMode, equipment, combatServiceSent,
+  skippedDefending, comboResyncs, lastCombat, lastReason, signalPath, serverLastCombo, farmTarget}` + `callbackErrors`.
+
+### Что проверить в игре (в таком порядке)
+1. Auto Farm ON рядом с мобом → строка `Farm:` должна дойти до `Combat_Service Combat c1… | sent N` (N растёт).
+2. Если `sent` растёт, а HP моба не падает: переключить **Attack timing** на «Instant» и обратно; посмотреть `srv combo`
+   в статусе (если есть) и `lastReason` в отчёте; прислать строку статуса + отчёт.
+3. Если `sent` не растёт — причина написана прямо в строке статуса (модуль/ремоут/дистанция/защита).
+4. «Attack once» вплотную к мобу — самый короткий тест канала.
+
+### Проверки
+- `python3 test_cam_main_v330.py` — 14 PASS (свинг‑задержка и точный порядок аргументов `Combat_Service`, instant‑режим,
+  синхронный путь модулей без task.spawn, `Item_Equip` один раз, `Toolbar_Equip` из инвентаря без блокировки боя,
+  отсутствие модулей ограничений, смерть не гасит тогглы и фарм возобновляется, ошибка колбэка считается без stopAll,
+  защита NpcCounter/Values.Blocking, ресинк комбо по `last_combo`, «Attack once», живой RemoteEvent, структура сборки).
+- Старые наборы: `test_cam_main_v230/231/240/250.py`, `test_main_hub.py`, `test_farm_features.py` — PASS
+  (в v250 тесты 10/12 теперь дренируют `task.delay`, т.к. пакет уходит после свинг‑задержки).
+- `test_cam_main_v201/210/220.py`, `test_cam_main.py` — legacy‑наборы под старые версии, падали и до 3.3.0 (не регресс).
+- Mock/static only: **приём `Combat_Service` сервером (реальный урон) моками не проверяется** — только в игре по строке статуса.
+
+### Сборка
+`pip -q install --break-system-packages lupa && python3 build_cam_main.py` → `CAM_Main_Hub_v3.3.0.lua` (Standalone syntax PASS).
+Патч логики воспроизводим: `cam_main_feature_v330.py` (exact‑replace с assert поверх `cam_main_logic.lua` версии 3.2.4).

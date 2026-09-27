@@ -1,4 +1,4 @@
--- CAM Main Hub 3.2.4 | source-backed client integration for place 136406881576517.
+-- CAM Main Hub 3.3.0 | source-backed client integration for place 136406881576517.
 -- No downloaded code, hooks, decompilation, arbitrary remotes, purchases or webhooks.
 local function StartCAMHub(Lumen)
     local Env = (getgenv and getgenv()) or _G
@@ -32,7 +32,7 @@ local function StartCAMHub(Lumen)
         infStamina=false,noCd=false,fastM1=false,
         killAura=false,killAuraRange=12,noDebuffs=false,infJump=false,
         instaKill=false,instaKillPct=10,fastAttack=false,
-        autoFarm=false,autoBoss=false,farmMobText="",farmStyle="Behind",farmDist=6,farmHeight=7,farmNoclip=true,farmSpeed=120,searchRange=300,m1Mode="Fast Attack (Combat_Service)",
+        autoFarm=false,autoBoss=false,farmMobText="",farmStyle="Behind",farmDist=6,farmHeight=7,farmNoclip=true,farmSpeed=120,searchRange=300,m1Mode="Fast Attack (Combat_Service)",attackTiming="Game client (swing delay)",farmStatus="OFF",
         fullbright=false,noFog=false,fpsCapText="",
         autoSkills=false,autoSkillText="Breathing Boost",autoBreath=false}
     local C={connections={},toggles={},logs={},modules={},loading={},loaderTasks={},owned={},tickets={},
@@ -42,9 +42,9 @@ local function StartCAMHub(Lumen)
         parryWatched=setmetatable({}, {__mode="k"}),parryPath="input",parryConfirmed=false,lastParry=0,
         parryAttempts=0,parryBlocked=0,parryPerfect=0,parryUnacked=0,
         blockWatchDone=false,trainWatchDone=false,trainSession=nil,sliderSamples={},trainClicks=0,trainWins=0,
-        fish={casts=0,bites=0,wins=0,awaitingBite=false,last=0,portalDone=false},fastM1={},fatk={combo=1,next=0,last=0}}
+        fish={casts=0,bites=0,wins=0,awaitingBite=false,last=0,portalDone=false},fastM1={},fatk={combo=1,next=0,last=0,sent=0},syncRetry={}}
     local stopAll,clearESP,refreshTargets,refreshDestinations,refreshHunts,endTravel
-    local statusLabel,targetLabel,resourceLabel,questLabel,nativeLabel,indexLabel,parryLabel,trainLabel,fishLabel,treeLabel
+    local statusLabel,targetLabel,resourceLabel,questLabel,nativeLabel,indexLabel,parryLabel,trainLabel,fishLabel,treeLabel,farmStatusLabel
     local targetDrop,destinationDrop,huntDrop
     local bossNames=CAM_BOSS_NAMES
     local function short(x,n) local s=tostring(x);return #s>(n or 160) and s:sub(1,n or 160).."..." or s end
@@ -83,7 +83,8 @@ local function StartCAMHub(Lumen)
     local function usable()
         if not S.alive or game.PlaceId~=136406881576517 then return false,"Unsupported place (read-only)" end
         local _,h,r=char()
-        if not h or not r or h.Health<=0 then return false,"Character unavailable" end
+        if h and r and h.Health<=0 then return false,"Died: toggles stay ON, waiting for respawn" end
+        if not h or not r then return false,"Character unavailable (respawning); toggles stay ON" end
         if focused() or menuOpen() then return false,"Paused: text entry / native menu" end
         return true
     end
@@ -92,10 +93,18 @@ local function StartCAMHub(Lumen)
         if C.toggles[key] then C.toggles[key]:Set(value,true) end
     end
     local function connect(signal,fn,label)
+        -- v3.3.0: errors are logged and counted; only a runaway error loop (30 errors within 10s) stops automation
         local con=signal:Connect(function(...)
             if not S.alive then return end
             local ok,err=pcall(fn,...)
-            if not ok then log("callback error",(label or "Callback")..": "..tostring(err));if stopAll then stopAll("Callback failed; see diagnostics") end end
+            if not ok then
+                local now=os.clock()
+                C.callbackErrors=(C.callbackErrors or 0)+1;C.lastCallbackError=(label or "Callback")..": "..tostring(err)
+                if (C.errLogAt or 0)<=now then C.errLogAt=now+1;log("callback error",C.lastCallbackError) end
+                if not C.errWindowAt or now-C.errWindowAt>10 then C.errWindowAt=now;C.errWindowCount=0 end
+                C.errWindowCount=(C.errWindowCount or 0)+1
+                if C.errWindowCount>=30 and stopAll then C.errWindowCount=0;stopAll("Repeated callback errors ("..C.callbackErrors.."): "..short(C.lastCallbackError,120)) end
+            end
         end)
         C.connections[#C.connections+1]=con;return con
     end
@@ -124,9 +133,11 @@ local function StartCAMHub(Lumen)
         ManageCD={"CAM","Global","Subsets","Gameplay","manage_cd"},
         CombatPresets={"CAM","Global","Combat_presets"},
     }
+    local resolveSignal,ensureModule
     local function loadNative()
         if game.PlaceId~=136406881576517 then note("Wrong place; native controls disabled") return end
         local epoch=S.epoch
+        resolveSignal()
         for key,path in pairs(modulePaths) do
             if not C.modules[key] and not C.loading[key] then
                 local obj=at(RS,path)
@@ -150,19 +161,44 @@ local function StartCAMHub(Lumen)
                 end
             end
         end
-        -- Live layout fact (working script): Signals/SignalEvent is a FOLDER with the
-        -- RemoteEvent child "Event"; requiring the folder fails, so resolve it directly.
-        if not C.modules.Signal then
-            local evt=at(RS,{"Communication","ServerAndClient","Signals","SignalEvent","Event"})
-            if evt and (evt:IsA("RemoteEvent") or evt:IsA("UnreliableRemoteEvent")) then
-                C.modules.Signal={ToServer=function(...) return evt:FireServer(...) end}
-                C.loading.Signal="ready";log("module","Signal: live RemoteEvent resolved directly")
-            end
-        end
         local ready,total=0,0
         for key in pairs(modulePaths) do total=total+1;if C.modules[key] then ready=ready+1 end end
         note(ready==total and "Native controls ready. Enabled modes continue automatically." or
-            ("Connecting native controls: "..ready.."/"..total.." ready. See dashboard for progress."))
+            ("Connecting native controls: "..ready.."/"..total.." ready. Live status: farm page / diagnostics."))
+    end
+    -- v3.3.0 working-script signal channel: ReplicatedStorage.Communication.ServerAndClient.Signals.SignalEvent.Event
+    -- is a live RemoteEvent (decompiled layout: SignalEvent = ModuleScript, child Event = RemoteEvent). The game's
+    -- SignalEvent.ToServer(...) ends in exactly Event:FireServer(...) (RemotePlus EventerMain.To), so the direct
+    -- remote needs no require and is what the working script uses for Combat_Service / Item_Equip / Tool_Mouse.
+    resolveSignal=function()
+        local evt=C.signalEvent
+        if not (evt and evt.Parent) then
+            evt=at(RS,{"Communication","ServerAndClient","Signals","SignalEvent","Event"})
+            if evt and not (evt:IsA("RemoteEvent") or evt:IsA("UnreliableRemoteEvent")) then evt=nil end
+            if evt then
+                C.signalEvent=evt;C.signalPath="live RemoteEvent SignalEvent/Event"
+                C.modules.Signal={ToServer=function(...) return evt:FireServer(...) end};C.loading.Signal="ready"
+                log("module","Signal: live RemoteEvent SignalEvent/Event (working-script channel)")
+            end
+        end
+        local m=C.modules.Signal
+        if type(m)=="table" and type(m.ToServer)=="function" then C.signalPath=C.signalPath or "SignalEvent module (require)";return m end
+        return nil
+    end
+    -- Synchronous module path for the farm tick: Delta (mobile) does not guarantee that a require inside
+    -- task.spawn ever completes, so the farm resolves what it needs inline (rate-limited, once per 3s per key).
+    ensureModule=function(key)
+        if C.modules[key] then return C.modules[key] end
+        if key=="Signal" then local m=resolveSignal();if m then return m end end
+        if (C.syncRetry[key] or 0)>os.clock() then return nil end
+        C.syncRetry[key]=os.clock()+3
+        local path=modulePaths[key];local obj=path and at(RS,path)
+        if not obj or not obj:IsA("ModuleScript") then
+            C.loading[key]="missing";log("module",key..": missing at ReplicatedStorage."..table.concat(path or {},"."));return nil
+        end
+        local ok,result=pcall(require,obj)
+        if ok and type(result)=="table" then C.modules[key]=result;C.loading[key]="ready";log("module",key..": loaded (sync path)");return result end
+        C.loading[key]="failed";log("module",key..": require failed: "..short(result));return nil
     end
     local function release(action)
         C.tickets[action]=nil
@@ -242,6 +278,7 @@ local function StartCAMHub(Lumen)
         releaseAll();endFly();stopWalk();if endTravel then endTravel() end;restoreMovement();restorePrompts();restoreShift()
         C.questActive=nil;C.questRoute=nil;C.questSentAt=nil;C.questAttempts=0;C.damageWatch=nil;C.punch=nil;C.equipAttempts=0;C.equipmentWait=nil;S.questStage="OFF"
         S.target=nil;S.skillSlots={};C.flyUp=false;C.flyDown=false;C.cooldowns={};C.huntSent={};C.attackAt=nil;C.skillAt=nil;C.potion=nil;C.potionLock=nil;C.potionNext=nil
+        C.farmTarget=nil;C.fatk.pending=nil;C.fatk.next=0;C.fatk.combo=1;C.toolbarEquipAt=nil;C.equipAt=nil;S.farmStatus="OFF"
         if clearESP then clearESP() end
         C.parryWatched=setmetatable({},{__mode="k"});C.blockWatchDone=false;C.trainWatchDone=false;C.trainSession=nil;C.sliderSamples={};C.parryUnacked=0
         S.status=reason or "Stopped";log("stop",S.status)
@@ -379,14 +416,21 @@ local function StartCAMHub(Lumen)
     local function ensureEquipment()
         local d=data();local info=C.modules.Info;local items=C.modules.Items;local rules=C.modules.Restrictions;local req=C.modules.Requirements
         local equipped=at(LP,{"Items_Config","Equipped"});local toolbar=at(d,{"Inventory","Toolbar"})
-        if not d or not equipped or not toolbar or not info or not items or not rules or not req then return false,"Waiting: equipment data/native modules" end
+        if not d or not equipped or not toolbar or not info or not items then return false,"Waiting: equipment data/native modules (Info/Items)" end
         local function combatItem(index)
             local slot=toolbar:FindFirstChild(toolbarNames[index] or "")
             if not slot or slot.Value==0 then return nil end
             local item=info.GetItemFromId(LP,slot.Value);local def=item and items[item.Name]
             if not def or not (def.HasCombat or def.CombatPreset or item.Name=="Combat") then return nil end
-            local limits=rules.GetCurrentRestrictions(LP,toolbarNames[index])
-            if limits.Locked or limits.ActionsDisabled or not req.SatisfiesEquip(d,item.Name) then return nil end
+            -- restriction modules are optional (v3.3.0): if they are not loaded the server still decides
+            if rules and type(rules.GetCurrentRestrictions)=="function" then
+                local okL,limits=pcall(rules.GetCurrentRestrictions,LP,toolbarNames[index])
+                if okL and type(limits)=="table" and (limits.Locked or limits.ActionsDisabled) then return nil end
+            end
+            if req and type(req.SatisfiesEquip)=="function" then
+                local okR,fine=pcall(req.SatisfiesEquip,d,item.Name)
+                if okR and fine==false then return nil end
+            end
             return item
         end
         local desired
@@ -1010,13 +1054,22 @@ local function StartCAMHub(Lumen)
         return out
     end
     actions.isFarmDefending=function(m)
+        -- working script isTargetDefending(): NpcCounter 1/2, NpcCounterTriggered, Values.Blocking without PierceBlock
+        -- (values folder = Player_Service.Values[<name>] when it exists, otherwise the model itself: Utility.getvaluesfolder)
+        if not m then return false end
         local nc;local okA=pcall(function() nc=m:GetAttribute("NpcCounter") end)
         if okA and (nc==1 or nc==2) then return true end
         local okB,t=pcall(function() return m:FindFirstChild("NpcCounterTriggered") end)
         if okB and t then return true end
-        local okC,bl=pcall(function() return m:FindFirstChild("Blocking") end)
-        local okD,pb=pcall(function() return m:FindFirstChild("PierceBlock") end)
-        return okC and bl~=nil and not (okD and pb~=nil)
+        local function blocking(folder)
+            if not folder then return false end
+            local okC,bl=pcall(function() return folder:FindFirstChild("Blocking") end)
+            local okD,pb=pcall(function() return folder:FindFirstChild("PierceBlock") end)
+            return okC and bl~=nil and not (okD and pb~=nil)
+        end
+        if blocking(m) then return true end
+        local okV,vf=pcall(function() return at(RS,{"Player_Service","Values",m.Name}) end)
+        return (okV and blocking(vf)) or false
     end
     actions.pickFarmTarget=function()
         local ch=LP.Character;local hrp=ch and ch:FindFirstChild("HumanoidRootPart")
@@ -1049,24 +1102,29 @@ local function StartCAMHub(Lumen)
     end
     actions.farmTick=function()
         local ch=LP.Character;local hrp=ch and ch:FindFirstChild("HumanoidRootPart");local hum=ch and ch:FindFirstChildOfClass("Humanoid")
-        if not hrp or not hum or hum.Health<=0 then C.farmTarget=nil;pcall(actions.m1Up);return false,"No character" end
+        if not hrp or not hum or hum.Health<=0 then C.farmTarget=nil;pcall(actions.m1Up);return false,"No character / dead: waiting for respawn (toggles stay ON)" end
         local t=actions.pickFarmTarget()
-        C.farmTarget=t
-        if not t then pcall(actions.m1Up);return false,"No farm target in range" end
-        local eqOk,eqMsg=ensureEquipment()
-        if not eqOk then pcall(actions.m1Up);return false,eqMsg end
+        if C.farmTarget~=t then C.farmTarget=t;C.equipAttempts=0;C.equipAt=nil end
+        if not t then pcall(actions.m1Up);return false,"No farm target within "..tostring(S.searchRange).." studs ("..((S.autoFarm and S.autoBoss) and "mobs + bosses" or (S.autoBoss and "bosses only" or "mobs only"))..(S.farmMobText~="" and (", filter: "..S.farmMobText) or "")..")" end
+        -- v3.3.0: weapon handling is best effort and never blocks the attack (working script: equip once, then fight with what is equipped)
+        local eqMsg=actions.prepareWeapon()
         if S.farmNoclip then pcall(function()
             for _,part in ipairs(ch:GetDescendants()) do
                 if part.IsA and part:IsA("BasePart") and part.CanCollide then part.CanCollide=false end
             end
         end) end
         local defending=actions.isFarmDefending(t.m)
-        local inRange=(t.r.Position-hrp.Position).Magnitude<=math.max(S.farmDist+8,10)
+        local dist=(t.r.Position-hrp.Position).Magnitude
+        local inRange=dist<=math.max(S.farmDist+8,12)
+        local atkMsg
         if S.m1Mode=="Fast Attack (Combat_Service)" then
-            if not defending then pcall(actions.fastAttackTick) end
+            if defending then atkMsg="target defending - holding"
+            elseif not inRange then atkMsg="approaching"
+            else local _,m=actions.fastAttackTick(t.m);atkMsg=m end
             pcall(actions.m1Up)
         else
-            if not defending and inRange then pcall(actions.m1Down) else pcall(actions.m1Up) end
+            if not defending and inRange then pcall(actions.m1Down);atkMsg="Tool_Mouse hold (tool activation only; melee needs Fast Attack)"
+            else pcall(actions.m1Up);atkMsg=defending and "target defending - holding" or "approaching" end
         end
         local now=os.clock()
         local dt=math.min(math.max(now-(C.moveT or 0),0),0.2)
@@ -1089,7 +1147,8 @@ local function StartCAMHub(Lumen)
                 hrp.CFrame=goal;C.stallPos=hrp.Position;C.stallAt=now;log("farm","movement stall: snapped to target position")
             elseif (hrp.Position-C.stallPos).Magnitude>=0.6 then C.stallPos=hrp.Position;C.stallAt=now end
         else C.stallPos=nil;C.stallAt=nil end
-        return true,"Farming "..tostring(t.m.Name)
+        local hp=t.h and t.h.Health or 0
+        return true,"Farming "..tostring(t.m.Name).." "..math.floor(dist).."st HP "..math.floor(hp).." | "..tostring(atkMsg).." | "..tostring(eqMsg)
     end
     -- v2.5.0 instant kill + instant attack: recipes ported from a WORKING third-party script for THIS game
     -- (uploaded by the user): kill via Health=0 on network-owned mobs; attack via raw FireServer Combat_Service
@@ -1155,36 +1214,48 @@ local function StartCAMHub(Lumen)
         end)
         return ok
     end
-    actions.fastAttackTick=function()
-        local sig=C.modules.Signal;local cp=C.modules.CombatPresets;local ci=C.modules.Info;local items=C.modules.Items
-        if type(sig)~="table" or type(cp)~="table" or type(cp.Presets)~="table" then return false,"Native modules not loaded" end
-        local combatName;local tool=type(ci)=="table" and type(ci.Get_equipped_tool)=="function" and ci.Get_equipped_tool(LP) or nil
+    -- v3.3.0 direct combat core = 1:1 port of the working script (document 3: resolveCombatPreset / getCombatTiming /
+    -- performCombatAttack) which is itself the game's own client path (2_75_Combat + Main_Combat_Script_Client):
+    -- local Swing_<combo> animation, Combat_Service after the preset swing delay, combo 1..Max, combo_duration reset.
+    -- No invented packets; only Combat_Service / Item_Equip / Toolbar_Equip / Tool_Mouse on the live SignalEvent.
+    actions.resolveCombat=function()
+        local cp=C.modules.CombatPresets;local ci=C.modules.Info;local items=C.modules.Items
+        if type(cp)~="table" or type(cp.Presets)~="table" then return nil,"Combat_presets module not loaded ("..tostring(C.loading.CombatPresets or "not requested")..")" end
+        local tool
+        if type(ci)=="table" and type(ci.Get_equipped_tool)=="function" then local ok,tl=pcall(ci.Get_equipped_tool,LP);if ok then tool=tl end end
         local eq=tool and type(items)=="table" and items[tool.Name] or nil
+        local combatName
         if eq and eq.CombatPreset and eq.CombatPreset~="Combat" then combatName=tool.Name
         else
             for powerName in string.gmatch(actions.curPower() or "","([^,]+)") do
                 local pn=powerName:gsub("^%s+",""):gsub("%s+$","")
                 if at(RS,{"Assets","Animations",pn.."_Combat_Anims"}) then combatName=pn;break end
             end
+            if not combatName and tool then
+                if eq and eq.HasCombat then combatName=tool.Name
+                elseif at(RS,{"Assets","Animations",tool.Name.."_Combat_Anims"}) then combatName=tool.Name end
+            end
         end
         combatName=combatName or "Combat"
         local overrideName;local preset=cp.Presets[combatName]
-        if not preset and combatName~="Combat" and type(items)=="table" and items[combatName] then
+        if not preset and type(items)=="table" and items[combatName] then
             local it=items[combatName]
             if it.Breathing~=nil or it.HasCombat or it.CombatPreset~=nil then
                 overrideName=combatName;combatName=it.CombatPreset or "Regular Katana";preset=cp.Presets[combatName]
             end
         end
         if not preset then combatName="Combat";overrideName=nil;preset=cp.Presets.Combat end
-        if type(preset)~="table" then return false,"No preset for "..tostring(combatName) end
-        local okspd,aspd=pcall(type(cp.attackSpeedMult)=="function" and cp.attackSpeedMult or function() return 1 end,LP)
-        if not okspd or type(aspd)~="number" or aspd<=0 then aspd=1 end
-        if os.clock()-(C.fatk.last or 0)>(cp.combo_duration or 1)/aspd then C.fatk.combo=1 end
-        local combo=C.fatk.combo
-        local function pick(field,fallback)
-            local t=preset[field];local v=type(t)=="table" and t[combo] or nil
-            return v or fallback
-        end
+        if type(preset)~="table" then return nil,"No combat preset for "..tostring(combatName).." (Combat_presets.Presets.Combat missing)" end
+        return {name=combatName,preset=preset,override=overrideName,tool=tool and tool.Name or "none"}
+    end
+    local function attackSpeed(cp)
+        local ok,aspd=pcall(type(cp.attackSpeedMult)=="function" and cp.attackSpeedMult or function() return 1 end,LP)
+        if not ok or type(aspd)~="number" or aspd<=0 then return 1 end
+        return aspd
+    end
+    local function combatTiming(cp,preset,combo)
+        local aspd=attackSpeed(cp)
+        local function pick(field,fallback) local t=preset[field];local v=type(t)=="table" and t[combo] or nil;return v or fallback end
         local swingDelay=pick("delay_before_swing",preset.default_before_swing or cp.Default_Swing_Wait or 0)
         local hitDelay=pick("delay_before_hit",preset.default_before_hit or swingDelay)
         local serverHitDelay=math.max((hitDelay-swingDelay)/aspd,0)
@@ -1192,25 +1263,134 @@ local function StartCAMHub(Lumen)
         local maxc=preset.Max or 5
         if combo==maxc and type(preset.final)=="number" then interval=math.max(interval,preset.final) end
         interval=math.max(interval/aspd,0.12)
-        if os.clock()<(C.fatk.next or 0) then return true end
-        C.fatk.next=os.clock()+interval*0.92
+        return serverHitDelay,interval,swingDelay,aspd,maxc
+    end
+    local function playSwing(rc,combo,aspd)
         pcall(function()
             local anims=at(RS,{"Assets","Animations"})
-            local folder=(overrideName and anims and anims:FindFirstChild(overrideName.."_Combat_Anims"))
-                or (anims and anims:FindFirstChild((combatName or "Combat").."_Combat_Anims"))
+            local folder=(rc.override and anims and anims:FindFirstChild(rc.override.."_Combat_Anims"))
+                or (anims and anims:FindFirstChild(rc.name.."_Combat_Anims"))
                 or (anims and anims:FindFirstChild("Combat_Combat_Anims"))
             local anim=folder and folder:FindFirstChild("Swing_"..combo)
             local _,hum=char();local animator=hum and hum:FindFirstChildOfClass("Animator")
             if anim and animator then
-                local track=animator:LoadAnimation(anim)
-                track:Play()
-                if type(preset.AnimSpeed)=="table" then track:AdjustSpeed((preset.AnimSpeed[combo] or preset.AnimSpeed.Default or 1)*aspd) end
+                local track=animator:LoadAnimation(anim);track:Play()
+                if type(rc.preset.AnimSpeed)=="table" then track:AdjustSpeed((rc.preset.AnimSpeed[combo] or rc.preset.AnimSpeed.Default or 1)*aspd) end
             end
         end)
-        pcall(sig.ToServer,"Combat_Service",combatName,combo,false,serverHitDelay,false,overrideName)
+    end
+    local function serverCombo()
+        -- read-only: Combat_presets.Check_can_do_combat_server keeps last_combo / last_cmbat as attributes; if they are
+        -- replicated (character or player) they tell exactly which combo the server accepted last.
+        for _,holder in ipairs({LP.Character,LP}) do
+            if holder then
+                local ok,v=pcall(function() return holder:GetAttribute("last_combo") end)
+                if ok and type(v)=="number" then return v end
+            end
+        end
+        return nil
+    end
+    -- v3.3.0 best-effort weapon prep for the direct farm (working script equipToolbarItem): Toolbar_Equip(name,id) when the
+    -- weapon only sits in the Inventory, then Items_Config.Equipped = slot + Item_Equip(slot). Never gates the attack.
+    actions.prepareWeapon=function()
+        if S.weapon=="Keep equipped" then return "weapon: keep equipped" end
+        local sig=C.modules.Signal;local items=C.modules.Items;local info=C.modules.Info
+        local equipped=at(LP,{"Items_Config","Equipped"});local d=data();local toolbar=at(d,{"Inventory","Toolbar"});local inv=at(d,{"Inventory","Inventory"})
+        if not equipped or not toolbar then return "weapon: toolbar data missing - using current tool" end
+        local function itemId(it)
+            local idv=it:FindFirstChild("Id")
+            if idv and idv:IsA("ValueBase") then return idv.Value end
+            return it:GetAttribute("Id")
+        end
+        local function itemById(id)
+            if id==nil or id==0 then return nil end
+            if type(info)=="table" and type(info.GetItemFromId)=="function" then local ok,it=pcall(info.GetItemFromId,LP,id);if ok and it then return it end end
+            if inv then for _,it in ipairs(inv:GetChildren()) do if itemId(it)==id then return it end end end
+            return nil
+        end
+        local function slotItem(index) local slot=toolbar:FindFirstChild(toolbarNames[index] or "");return slot and itemById(slot.Value) or nil end
+        local function isCombat(it)
+            if not it then return false end
+            local def=type(items)=="table" and items[it.Name] or nil
+            if def then return def.HasCombat==true or def.CombatPreset~=nil end
+            return it.Name=="Combat" or at(RS,{"Assets","Animations",it.Name.."_Combat_Anims"})~=nil
+        end
+        local desired
+        if S.weapon=="Auto combat tool" then
+            local cur=slotItem(equipped.Value)
+            if isCombat(cur) then C.equipAttempts=0;S.equipment=cur.Name;return "weapon: "..cur.Name end
+            for _,i in ipairs({3,1,2,4,5}) do if isCombat(slotItem(i)) then desired=i;break end end
+            if not desired then
+                if inv and sig then
+                    for _,it in ipairs(inv:GetChildren()) do
+                        local idv=isCombat(it) and itemId(it) or nil
+                        if idv~=nil then
+                            if (C.toolbarEquipAt or 0)>os.clock() then return "weapon: Toolbar_Equip "..it.Name.." pending" end
+                            C.toolbarEquipAt=os.clock()+3
+                            pcall(sig.ToServer,"Toolbar_Equip",it.Name,idv);log("equipment","Toolbar_Equip "..it.Name.." (id "..tostring(idv)..")")
+                            return "weapon: Toolbar_Equip "..it.Name
+                        end
+                    end
+                end
+                return "weapon: no combat item on toolbar - fighting with the current tool"
+            end
+        else desired=tonumber(S.weapon:match("(%d+)")) end
+        if not desired then return "weapon: "..tostring(S.weapon) end
+        if equipped.Value==desired then
+            local it=slotItem(desired);S.equipment=it and it.Name or ("slot "..desired)
+            return "weapon: slot "..desired..(it and (" "..it.Name) or "")
+        end
+        if (C.equipAt or 0)>os.clock() then return "weapon: equipping slot "..desired end
+        C.equipAttempts=(C.equipAttempts or 0)+1
+        C.equipAt=os.clock()+(C.equipAttempts>3 and 10 or 2)
+        -- working script order: Items_Config.Equipped = slot, then Item_Equip(slot); no acknowledgement gate
+        pcall(function() equipped.Value=desired end)
+        if sig then pcall(sig.ToServer,"Item_Equip",desired) end
+        log("equipment","Item_Equip slot "..desired.." (attempt "..C.equipAttempts..")")
+        return "weapon: Item_Equip slot "..desired
+    end
+    actions.fastAttackTick=function(targetModel)
+        local sig=ensureModule("Signal")
+        if not sig then C.fatk.reason="Signal remote missing (Communication/ServerAndClient/Signals/SignalEvent/Event)";return false,C.fatk.reason end
+        local cp=ensureModule("CombatPresets")
+        if not cp then C.fatk.reason="Combat_presets not loaded ("..tostring(C.loading.CombatPresets or "pending").."); retrying";return false,C.fatk.reason end
+        ensureModule("Items");ensureModule("Info")
+        local now=os.clock()
+        if C.fatk.pending then return true,"swing pending | sent "..(C.fatk.sent or 0) end
+        if now<(C.fatk.next or 0) then return true,"pacing "..string.format("%.2f",C.fatk.next-now).."s | sent "..(C.fatk.sent or 0) end
+        local rc,why=actions.resolveCombat()
+        if not rc then C.fatk.reason=why;return false,why end
+        local aspd0=attackSpeed(cp)
+        -- combo reset exactly like performCombatAttack(): combo_duration / attackSpeed since the last swing
+        if now-(C.fatk.last or 0)>(cp.combo_duration or 1)/aspd0 then C.fatk.combo=1 end
+        local maxc=rc.preset.Max or 5
+        if C.fatk.combo>maxc then C.fatk.combo=1 end
+        local combo=C.fatk.combo
+        -- resync with the server's accepted combo when the attribute is visible and our last packet was not taken
+        local sc=serverCombo()
+        if type(sc)=="number" and C.fatk.sentCombo and C.fatk.lastSend and now-C.fatk.lastSend>0.3 and sc~=C.fatk.sentCombo then
+            local want=(sc==5 or sc==7 or sc>=maxc) and 1 or (sc+1)
+            if want~=combo then C.fatk.resyncs=(C.fatk.resyncs or 0)+1;combo=want;C.fatk.combo=want;log("combat","combo resync: server last_combo="..sc.." -> sending "..want) end
+        end
+        local serverHitDelay,interval,swingDelay,aspd=combatTiming(cp,rc.preset,combo)
+        playSwing(rc,combo,aspd)
+        C.fatk.last=now;C.fatk.next=now+interval*0.92
         C.fatk.combo=(combo>=maxc) and 1 or (combo+1)
-        C.fatk.last=os.clock()
-        return true
+        C.fatk.lastCombat=rc.name..(rc.override and ("/"..rc.override) or "").." c"..combo.." tool="..rc.tool
+        local epoch=S.epoch
+        local function fire()
+            C.fatk.pending=nil
+            if not S.alive or epoch~=S.epoch then return end
+            if targetModel and (not targetModel.Parent or actions.isFarmDefending(targetModel)) then
+                C.fatk.skipped=(C.fatk.skipped or 0)+1;C.fatk.next=os.clock()+0.05;return
+            end
+            local ok,err=pcall(sig.ToServer,"Combat_Service",rc.name,combo,false,serverHitDelay,false,rc.override)
+            if ok then C.fatk.sent=(C.fatk.sent or 0)+1;C.fatk.lastSend=os.clock();C.fatk.sentCombo=combo;C.fatk.reason=nil
+            else C.fatk.reason="Combat_Service send error: "..short(err);log("combat",C.fatk.reason) end
+        end
+        if S.attackTiming=="Instant (no swing delay)" or swingDelay<=0 then fire()
+        else C.fatk.pending=true;task.delay(swingDelay,fire) end
+        return true,"Combat_Service "..rc.name.." c"..combo..(rc.override and (" ("..rc.override..")") or "").." | sent "..(C.fatk.sent or 0)..(sc and (" | srv combo "..sc) or "")
     end
     -- v2.4.0 combat assist (client-side, honest scope):
     -- stamina drain + regen live client-side (007_Skills_Module, 014_StaminaComponent); stamina server check exists ONLY in BreathingBoost/Hundred-Legged.
@@ -1765,11 +1945,15 @@ local function StartCAMHub(Lumen)
         -- Freeze this snapshot's log; later messages must not rewrite a recorder's runtimeBefore.
         local frozenLog={}
         for _,entry in ipairs(C.logs) do frozenLog[#frozenLog+1]={time=entry.time,kind=entry.kind,text=entry.text} end
-        return {format="CAM Main Hub 3.2.4",timeUTC=os.date("!%Y-%m-%dT%H:%M:%SZ"),placeId=game.PlaceId,placeVersion=game.PlaceVersion,
+        return {format="CAM Main Hub 3.3.0",timeUTC=os.date("!%Y-%m-%dT%H:%M:%SZ"),placeId=game.PlaceId,placeVersion=game.PlaceVersion,
             state=state,modules=modules,log=frozenLog,lastStop=C.lastStop,
             farm={backend=C.inputBackend or "not used",requests=C.attackRequests or 0,comboAcks=C.comboAcks or 0,damageObservations=C.damageEvents or 0,potionRequests=C.potionRequests or 0,potionAcks=C.potionAcks or 0,potionFailures=C.potionFailures or 0,baitRequests=C.baitRequests or 0,baitAcks=C.baitAcks or 0,
                 quest=C.questRoute and C.questRoute.key or "none",questRequestAttempts=C.questAttempts or 0,level=level(),
-                catalogNpcs=#CAM_CATALOG.npcs,catalogQuests=#CAM_CATALOG.quests,loadedHumanoids=C.snapshotHostiles,combatBusy=C.combatBusy==true},target=m and m:GetFullName() or "none",ownership=ownership(m),
+                catalogNpcs=#CAM_CATALOG.npcs,catalogQuests=#CAM_CATALOG.quests,loadedHumanoids=C.snapshotHostiles,combatBusy=C.combatBusy==true,
+                direct={status=S.farmStatus,attackMode=S.m1Mode,attackTiming=S.attackTiming,weaponMode=S.weapon,equipment=S.equipment,
+                    combatServiceSent=C.fatk.sent or 0,skippedDefending=C.fatk.skipped or 0,comboResyncs=C.fatk.resyncs or 0,lastCombat=C.fatk.lastCombat,lastReason=C.fatk.reason,
+                    signalPath=C.signalPath or "not resolved",serverLastCombo=serverCombo(),farmTarget=C.farmTarget and C.farmTarget.m and C.farmTarget.m.Name or "none"},
+                callbackErrors=C.callbackErrors or 0,lastCallbackError=C.lastCallbackError},target=m and m:GetFullName() or "none",ownership=ownership(m),
             note="Client actions / requests are not proof of server acceptance. No private credentials or webhook URLs are collected."}
     end
     local function report()
@@ -1802,9 +1986,9 @@ local function StartCAMHub(Lumen)
         if not ok then pcall(function() warn("[CAM Main] unload cleanup error: "..tostring(err)) end) end
         return oldUnload(self)
     end
-    Env.CAMMainHub={State=S,Stop=function() Lumen:Unload() end,StopAll=function() stopAll("Diagnostics STOP") end,Snapshot=snapshot,Version="3.2.4"}
+    Env.CAMMainHub={State=S,Stop=function() Lumen:Unload() end,StopAll=function() stopAll("Diagnostics STOP") end,Snapshot=snapshot,Version="3.3.0"}
     Lumen.Folder="cam_main_hub";Lumen.ConfigFolder=Lumen.Folder.."/configs";Lumen.ThemeFolder=Lumen.Folder.."/themes"
-    local window=Lumen:Window({Name="CAM MAIN | Quest & Farm",Version="3.2.4 / + combat_service default, speed 300",Footer="RightCtrl menu | unload: settings | honest limits",Size=UDim2.fromOffset(900,660),Keybind=Enum.KeyCode.RightControl})
+    local window=Lumen:Window({Name="CAM MAIN | Quest & Farm",Version="3.3.0 / + working-script combat core, live farm status",Footer="RightCtrl menu | unload: settings | honest limits",Size=UDim2.fromOffset(900,660),Keybind=Enum.KeyCode.RightControl})
     -- hide the window drop shadow entirely (user request: no shadow behind the menu, ever)
     local winShadow=window.Items and window.Items.Shadow
     local function killShadow()
@@ -1823,7 +2007,7 @@ local function StartCAMHub(Lumen)
     local function section(p,name,side) return p:Section({Name=name,Side=side or 1}) end
     local function button(sec,name,fn,confirm)
         return sec:Button({Name=name,Confirm=confirm or false,Callback=function()
-            local ok,err=pcall(fn);if not ok then log("button error",err);note("Action failed: "..short(err));stopAll("Action failed") end
+            local ok,err=pcall(fn);if not ok then log("button error",err);note("Action failed: "..short(err)) end
         end})
     end
     local function toggle(sec,name,key,fn,visualOnly)
@@ -1853,8 +2037,15 @@ local function StartCAMHub(Lumen)
     toggle(farmSec,"Farm noclip","farmNoclip")
     farmSec:Dropdown({Name="Attack mode",Items={"Fast Attack (Combat_Service)","Hold M1 (native)"},Default=S.m1Mode,Flag="cam_m1mode",Callback=function(v) S.m1Mode=v end})
     farmSec:Dropdown({Name="Weapon",Items={"Auto combat tool","Keep equipped","Slot 1","Slot 2","Slot 3","Slot 4","Slot 5"},Default=S.weapon,Flag="cam_weapon",Callback=function(v) S.weapon=v end})
-    farmSec:Label("Regions scan -> stepped approach; attacks run inside the game's own input path (hold M1) or raw Combat_Service.")
-    farmSec:Label("Defending targets (NpcCounter / Blocking) are skipped this pass.")
+    farmSec:Dropdown({Name="Attack timing",Items={"Game client (swing delay)","Instant (no swing delay)"},Default=S.attackTiming,Flag="cam_atktiming",Callback=function(v) S.attackTiming=v end})
+    farmStatusLabel=farmSec:Label("Farm: OFF")
+    button(farmSec,"Attack once (Combat_Service probe)",function()
+        loadNative();local ok,msg=actions.fastAttackTick(nil);note((ok and "Attack: " or "Not sent: ")..tostring(msg))
+    end)
+    farmSec:Label("Fast Attack = the game's Combat_Service packet after the preset swing delay (working-script protocol), combo 1..Max.")
+    farmSec:Label("Hold M1 = Tool_Mouse Down/Up (tool activation channel; it does not swing melee weapons).")
+    farmSec:Label("Weapon prep never blocks: Item_Equip / Toolbar_Equip are sent once, then the fight continues with the equipped tool.")
+    farmSec:Label("Defending targets (NpcCounter / Blocking) are skipped this pass. Death keeps every toggle ON.")
     local ps=section(farmPage,"auto potion (native toolbar)",2)
     toggle(ps,"Auto Potion - consumes toolbar potion at low HP","autoPotion",function(v) if v then loadNative() else C.potion=nil;C.potionLock=nil end end)
     ps:Dropdown({Name="Potion choice",Items={"Auto (strongest heal)","Health Elixir","Health Potion","Health Regen Elixir","Health Regen Potion"},Default=S.potionChoice,Flag="cam_potion_choice",Callback=function(v) S.potionChoice=v end})
@@ -2241,7 +2432,12 @@ local function StartCAMHub(Lumen)
         if S.noDebuffs and os.clock()-(C.purgeT or 0)>0.2 then C.purgeT=os.clock();pcall(actions.purgeDebuffs) end
         if (S.autoSkills or S.autoBreath) then pcall(actions.autoSkillTick) end
         if winShadow then pcall(function() if winShadow.Visible then killShadow() end end) end
-        if S.autoFarm or S.autoBoss then pcall(actions.farmTick) end
+        if S.autoFarm or S.autoBoss then
+            local okF,resF,msgF=pcall(actions.farmTick)
+            if not okF then S.farmStatus="farm error: "..short(resF);if (C.farmErrAt or 0)<=os.clock() then C.farmErrAt=os.clock()+2;log("farm error",tostring(resF)) end
+            else S.farmStatus=msgF or S.farmStatus end
+            if not (S.autoLevel or S.farm or S.attack or S.skills) then S.status=S.farmStatus end
+        elseif S.farmStatus~="OFF" then S.farmStatus="OFF";C.farmTarget=nil;C.fatk.pending=nil end
         if S.instaKill and os.clock()-(C.ikT or 0)>0.1 then C.ikT=os.clock();pcall(actions.instaKillTick) end
         if S.fastAttack then pcall(actions.fastAttackTick) end
         if S.autoFish and os.clock()-C.fish.last>0.5 then
@@ -2249,7 +2445,12 @@ local function StartCAMHub(Lumen)
             else pcall(function() actions.castRod() end) end
         end
         local current,h=char()
-        if h and h.Health<=0 and C.deadCharacter~=current then C.deadCharacter=current;stopAll("Death: all toggles OFF") end
+        if h and h.Health<=0 and C.deadCharacter~=current then
+            -- v3.3.0 (user rule): death never switches features off; only targets / transient combat state reset
+            C.deadCharacter=current;C.farmTarget=nil;S.target=nil;C.target=nil;C.fatk.combo=1;C.fatk.next=0;C.fatk.pending=nil;C.damageWatch=nil
+            pcall(actions.m1Up);releaseAll();endTravel()
+            S.status="Died: toggles stay ON, waiting for respawn";S.farmStatus=S.status;log("death",S.status)
+        end
         if h and h.Health>0 then C.deadCharacter=nil end
         moveStep();farmMove(dt)
         elapsed=elapsed+dt;uiTime=uiTime+dt;C.visualClock=C.visualClock+dt;C.espClock=(C.espClock or 0)+dt
@@ -2260,6 +2461,9 @@ local function StartCAMHub(Lumen)
             uiTime=0;tick=tick+1
             local _,h=char();local m=S.target;local n=0;for _ in pairs(C.objects) do n=n+1 end
             statusLabel:SetText(short(S.status,95));indexLabel:SetText((C.indexing and "Indexing... " or "Loaded index: ")..n.." objects")
+            if farmStatusLabel and farmStatusLabel.SetText then
+                farmStatusLabel:SetText(short("Farm: "..tostring(S.farmStatus).." | Combat_Service sent "..(C.fatk.sent or 0)..(C.fatk.lastCombat and (" | last "..C.fatk.lastCombat) or "")..(C.fatk.reason and (" | "..C.fatk.reason) or ""),160))
+            end
             if parryLabel and parryLabel.SetText then parryLabel:SetText("Parry: "..C.parryAttempts.." taps / "..C.parryBlocked.." blocks / "..C.parryPerfect.." perfect | method "..C.parryPath..(C.parryConfirmed and " (server-confirmed)" or " (unconfirmed)")) end
             if trainLabel and trainLabel.SetText then trainLabel:SetText("Training: "..C.trainWins.." win signals / "..C.trainClicks.." slider clicks") end
             if fishLabel and fishLabel.SetText then fishLabel:SetText("Fishing: "..C.fish.casts.." casts / "..C.fish.bites.." bites / "..C.fish.wins.." wins") end
@@ -2294,6 +2498,6 @@ local function StartCAMHub(Lumen)
         end
         C.indexing=false
     end)
-    note("CAM Main 3.2.4 ready. Auto Level or Auto Farm connects native controls automatically. All automation OFF. End: STOP.")
+    note("CAM Main 3.3.0 ready. Auto Farm / Auto Level connect native modules automatically. All automation OFF. Unload: settings tab.")
 end
 StartCAMHub(Lumen)
