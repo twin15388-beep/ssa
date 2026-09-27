@@ -28,7 +28,7 @@ function _countSends(kind) local n=0;for _,e in ipairs(_sentE) do if e.args[1]==
 
 def fresh(extra=''):
     lua=make(logic)
-    assert lua.eval('CAMMainHub.Version')=='3.3.0'
+    assert lua.eval('CAMMainHub.Version')=='3.3.1'
     lua.execute(PRESET+extra)
     return lua
 
@@ -240,11 +240,11 @@ assert lua.eval('CAMMainHub.Snapshot().farm.direct.signalPath')=='live RemoteEve
 print('PASS signal channel: live SignalEvent/Event RemoteEvent used directly (no require needed)')
 
 # ---- 14. structure: bundle carries the 3.3.0 core and the honest UI copy ----
-text=Path('CAM_Main_Hub_v3.3.0.lua').read_text()
-for needle in ['Version="3.3.0"','actions.resolveCombat','actions.prepareWeapon','Attack timing','Attack once (Combat_Service probe)',
+text=Path('CAM_Main_Hub_v3.3.1.lua').read_text()
+for needle in ['Version="3.3.1"','actions.resolveCombat','actions.prepareWeapon','Attack timing','Attack once (Combat_Service probe)',
                'Died: toggles stay ON, waiting for respawn','working-script combat core','Repeated callback errors','Hold M1 = Tool_Mouse Down/Up']:
     assert needle in text,needle
 assert 'Death: all toggles OFF' not in text
 assert 'stopAll("Action failed")' not in text
-print('PASS structure: 3.3.0 standalone carries the working-script combat core, live status, no death/click stopAll')
+print('PASS structure: 3.3.1 standalone carries the working-script combat core, live status, no death/click stopAll')
 print('Mock/static only: server acceptance of Combat_Service (damage) is NOT verified here - confirm in-game via the farm status line / diagnostics report.')

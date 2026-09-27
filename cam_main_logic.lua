@@ -1,4 +1,4 @@
--- CAM Main Hub 3.3.0 | source-backed client integration for place 136406881576517.
+-- CAM Main Hub 3.3.1 | source-backed client integration for place 136406881576517.
 -- No downloaded code, hooks, decompilation, arbitrary remotes, purchases or webhooks.
 local function StartCAMHub(Lumen)
     local Env = (getgenv and getgenv()) or _G
@@ -19,7 +19,7 @@ local function StartCAMHub(Lumen)
         targetName="",targetKind="Mob",searchRange=350,hitRange=7,standOff=4,skillRange=35,
         targetMode="Selected mob",mobCode="KaruVillageBandit",bossCode="Zuko",
         positionMode="Above",farmDistance=2,farmHeight=3,travelMode="Tween",travelSpeed=80,orbitSpeed=1,
-        lookMode="Horizontal",inputMode="Auto (live punch / native input)",weapon="Auto combat tool",
+        lookMode="Horizontal",inputMode="Combat_Service (direct)",weapon="Auto combat tool",
         questPolicy="Highest eligible",questStage="OFF",questName="-",questProgress="-",equipment="-",noDamageTimeout=20,
         attackDelay=0.5,skillDelay=3,skillHold=0.2,healthStop=25,farmNoclip=true,autoPotion=false,potionHp=35,potionDelay=6,potionChoice="Auto (strongest heal)",baitName="",
         walkSpeed=26,jumpHeight=12,flySpeed=45,espRange=600,espLimit=40,
@@ -32,7 +32,7 @@ local function StartCAMHub(Lumen)
         infStamina=false,noCd=false,fastM1=false,
         killAura=false,killAuraRange=12,noDebuffs=false,infJump=false,
         instaKill=false,instaKillPct=10,fastAttack=false,
-        autoFarm=false,autoBoss=false,farmMobText="",farmStyle="Behind",farmDist=6,farmHeight=7,farmNoclip=true,farmSpeed=120,searchRange=300,m1Mode="Fast Attack (Combat_Service)",attackTiming="Game client (swing delay)",farmStatus="OFF",
+        autoFarm=false,autoBoss=false,farmMobText="",farmStyle="Behind",farmDist=4,farmHeight=5,farmNoclip=true,farmSpeed=120,searchRange=300,m1Mode="Fast Attack (Combat_Service)",attackTiming="Game client (swing delay)",farmStatus="OFF",
         fullbright=false,noFog=false,fpsCapText="",
         autoSkills=false,autoSkillText="Breathing Boost",autoBreath=false}
     local C={connections={},toggles={},logs={},modules={},loading={},loaderTasks={},owned={},tickets={},
@@ -43,7 +43,7 @@ local function StartCAMHub(Lumen)
         parryAttempts=0,parryBlocked=0,parryPerfect=0,parryUnacked=0,
         blockWatchDone=false,trainWatchDone=false,trainSession=nil,sliderSamples={},trainClicks=0,trainWins=0,
         fish={casts=0,bites=0,wins=0,awaitingBite=false,last=0,portalDone=false},fastM1={},fatk={combo=1,next=0,last=0,sent=0},syncRetry={}}
-    local stopAll,clearESP,refreshTargets,refreshDestinations,refreshHunts,endTravel
+    local stopAll,clearESP,refreshTargets,refreshDestinations,refreshHunts,endTravel,actions
     local statusLabel,targetLabel,resourceLabel,questLabel,nativeLabel,indexLabel,parryLabel,trainLabel,fishLabel,treeLabel,farmStatusLabel
     local targetDrop,destinationDrop,huntDrop
     local bossNames=CAM_BOSS_NAMES
@@ -630,6 +630,24 @@ local function StartCAMHub(Lumen)
         local observedCombo=observeCombo()
         local m,d=target();if not m then return false,"No matching loaded hostile NPC" end
         if d>S.hitRange then return false,"Travelling: target outside M1 range" end
+        if S.inputMode=="Combat_Service (direct)" then
+            -- v3.3.1: same working-script channel as the direct farm (Combat_Service after the preset swing delay);
+            -- weapon prep is best effort, the only stop left is the explicit "STOP after no target damage" slider.
+            local eqMsg=actions.prepareWeapon()
+            face(m);C.attackRequests=(C.attackRequests or 0)+1;C.inputBackend="Combat_Service (direct)"
+            local h=m:FindFirstChildOfClass("Humanoid")
+            if not C.damageWatch or C.damageWatch.target~=m then C.damageWatch={target=m,hp=h.Health,time=os.clock(),combo=comboTime()} end
+            local watch=C.damageWatch
+            if h.Health<watch.hp then C.damageEvents=(C.damageEvents or 0)+1;watch.time=os.clock();watch.hp=h.Health end
+            if os.clock()-watch.time>S.noDamageTimeout then
+                stopAll("No target HP decrease for "..S.noDamageTimeout.."s (Combat_Service sent "..(C.fatk.sent or 0)..", dist "..string.format("%.1f",d)..(C.fatk.reach and (", hitbox reach~"..string.format("%.1f",C.fatk.reach+0.5)) or "").."): lower distance/height or check the target")
+                return false,S.status
+            end
+            local sent,msg=actions.fastAttackTick(m)
+            if C.fatk.reach and d>C.fatk.reach+0.5 then msg=tostring(msg).." | dist "..string.format("%.1f",d).." > hitbox reach~"..string.format("%.1f",C.fatk.reach+0.5) end
+            C.lastCombatResult=msg
+            return sent,tostring(msg).." | "..eqMsg
+        end
         local ready,msg=ensureEquipment()
         if not ready then
             C.equipmentWait=C.equipmentWait or os.clock()
@@ -824,7 +842,7 @@ local function StartCAMHub(Lumen)
         if par==workspace:FindFirstChild("Training") then return "Training" end
         return nil
     end
-    local actions={}
+    actions={}
     -- v2.3.0 Auto Parry (beta). Protocol facts from server values + decompiled 012_Skill_Controller:
     -- block = native Skills_1st hold; server ack = Values/<player>/Blocking node (value 9),
     -- perfect = the same node with Perfect / PerfectNpc children (server-decided, so this is an honest ack).
@@ -1120,7 +1138,10 @@ local function StartCAMHub(Lumen)
         if S.m1Mode=="Fast Attack (Combat_Service)" then
             if defending then atkMsg="target defending - holding"
             elseif not inRange then atkMsg="approaching"
-            else local _,m=actions.fastAttackTick(t.m);atkMsg=m end
+            else
+                local _,m=actions.fastAttackTick(t.m);atkMsg=m
+                if C.fatk.reach and dist>C.fatk.reach+0.5 then atkMsg=tostring(m).." | dist "..string.format("%.1f",dist).." > hitbox reach~"..string.format("%.1f",C.fatk.reach+0.5).." (lower Distance / height)" end
+            end
             pcall(actions.m1Up)
         else
             if not defending and inRange then pcall(actions.m1Down);atkMsg="Tool_Mouse hold (tool activation only; melee needs Fast Attack)"
@@ -1265,6 +1286,14 @@ local function StartCAMHub(Lumen)
         interval=math.max(interval/aspd,0.12)
         return serverHitDelay,interval,swingDelay,aspd,maxc
     end
+    local function combatReach(preset,combo)
+        -- Combat_presets.Get_Players_For_Combat (shared module, the server runs the same maths): standing still the hit
+        -- box is (6+W) x (6.25+W) x (9+D) studs, centred 1 stud under the root and pushed forward only by
+        -- MinHitboxSize/Reaches (lunge distance is 0 for a non-running hit). Forward extent = 4.5 + 1.25*reach + D/2 + Z.
+        local function pick(field) local t=preset[field];if type(t)~="table" then return 0 end;return t[combo] or t.Default or 0 end
+        local reach=(preset.MinHitboxSize or 0)+pick("Reaches")
+        return 4.5+reach*1.25+pick("Depths")/2+pick("ZOffsets")
+    end
     local function playSwing(rc,combo,aspd)
         pcall(function()
             local anims=at(RS,{"Assets","Animations"})
@@ -1373,6 +1402,7 @@ local function StartCAMHub(Lumen)
             if want~=combo then C.fatk.resyncs=(C.fatk.resyncs or 0)+1;combo=want;C.fatk.combo=want;log("combat","combo resync: server last_combo="..sc.." -> sending "..want) end
         end
         local serverHitDelay,interval,swingDelay,aspd=combatTiming(cp,rc.preset,combo)
+        C.fatk.reach=combatReach(rc.preset,combo)
         playSwing(rc,combo,aspd)
         C.fatk.last=now;C.fatk.next=now+interval*0.92
         C.fatk.combo=(combo>=maxc) and 1 or (combo+1)
@@ -1479,6 +1509,10 @@ local function StartCAMHub(Lumen)
             end
         end
         if not best then return false,"No mob in aura range" end
+        if S.inputMode=="Combat_Service (direct)" then
+            local sent,msg=actions.fastAttackTick(best.n)
+            return sent,"Aura "..tostring(msg).." -> "..tostring(best.n.Name).." @"..math.floor(bd)
+        end
         local punch=(S.inputMode~="Native input only") and findPunch() or nil
         if punch then local ok,err=pcall(punch);if not ok then C.punch=nil;return false,"aura punch err: "..short(err) end
         else press("Combat",0.12) end
@@ -1945,14 +1979,14 @@ local function StartCAMHub(Lumen)
         -- Freeze this snapshot's log; later messages must not rewrite a recorder's runtimeBefore.
         local frozenLog={}
         for _,entry in ipairs(C.logs) do frozenLog[#frozenLog+1]={time=entry.time,kind=entry.kind,text=entry.text} end
-        return {format="CAM Main Hub 3.3.0",timeUTC=os.date("!%Y-%m-%dT%H:%M:%SZ"),placeId=game.PlaceId,placeVersion=game.PlaceVersion,
+        return {format="CAM Main Hub 3.3.1",timeUTC=os.date("!%Y-%m-%dT%H:%M:%SZ"),placeId=game.PlaceId,placeVersion=game.PlaceVersion,
             state=state,modules=modules,log=frozenLog,lastStop=C.lastStop,
             farm={backend=C.inputBackend or "not used",requests=C.attackRequests or 0,comboAcks=C.comboAcks or 0,damageObservations=C.damageEvents or 0,potionRequests=C.potionRequests or 0,potionAcks=C.potionAcks or 0,potionFailures=C.potionFailures or 0,baitRequests=C.baitRequests or 0,baitAcks=C.baitAcks or 0,
                 quest=C.questRoute and C.questRoute.key or "none",questRequestAttempts=C.questAttempts or 0,level=level(),
                 catalogNpcs=#CAM_CATALOG.npcs,catalogQuests=#CAM_CATALOG.quests,loadedHumanoids=C.snapshotHostiles,combatBusy=C.combatBusy==true,
                 direct={status=S.farmStatus,attackMode=S.m1Mode,attackTiming=S.attackTiming,weaponMode=S.weapon,equipment=S.equipment,
                     combatServiceSent=C.fatk.sent or 0,skippedDefending=C.fatk.skipped or 0,comboResyncs=C.fatk.resyncs or 0,lastCombat=C.fatk.lastCombat,lastReason=C.fatk.reason,
-                    signalPath=C.signalPath or "not resolved",serverLastCombo=serverCombo(),farmTarget=C.farmTarget and C.farmTarget.m and C.farmTarget.m.Name or "none"},
+                    signalPath=C.signalPath or "not resolved",serverLastCombo=serverCombo(),hitboxReach=C.fatk.reach,classicBackend=S.inputMode,farmTarget=C.farmTarget and C.farmTarget.m and C.farmTarget.m.Name or "none"},
                 callbackErrors=C.callbackErrors or 0,lastCallbackError=C.lastCallbackError},target=m and m:GetFullName() or "none",ownership=ownership(m),
             note="Client actions / requests are not proof of server acceptance. No private credentials or webhook URLs are collected."}
     end
@@ -1986,9 +2020,9 @@ local function StartCAMHub(Lumen)
         if not ok then pcall(function() warn("[CAM Main] unload cleanup error: "..tostring(err)) end) end
         return oldUnload(self)
     end
-    Env.CAMMainHub={State=S,Stop=function() Lumen:Unload() end,StopAll=function() stopAll("Diagnostics STOP") end,Snapshot=snapshot,Version="3.3.0"}
+    Env.CAMMainHub={State=S,Stop=function() Lumen:Unload() end,StopAll=function() stopAll("Diagnostics STOP") end,Snapshot=snapshot,Version="3.3.1"}
     Lumen.Folder="cam_main_hub";Lumen.ConfigFolder=Lumen.Folder.."/configs";Lumen.ThemeFolder=Lumen.Folder.."/themes"
-    local window=Lumen:Window({Name="CAM MAIN | Quest & Farm",Version="3.3.0 / + working-script combat core, live farm status",Footer="RightCtrl menu | unload: settings | honest limits",Size=UDim2.fromOffset(900,660),Keybind=Enum.KeyCode.RightControl})
+    local window=Lumen:Window({Name="CAM MAIN | Quest & Farm",Version="3.3.1 / + working-script combat core, reach-aware farm",Footer="RightCtrl menu | unload: settings | honest limits",Size=UDim2.fromOffset(900,660),Keybind=Enum.KeyCode.RightControl})
     -- hide the window drop shadow entirely (user request: no shadow behind the menu, ever)
     local winShadow=window.Items and window.Items.Shadow
     local function killShadow()
@@ -2045,6 +2079,7 @@ local function StartCAMHub(Lumen)
     farmSec:Label("Fast Attack = the game's Combat_Service packet after the preset swing delay (working-script protocol), combo 1..Max.")
     farmSec:Label("Hold M1 = Tool_Mouse Down/Up (tool activation channel; it does not swing melee weapons).")
     farmSec:Label("Weapon prep never blocks: Item_Equip / Toolbar_Equip are sent once, then the fight continues with the equipped tool.")
+    farmSec:Label("Server hitbox (Get_Players_For_Combat): 9-stud box centred on you -> fists reach ~5 studs, katana-type ~6. Keep Distance <= 4; the status warns when the target is beyond reach.")
     farmSec:Label("Defending targets (NpcCounter / Blocking) are skipped this pass. Death keeps every toggle ON.")
     local ps=section(farmPage,"auto potion (native toolbar)",2)
     toggle(ps,"Auto Potion - consumes toolbar potion at low HP","autoPotion",function(v) if v then loadNative() else C.potion=nil;C.potionLock=nil end end)
@@ -2085,7 +2120,8 @@ local function StartCAMHub(Lumen)
     slider(cfPos,"M1 interval (seconds)","attackDelay",0.25,3)
     slider(cfPos,"STOP at HP percent","healthStop",5,80)
     slider(cfPos,"STOP after no target damage (seconds)","noDamageTimeout",10,60)
-    cfPos:Dropdown({Name="M1 input backend",Items={"Auto (live punch / native input)","Native input only"},Default=S.inputMode,Flag="cam_inputmode",Callback=function(v) S.inputMode=v;release("Combat");C.damageWatch=nil end})
+    cfPos:Dropdown({Name="M1 input backend",Items={"Combat_Service (direct)","Auto (live punch / native input)","Native input only"},Default=S.inputMode,Flag="cam_inputmode",Callback=function(v) S.inputMode=v;release("Combat");C.damageWatch=nil end})
+    cfPos:Label("Combat_Service (direct) = the working-script packet (preset timing, Attack timing option applies); M1 interval slider is for the input backends.")
     local autoPage=page("auto level","gameplay")
     local al=section(autoPage,"level-aware quest cycle")
     toggle(al,"Auto Level - accept / farm / repeat","autoLevel",function(v)
@@ -2498,6 +2534,6 @@ local function StartCAMHub(Lumen)
         end
         C.indexing=false
     end)
-    note("CAM Main 3.3.0 ready. Auto Farm / Auto Level connect native modules automatically. All automation OFF. Unload: settings tab.")
+    note("CAM Main 3.3.1 ready. Auto Farm / Auto Level connect native modules automatically. All automation OFF. Unload: settings tab.")
 end
 StartCAMHub(Lumen)
