@@ -1,0 +1,1502 @@
+[
+  {
+    "file": "000_TeamGuiLayout.lua",
+    "path": "ReplicatedStorage.TeamGuiLayout",
+    "bytes": 2585
+  },
+  {
+    "file": "001_SmartBone.lua",
+    "path": "ReplicatedStorage.SmartBone",
+    "bytes": 20978
+  },
+  {
+    "file": "002_ChapeuMeshSkinning.lua",
+    "path": "ReplicatedStorage.ChapeuMeshSkinning",
+    "bytes": 8481
+  },
+  {
+    "file": "003_VampireCapeSkinning.lua",
+    "path": "ReplicatedStorage.VampireCapeSkinning",
+    "bytes": 11891
+  },
+  {
+    "file": "004_UpgradesModule.lua",
+    "path": "ReplicatedStorage.UpgradesModule",
+    "bytes": 1639
+  },
+  {
+    "file": "005_Profiles.lua",
+    "path": "ReplicatedStorage.SmartBone.Profiles",
+    "bytes": 68
+  },
+  {
+    "file": "006_Config.lua",
+    "path": "ReplicatedStorage.SmartBone.Config",
+    "bytes": 982
+  },
+  {
+    "file": "007_CharacterAnimations.lua",
+    "path": "ReplicatedStorage.Animações.CharacterAnimations",
+    "bytes": 1532
+  },
+  {
+    "file": "008_SprintConfig.lua",
+    "path": "ReplicatedStorage.Funções.SprintConfig",
+    "bytes": 7903
+  },
+  {
+    "file": "009_VampireSpeedEffect.lua",
+    "path": "ReplicatedStorage.Funções.VampireSpeedEffect",
+    "bytes": 29312
+  },
+  {
+    "file": "010_DayNightConfig.lua",
+    "path": "ReplicatedStorage.Funções.DayNightConfig",
+    "bytes": 2201
+  },
+  {
+    "file": "011_VampireNightVision.lua",
+    "path": "ReplicatedStorage.Funções.VampireNightVision",
+    "bytes": 5333
+  },
+  {
+    "file": "012_VampiricTrackerConfig.lua",
+    "path": "ReplicatedStorage.Funções.VampiricTrackerConfig",
+    "bytes": 500
+  },
+  {
+    "file": "013_VampiricTrackerClient.lua",
+    "path": "ReplicatedStorage.Funções.VampiricTrackerClient",
+    "bytes": 12400
+  },
+  {
+    "file": "014_BloodThirstConfig.lua",
+    "path": "ReplicatedStorage.Funções.BloodThirstConfig",
+    "bytes": 133
+  },
+  {
+    "file": "015_R6RagdollConfig.lua",
+    "path": "ReplicatedStorage.Funções.R6RagdollConfig",
+    "bytes": 974
+  },
+  {
+    "file": "016_VampireHibernationConfig.lua",
+    "path": "ReplicatedStorage.Funções.VampireHibernationConfig",
+    "bytes": 144
+  },
+  {
+    "file": "017_BloodDrinkConfig.lua",
+    "path": "ReplicatedStorage.Funções.BloodDrinkConfig",
+    "bytes": 1033
+  },
+  {
+    "file": "018_BreakNeckConfig.lua",
+    "path": "ReplicatedStorage.Funções.BreakNeckConfig",
+    "bytes": 638
+  },
+  {
+    "file": "019_AudioConfig.lua",
+    "path": "ReplicatedStorage.Funções.AudioConfig",
+    "bytes": 325
+  },
+  {
+    "file": "020_BeVampireConfig.lua",
+    "path": "ReplicatedStorage.Funções.BeVampireConfig",
+    "bytes": 433
+  },
+  {
+    "file": "021_InfectConfig.lua",
+    "path": "ReplicatedStorage.Funções.InfectConfig",
+    "bytes": 636
+  },
+  {
+    "file": "022_PunchConfig.lua",
+    "path": "ReplicatedStorage.Funções.PunchConfig",
+    "bytes": 1088
+  },
+  {
+    "file": "023_StakeConfig.lua",
+    "path": "ReplicatedStorage.Funções.StakeConfig",
+    "bytes": 655
+  },
+  {
+    "file": "024_WerewolfSense.lua",
+    "path": "ReplicatedStorage.Funções.WerewolfSense",
+    "bytes": 3619
+  },
+  {
+    "file": "025_HypnosisConfig.lua",
+    "path": "ReplicatedStorage.Funções.HypnosisConfig",
+    "bytes": 476
+  },
+  {
+    "file": "026_BackHumanConfig.lua",
+    "path": "ReplicatedStorage.Funções.BackHumanConfig",
+    "bytes": 385
+  },
+  {
+    "file": "027_HeartRippingConfig.lua",
+    "path": "ReplicatedStorage.Funções.HeartRippingConfig",
+    "bytes": 396
+  },
+  {
+    "file": "028_CeilingSleepConfig.lua",
+    "path": "ReplicatedStorage.Funções.CeilingSleepConfig",
+    "bytes": 567
+  },
+  {
+    "file": "029_BatFormConfig.lua",
+    "path": "ReplicatedStorage.Funções.BatFormConfig",
+    "bytes": 504
+  },
+  {
+    "file": "030_WitchSpellsConfig.lua",
+    "path": "ReplicatedStorage.Funções.WitchSpellsConfig",
+    "bytes": 3312
+  },
+  {
+    "file": "031_AltShiftLock.lua",
+    "path": "ReplicatedStorage.Funções.AltShiftLock",
+    "bytes": 4119
+  },
+  {
+    "file": "032_Icon.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon",
+    "bytes": 37105
+  },
+  {
+    "file": "033_READ_ME.lua",
+    "path": "ReplicatedStorage.TopbarPlus.READ_ME",
+    "bytes": 187
+  },
+  {
+    "file": "034_CombatConfig.lua",
+    "path": "ReplicatedStorage.ArczisCombat.CombatConfig",
+    "bytes": 3309
+  },
+  {
+    "file": "035_Iris.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris",
+    "bytes": 5087
+  },
+  {
+    "file": "036_DefaultObjectSettings.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.DefaultObjectSettings",
+    "bytes": 559
+  },
+  {
+    "file": "037_Frustum.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Frustum",
+    "bytes": 2105
+  },
+  {
+    "file": "038_spec.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Frustum.spec",
+    "bytes": 2579
+  },
+  {
+    "file": "039_Runtime.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "040_Utilities.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Utilities",
+    "bytes": 11877
+  },
+  {
+    "file": "041_Bone.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Bone",
+    "bytes": 25374
+  },
+  {
+    "file": "042_BoneTree.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.BoneTree",
+    "bytes": 10788
+  },
+  {
+    "file": "043_Types.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Types",
+    "bytes": 54
+  },
+  {
+    "file": "044_VERSION.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.VERSION",
+    "bytes": 1252
+  },
+  {
+    "file": "045_Reference.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Reference",
+    "bytes": 737
+  },
+  {
+    "file": "046_Attribute.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Attribute",
+    "bytes": 627
+  },
+  {
+    "file": "047_Utility.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Utility",
+    "bytes": 20732
+  },
+  {
+    "file": "048_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Stake.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "049_StakeClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Stake.StakeClient",
+    "bytes": 4605
+  },
+  {
+    "file": "050_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.High Stake.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "051_StakeClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.High Stake.StakeClient",
+    "bytes": 4605
+  },
+  {
+    "file": "052_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Cup.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "053_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Human Blood.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "054_PotionClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Human Blood.PotionClient",
+    "bytes": 2875
+  },
+  {
+    "file": "055_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Metal Ring.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "056_RingClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Metal Ring.RingClient",
+    "bytes": 1606
+  },
+  {
+    "file": "057_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Dish.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "058_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Vampire Blood.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "059_PotionClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Vampire Blood.PotionClient",
+    "bytes": 7593
+  },
+  {
+    "file": "060_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Night Vision.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "061_PotionClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Night Vision.PotionClient",
+    "bytes": 6815
+  },
+  {
+    "file": "062_NeutralToolPoseController.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Human Potion.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "063_PotionClient.lua",
+    "path": "ReplicatedStorage.DarkHazardShopPreviews.Human Potion.PotionClient",
+    "bytes": 6815
+  },
+  {
+    "file": "065_NetworkRegistry.lua",
+    "path": "ReplicatedStorage.Shared.Modules.NetworkRegistry",
+    "bytes": 2576
+  },
+  {
+    "file": "066_widgets.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets",
+    "bytes": 20288
+  },
+  {
+    "file": "067_API.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.API",
+    "bytes": 10285
+  },
+  {
+    "file": "068_config.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.config",
+    "bytes": 8216
+  },
+  {
+    "file": "069_demoWindow.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.demoWindow",
+    "bytes": 43608
+  },
+  {
+    "file": "070_Internal.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.Internal",
+    "bytes": 15959
+  },
+  {
+    "file": "071_Types.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.Types",
+    "bytes": 54
+  },
+  {
+    "file": "072_Gizmo.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo",
+    "bytes": 1061
+  },
+  {
+    "file": "073_ImOverlay.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.ImOverlay",
+    "bytes": 82
+  },
+  {
+    "file": "074_DebugUi.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.DebugUi",
+    "bytes": 11270
+  },
+  {
+    "file": "075_Collider.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Collider",
+    "bytes": 6883
+  },
+  {
+    "file": "076_ColliderObject.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.ColliderObject",
+    "bytes": 3086
+  },
+  {
+    "file": "077_AxisConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.AxisConstraint",
+    "bytes": 2698
+  },
+  {
+    "file": "078_spec.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.AxisConstraint.spec",
+    "bytes": 4321
+  },
+  {
+    "file": "079_CollisionConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.CollisionConstraint",
+    "bytes": 518
+  },
+  {
+    "file": "080_DistanceConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.DistanceConstraint",
+    "bytes": 420
+  },
+  {
+    "file": "081_spec.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.DistanceContraint.spec",
+    "bytes": 1284
+  },
+  {
+    "file": "082_FrictionConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.FrictionConstraint",
+    "bytes": 128
+  },
+  {
+    "file": "083_RopeConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.RopeConstraint",
+    "bytes": 552
+  },
+  {
+    "file": "084_spec.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.RopeConstraint.spec",
+    "bytes": 1996
+  },
+  {
+    "file": "085_RotationConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.RotationConstraint",
+    "bytes": 1234
+  },
+  {
+    "file": "086_SpringConstraint.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Constraints.SpringConstraint",
+    "bytes": 1124
+  },
+  {
+    "file": "087_Caption.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Caption",
+    "bytes": 13643
+  },
+  {
+    "file": "088_Container.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Container",
+    "bytes": 8391
+  },
+  {
+    "file": "089_Indicator.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Indicator",
+    "bytes": 3755
+  },
+  {
+    "file": "090_Menu.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Menu",
+    "bytes": 7564
+  },
+  {
+    "file": "091_Notice.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Notice",
+    "bytes": 3784
+  },
+  {
+    "file": "092_Selection.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Selection",
+    "bytes": 1664
+  },
+  {
+    "file": "093_Widget.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Widget",
+    "bytes": 19017
+  },
+  {
+    "file": "094_Dropdown.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Elements.Dropdown",
+    "bytes": 13866
+  },
+  {
+    "file": "095_Gamepad.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Features.Gamepad",
+    "bytes": 7508
+  },
+  {
+    "file": "096_Overflow.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Features.Overflow",
+    "bytes": 10261
+  },
+  {
+    "file": "097_Themes.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Features.Themes",
+    "bytes": 10709
+  },
+  {
+    "file": "098_GoodSignal.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Packages.GoodSignal",
+    "bytes": 3636
+  },
+  {
+    "file": "099_Janitor.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Packages.Janitor",
+    "bytes": 9278
+  },
+  {
+    "file": "100_Button.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Button",
+    "bytes": 3179
+  },
+  {
+    "file": "101_Checkbox.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Checkbox",
+    "bytes": 5235
+  },
+  {
+    "file": "102_Combo.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Combo",
+    "bytes": 20204
+  },
+  {
+    "file": "103_Format.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Format",
+    "bytes": 5400
+  },
+  {
+    "file": "104_Input.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Input",
+    "bytes": 63501
+  },
+  {
+    "file": "105_Menu.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Menu",
+    "bytes": 25365
+  },
+  {
+    "file": "106_RadioButton.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.RadioButton",
+    "bytes": 5551
+  },
+  {
+    "file": "107_Root.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Root",
+    "bytes": 4787
+  },
+  {
+    "file": "108_Table.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Table",
+    "bytes": 6610
+  },
+  {
+    "file": "109_Text.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Text",
+    "bytes": 5160
+  },
+  {
+    "file": "110_Tree.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Tree",
+    "bytes": 12542
+  },
+  {
+    "file": "111_Window.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris.widgets.Window",
+    "bytes": 37649
+  },
+  {
+    "file": "112_Gizmo.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmo",
+    "bytes": 9906
+  },
+  {
+    "file": "113_CeiveImOverlay.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.ImOverlay.CeiveImOverlay",
+    "bytes": 6075
+  },
+  {
+    "file": "114_Box.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Colliders.Box",
+    "bytes": 2123
+  },
+  {
+    "file": "115_Cylinder.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Colliders.Cylinder",
+    "bytes": 3067
+  },
+  {
+    "file": "116_Sphere.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Colliders.Sphere",
+    "bytes": 799
+  },
+  {
+    "file": "117_Triangle.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Colliders.Triangle",
+    "bytes": 2545
+  },
+  {
+    "file": "118_Capsule.lua",
+    "path": "ReplicatedStorage.SmartBone.Components.Collision.Colliders.Capsule",
+    "bytes": 1435
+  },
+  {
+    "file": "119_Classic.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Features.Themes.Classic",
+    "bytes": 1169
+  },
+  {
+    "file": "120_Default.lua",
+    "path": "ReplicatedStorage.TopbarPlus.Icon.Features.Themes.Default",
+    "bytes": 3350
+  },
+  {
+    "file": "121_Arrow.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Arrow",
+    "bytes": 1486
+  },
+  {
+    "file": "122_Box.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Box",
+    "bytes": 3243
+  },
+  {
+    "file": "123_Capsule.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Capsule",
+    "bytes": 2890
+  },
+  {
+    "file": "124_Circle.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Circle",
+    "bytes": 2766
+  },
+  {
+    "file": "125_Cone.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Cone",
+    "bytes": 2421
+  },
+  {
+    "file": "126_Cylinder.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Cylinder",
+    "bytes": 2586
+  },
+  {
+    "file": "127_Line.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Line",
+    "bytes": 1226
+  },
+  {
+    "file": "128_Mesh.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Mesh",
+    "bytes": 2727
+  },
+  {
+    "file": "129_Plane.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Plane",
+    "bytes": 1877
+  },
+  {
+    "file": "130_Ray.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Ray",
+    "bytes": 1387
+  },
+  {
+    "file": "131_Sphere.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Sphere",
+    "bytes": 1459
+  },
+  {
+    "file": "132_Text.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Text",
+    "bytes": 2161
+  },
+  {
+    "file": "133_VolumeArrow.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.VolumeArrow",
+    "bytes": 1916
+  },
+  {
+    "file": "134_VolumeBox.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.VolumeBox",
+    "bytes": 1660
+  },
+  {
+    "file": "135_VolumeCone.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.VolumeCone",
+    "bytes": 1749
+  },
+  {
+    "file": "136_VolumeCylinder.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.VolumeCylinder",
+    "bytes": 1957
+  },
+  {
+    "file": "137_VolumeSphere.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.VolumeSphere",
+    "bytes": 1669
+  },
+  {
+    "file": "138_Wedge.lua",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Debug.Gizmo.Gizmos.Wedge",
+    "bytes": 2863
+  },
+  {
+    "file": "139_VampireSpeedEffectController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireSpeedEffectController",
+    "bytes": 174
+  },
+  {
+    "file": "140_NPCDIALOGONOVO.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.NPCDIALOGONOVO",
+    "bytes": 22616
+  },
+  {
+    "file": "141_VampireNightVisionController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireNightVisionController",
+    "bytes": 174
+  },
+  {
+    "file": "142_VampiricTrackerClientController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampiricTrackerClientController",
+    "bytes": 177
+  },
+  {
+    "file": "143_ActionLockController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ActionLockController",
+    "bytes": 3188
+  },
+  {
+    "file": "144_TeamAnimationController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.TeamAnimationController",
+    "bytes": 10030
+  },
+  {
+    "file": "145_DeathSoundController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.DeathSoundController",
+    "bytes": 1356
+  },
+  {
+    "file": "146_BeVampireTransitionController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.BeVampireTransitionController",
+    "bytes": 1879
+  },
+  {
+    "file": "147_WerewolfSenseController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WerewolfSenseController",
+    "bytes": 1077
+  },
+  {
+    "file": "148_HypnosisCommandController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HypnosisCommandController",
+    "bytes": 17409
+  },
+  {
+    "file": "149_VampireYearsOverheadController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireYearsOverheadController",
+    "bytes": 18085
+  },
+  {
+    "file": "150_MoneyRewardPopupClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MoneyRewardPopupClient",
+    "bytes": 3144
+  },
+  {
+    "file": "151_VampireHatDurabilityClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireHatDurabilityClient",
+    "bytes": 3274
+  },
+  {
+    "file": "152_VampireLandingWindClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireLandingWindClient",
+    "bytes": 7813
+  },
+  {
+    "file": "153_VampireFarmProgressController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireFarmProgressController",
+    "bytes": 4688
+  },
+  {
+    "file": "154_MobileShiftLockController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MobileShiftLockController",
+    "bytes": 4196
+  },
+  {
+    "file": "155_CeilingSleepController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CeilingSleepController",
+    "bytes": 13654
+  },
+  {
+    "file": "156_BatFormFlightController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.BatFormFlightController",
+    "bytes": 6198
+  },
+  {
+    "file": "157_WindShake.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WindShake",
+    "bytes": 11852
+  },
+  {
+    "file": "158_WindShakeInit.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WindShakeInit",
+    "bytes": 134
+  },
+  {
+    "file": "159_GrimoriHumanDarkness.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.GrimoriHumanDarkness",
+    "bytes": 3288
+  },
+  {
+    "file": "160_GrimoriPactPromptClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.GrimoriPactPromptClient",
+    "bytes": 2030
+  },
+  {
+    "file": "161_QuestClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.QuestClient",
+    "bytes": 34379
+  },
+  {
+    "file": "162_CartMovement.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CartMovement",
+    "bytes": 5695
+  },
+  {
+    "file": "163_GameInventoryController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.GameInventoryController",
+    "bytes": 33581
+  },
+  {
+    "file": "164_HideTeamHeaders_DISABLED.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HideTeamHeaders_DISABLED",
+    "bytes": 10051
+  },
+  {
+    "file": "165_HidePlayerList.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HidePlayerList",
+    "bytes": 791
+  },
+  {
+    "file": "166_LowGraphicsController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.LowGraphicsController",
+    "bytes": 14663
+  },
+  {
+    "file": "167_WitchLifeDrainController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchLifeDrainController",
+    "bytes": 11372
+  },
+  {
+    "file": "168_StrengthSpellController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.StrengthSpellController",
+    "bytes": 11733
+  },
+  {
+    "file": "169_CorpseDeliveryQuestClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CorpseDeliveryQuestClient",
+    "bytes": 7842
+  },
+  {
+    "file": "170_InteractionBillboardClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.InteractionBillboardClient",
+    "bytes": 9564
+  },
+  {
+    "file": "171_SettingsMenuController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SettingsMenuController",
+    "bytes": 19237
+  },
+  {
+    "file": "172_TreeWindClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.TreeWindClient",
+    "bytes": 2765
+  },
+  {
+    "file": "173_WitchBreakNeckController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchBreakNeckController",
+    "bytes": 14236
+  },
+  {
+    "file": "174_Quest2Client.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.Quest2Client",
+    "bytes": 17212
+  },
+  {
+    "file": "175_WitchPetrificationController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchPetrificationController",
+    "bytes": 19937
+  },
+  {
+    "file": "176_WitchSpiritWorldController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchSpiritWorldController",
+    "bytes": 23431
+  },
+  {
+    "file": "177_WitchHeartRippingController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchHeartRippingController",
+    "bytes": 12399
+  },
+  {
+    "file": "178_HumanTrainingFeedbackController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HumanTrainingFeedbackController",
+    "bytes": 2801
+  },
+  {
+    "file": "179_DamagePopupClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.DamagePopupClient",
+    "bytes": 3416
+  },
+  {
+    "file": "180_ConsoleTeamGuiController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ConsoleTeamGuiController",
+    "bytes": 10054
+  },
+  {
+    "file": "181_CannibalBloodTremorController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CannibalBloodTremorController",
+    "bytes": 5270
+  },
+  {
+    "file": "182_SmartBoneRuntime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBoneRuntime",
+    "bytes": 1347
+  },
+  {
+    "file": "183_ChapeuSmartBoneSetup.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ChapeuSmartBoneSetup",
+    "bytes": 14503
+  },
+  {
+    "file": "184_ChapeuMeshSkinningRuntime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ChapeuMeshSkinningRuntime",
+    "bytes": 1082
+  },
+  {
+    "file": "185_VampireCapeSkinningRuntime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireCapeSkinningRuntime",
+    "bytes": 4276
+  },
+  {
+    "file": "186_VampireCapeDurabilityClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireCapeDurabilityClient",
+    "bytes": 3225
+  },
+  {
+    "file": "187_ArczisHitReactionClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ArczisHitReactionClient",
+    "bytes": 3340
+  },
+  {
+    "file": "188_ArczisSoundHandler.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ArczisSoundHandler",
+    "bytes": 1416
+  },
+  {
+    "file": "189_ArczisCombatController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.ArczisCombatController",
+    "bytes": 50069
+  },
+  {
+    "file": "190_CustomShiftLock.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CustomShiftLock",
+    "bytes": 83
+  },
+  {
+    "file": "191_HunterDetectionClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HunterDetectionClient",
+    "bytes": 3405
+  },
+  {
+    "file": "192_WitchCraftClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchCraftClient",
+    "bytes": 15996
+  },
+  {
+    "file": "193_HunterQuestClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HunterQuestClient",
+    "bytes": 34381
+  },
+  {
+    "file": "194_LanternDurabilityClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.LanternDurabilityClient",
+    "bytes": 3241
+  },
+  {
+    "file": "195_WitchPainInflictionController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchPainInflictionController",
+    "bytes": 22587
+  },
+  {
+    "file": "196_HumanSideQuestClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.HumanSideQuestClient",
+    "bytes": 26572
+  },
+  {
+    "file": "197_BloodImpactClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.BloodImpactClient",
+    "bytes": 5039
+  },
+  {
+    "file": "198_BloodContainerConsoleController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.BloodContainerConsoleController",
+    "bytes": 3683
+  },
+  {
+    "file": "199_VampireBloodlineClient.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.VampireBloodlineClient",
+    "bytes": 6352
+  },
+  {
+    "file": "200_MainLocal.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MainLocal",
+    "bytes": 14019
+  },
+  {
+    "file": "201_WitchInvisibleController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WitchInvisibleController",
+    "bytes": 8834
+  },
+  {
+    "file": "202_MobileLockOnController.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MobileLockOnController",
+    "bytes": 14896
+  },
+  {
+    "file": "203_RbxCharacterSounds.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.RbxCharacterSounds",
+    "bytes": 18138
+  },
+  {
+    "file": "204_SprintController.lua",
+    "path": "Workspace.Kokakoka20.SprintController",
+    "bytes": 158
+  },
+  {
+    "file": "205_R6RagdollClientController.lua",
+    "path": "Workspace.Kokakoka20.R6RagdollClientController",
+    "bytes": 2183
+  },
+  {
+    "file": "206_Bobbing_Camera.lua",
+    "path": "Workspace.Kokakoka20.Bobbing Camera",
+    "bytes": 3196
+  },
+  {
+    "file": "207_HumanDashController.lua",
+    "path": "Workspace.Kokakoka20.HumanDashController",
+    "bytes": 2282
+  },
+  {
+    "file": "208_ToolEquipMovementGuard.lua",
+    "path": "Workspace.Kokakoka20.ToolEquipMovementGuard",
+    "bytes": 6034
+  },
+  {
+    "file": "210_Animate.lua",
+    "path": "Workspace.Kokakoka20.Animate",
+    "bytes": 15264
+  },
+  {
+    "file": "211_FootStep.lua",
+    "path": "Players.Kokakoka20.Backpack.FootStep",
+    "bytes": 1509
+  },
+  {
+    "file": "212_Settings.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WindShake.Settings",
+    "bytes": 3242
+  },
+  {
+    "file": "213_VectorMap.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.WindShake.VectorMap",
+    "bytes": 8287
+  },
+  {
+    "file": "214_SmoothShiftLock.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CustomShiftLock.SmoothShiftLock",
+    "bytes": 8352
+  },
+  {
+    "file": "215_Dragging.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MainLocal.Dragging",
+    "bytes": 8536
+  },
+  {
+    "file": "216_Buttons.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MainLocal.Buttons",
+    "bytes": 1607
+  },
+  {
+    "file": "217_Open_Close.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.MainLocal.Open/Close",
+    "bytes": 8663
+  },
+  {
+    "file": "218_AtomicBinding.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.RbxCharacterSounds.AtomicBinding",
+    "bytes": 7438
+  },
+  {
+    "file": "219_StatsController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.PlayerStatsHUD.StatsController",
+    "bytes": 16917
+  },
+  {
+    "file": "220_MoneyBoosterController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.GAMEPASS.MoneyBoosterController",
+    "bytes": 32493
+  },
+  {
+    "file": "221_NPCShopClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.NPCShopClient",
+    "bytes": 12505
+  },
+  {
+    "file": "222_PartyController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.PARTYUI.PartyController",
+    "bytes": 34498
+  },
+  {
+    "file": "223_SprintClient.lua",
+    "path": "Workspace.Kokakoka20.Funções.SprintClient",
+    "bytes": 26826
+  },
+  {
+    "file": "224_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 1.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "225_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 2.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "226_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 3.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "227_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 4.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "228_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 5.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "229_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 6.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "230_Runtime.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.SmartBone Worker 7.Runtime",
+    "bytes": 6819
+  },
+  {
+    "file": "231_MobileHudController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.HumansMOBILE.MobileHudController",
+    "bytes": 23169
+  },
+  {
+    "file": "232_MobileHudController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.VampireMOBILE.MobileHudController",
+    "bytes": 17603
+  },
+  {
+    "file": "233_TweenTransition.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.TweenTransition",
+    "bytes": 1706
+  },
+  {
+    "file": "234_Maid.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CustomShiftLock.SmoothShiftLock.Utils.Maid",
+    "bytes": 2634
+  },
+  {
+    "file": "235_Spring.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CustomShiftLock.SmoothShiftLock.Utils.Spring",
+    "bytes": 4122
+  },
+  {
+    "file": "236_IncendiaController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesMOBILE.Powers.IncendiaController",
+    "bytes": 15518
+  },
+  {
+    "file": "237_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesMOBILE.Powers.PowerController",
+    "bytes": 24723
+  },
+  {
+    "file": "238_SoulDrainController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesMOBILE.Powers.SoulDrainController",
+    "bytes": 5203
+  },
+  {
+    "file": "239_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.VampireCONSOLE.Powers.PowerController",
+    "bytes": 44679
+  },
+  {
+    "file": "240_IncendiaController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesPC.Powers1.IncendiaController",
+    "bytes": 13295
+  },
+  {
+    "file": "241_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesPC.Powers1.PowerController",
+    "bytes": 114
+  },
+  {
+    "file": "242_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.VampirePC.Powers.PowerController",
+    "bytes": 43258
+  },
+  {
+    "file": "243_IncendiaController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesCONSOLE.Powers1.IncendiaController",
+    "bytes": 14504
+  },
+  {
+    "file": "244_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.WitchesCONSOLE.Powers1.PowerController",
+    "bytes": 114
+  },
+  {
+    "file": "245_PowerController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.TEAMS.VampireMOBILE.Powers.PowerController",
+    "bytes": 44533
+  },
+  {
+    "file": "246_ManualResize.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ManualResize",
+    "bytes": 1353
+  },
+  {
+    "file": "247_LocalScript.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.OtherFrames.TransactionFrame.LocalScript",
+    "bytes": 524
+  },
+  {
+    "file": "248_LocalScript.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ShopLabel.CloseButton.LocalScript",
+    "bytes": 243
+  },
+  {
+    "file": "249_TextLoop.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.OtherFrames.TransactionFrame.TransactionText.TextLoop",
+    "bytes": 316
+  },
+  {
+    "file": "250_Rotate.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.OtherFrames.TransactionFrame.LoadingFrame.LoadingIcon.Rotate",
+    "bytes": 588
+  },
+  {
+    "file": "251_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item1.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "252_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item1.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "253_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item2.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "254_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item2.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "255_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Offer1.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "256_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Offer1.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "257_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item3.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "258_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item3.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "259_TweenImageToViewport.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item3.Scripts.TweenImageToViewport",
+    "bytes": 1013
+  },
+  {
+    "file": "260_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_1.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "261_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_1.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "262_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_2.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "263_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_2.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "264_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_3.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "265_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_3.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "266_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_4.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "267_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_4.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "268_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_5.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "269_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_5.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "270_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_6.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "271_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_6.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "272_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_7.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "273_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_7.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "274_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_8.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "275_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_8.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "276_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_9.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "277_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_9.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "278_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_10.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "279_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_10.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "280_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_11.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "281_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_11.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "282_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_12.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "283_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_12.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "284_Click.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_13.BuyButton.Click",
+    "bytes": 141
+  },
+  {
+    "file": "285_Tween.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_13.GradientFrame.Tween",
+    "bytes": 1207
+  },
+  {
+    "file": "286_Animate.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item2.ViewportFrame.WorldModel.Rig.Animate",
+    "bytes": 15282
+  },
+  {
+    "file": "287_Animate.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.Item3.ViewportFrame.WorldModel.Rig.Animate",
+    "bytes": 15282
+  },
+  {
+    "file": "288_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_1.ItemViewport.World.PreviewObject.Stake.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "289_StakeClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_1.ItemViewport.World.PreviewObject.Stake.StakeClient",
+    "bytes": 4605
+  },
+  {
+    "file": "290_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_2.ItemViewport.World.PreviewObject.High Stake.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "291_StakeClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_2.ItemViewport.World.PreviewObject.High Stake.StakeClient",
+    "bytes": 4605
+  },
+  {
+    "file": "292_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_3.ItemViewport.World.PreviewObject.Human Blood.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "293_PotionClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_3.ItemViewport.World.PreviewObject.Human Blood.PotionClient",
+    "bytes": 2875
+  },
+  {
+    "file": "294_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_4.ItemViewport.World.PreviewObject.Human Potion.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "295_PotionClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_4.ItemViewport.World.PreviewObject.Human Potion.PotionClient",
+    "bytes": 6815
+  },
+  {
+    "file": "296_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_6.ItemViewport.World.PreviewObject.Cup.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "297_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_7.ItemViewport.World.PreviewObject.Dish.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "298_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_8.ItemViewport.World.PreviewObject.Night Vision.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "299_PotionClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_8.ItemViewport.World.PreviewObject.Night Vision.PotionClient",
+    "bytes": 6815
+  },
+  {
+    "file": "300_NeutralToolPoseController.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_10.ItemViewport.World.PreviewObject.Metal Ring.NeutralToolPoseController",
+    "bytes": 2583
+  },
+  {
+    "file": "301_RingClient.lua",
+    "path": "Players.Kokakoka20.PlayerGui.DarkHazardItemShop.MainFrame.ScrollFrame.ScrollingFrame.ShopCard_10.ItemViewport.World.PreviewObject.Metal Ring.RingClient",
+    "bytes": 1606
+  }
+]

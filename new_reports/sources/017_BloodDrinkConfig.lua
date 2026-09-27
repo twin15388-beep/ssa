@@ -1,0 +1,33 @@
+-- Decompiled with Potassium's decompiler.
+
+return {
+    ToolName = "Blood Drink",
+    SelectionTime = 10,
+    Cooldown = 8,
+    MaximumDistance = 8,
+    CharacterSpacing = 0,
+    ExitSpacing = 2.6,
+    BloodGain = 40,
+    TargetDamage = 15,
+    NPCHitXP = 3,
+    PlayerHitXP = 5,
+    VampireTargetMinimumYears = 20,
+    VampireDrainDuration = 3,
+    VampireDrainInterval = 0.25,
+    VampireDrainPercentPerSecond = 0.08,
+    VampireDrainMinimumPerSecond = 6,
+    CannibalRaisedPoisonDuration = 6,
+    CannibalRaisedPoisonInterval = 0.25,
+    CannibalRaisedPoisonPercentPerSecond = 0.1,
+    CannibalRaisedPoisonMinimumPerSecond = 8,
+    CannibalRaisedPoisonMinimumHealth = 1,
+    DefaultAnimationDuration = 4,
+    MaximumAnimationDuration = 10,
+    ParticleEmitCount = 18,
+    CannibalShakeFeedsToMax = 10,
+    CannibalShakeMaxPosition = 0.018,
+    CannibalShakeMaxRotationDegrees = 0.9,
+    CannibalShakeFrequency = 12,
+    VampireAnimationId = "rbxassetid://103821640069642",
+    HumanAnimationId = "rbxassetid://111077385886703"
+};

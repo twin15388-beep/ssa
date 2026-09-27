@@ -1,0 +1,32 @@
+-- Decompiled with Potassium's decompiler.
+
+local Players = game:GetService("Players");
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local gameSettings = require(ReplicatedStorage.CAM.Global.gameSettings);
+local Value = script:FindFirstChild("Value");
+local v1 = Value == nil and "" or tostring(Value.Value);
+warn((`version - {v1}`));
+local PlayerGui = Players.LocalPlayer:WaitForChild("PlayerGui");
+local ScreenGui = Instance.new("ScreenGui");
+ScreenGui.Name = "Version";
+ScreenGui.ResetOnSpawn = false;
+ScreenGui.ScreenInsets = Enum.ScreenInsets.None;
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+ScreenGui.DisplayOrder = 1000;
+ScreenGui.Enabled = v1 ~= "";
+local TextLabel = Instance.new("TextLabel");
+TextLabel.Name = "Label";
+TextLabel.AnchorPoint = Vector2.new(1, 1);
+TextLabel.Position = UDim2.new(1, -4, 1, -4);
+TextLabel.Size = UDim2.fromOffset(0, 11);
+TextLabel.AutomaticSize = Enum.AutomaticSize.X;
+TextLabel.BackgroundTransparency = 1;
+TextLabel.Text = v1;
+TextLabel.FontFace = Font.new(gameSettings.preferedFont.Family, Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+TextLabel.TextSize = 11;
+TextLabel.TextColor3 = Color3.new(1, 1, 1);
+TextLabel.TextTransparency = 0.45;
+TextLabel.TextXAlignment = Enum.TextXAlignment.Right;
+TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom;
+TextLabel.Parent = ScreenGui;
+ScreenGui.Parent = PlayerGui;

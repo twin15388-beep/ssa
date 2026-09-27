@@ -1,0 +1,36 @@
+-- Decompiled with Potassium's decompiler.
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Menum = require(ReplicatedStorage:WaitForChild("CAM"):WaitForChild("Global"):WaitForChild("Menum"));
+require(ReplicatedStorage.CAM.Global.Types.NpcTypes);
+
+return {
+ Name = "Akazo",
+ Icon = "rbxassetid://93452648734236",
+ Quantity = 1,
+ Type = Menum.npcType.Active,
+ SendOver = {
+ Boss = {
+ SpawnCountdown = true,
+ DamageLeaderboard = true,
+ HealthEvents = "SecondPhase"
+ },
+ Spawning = {
+ SpawnTime = 300,
+ DespawnDistance = 250,
+ Center = Vector3.new(-1131.975, 1380.916, -1746.561),
+ Locations = { Vector3.new(-1131.975, 1380.916, -1746.561) },
+ Appearance = ReplicatedStorage.Assets.Npcs.EvilArtDemons.Akazo
+ },
+ Idling = {
+ Enabled = false
+ },
+ Following = {
+ CaptureDistance = 0,
+ LetGoDistance = 140
+ },
+ Settings = {
+ NpcCode = "Akazo"
+ }
+ }
+};

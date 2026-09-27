@@ -1,0 +1,437 @@
+[
+  {
+    "file": "new_game_analysis/core_sources/000_SignalEvent.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Signals.SignalEvent",
+    "bytes": 2088
+  },
+  {
+    "file": "new_game_analysis/core_sources/001_SignalFunction.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Signals.SignalFunction",
+    "bytes": 2066
+  },
+  {
+    "file": "new_game_analysis/core_sources/002_Checker.lua",
+    "path": "ReplicatedStorage.CAM.Global.Checker",
+    "bytes": 19513
+  },
+  {
+    "file": "new_game_analysis/core_sources/003_Combat_presets.lua",
+    "path": "ReplicatedStorage.CAM.Global.Combat_presets",
+    "bytes": 20625
+  },
+  {
+    "file": "new_game_analysis/core_sources/004_Utility.lua",
+    "path": "ReplicatedStorage.CAM.Global.Utility",
+    "bytes": 46747
+  },
+  {
+    "file": "new_game_analysis/core_sources/005_Character_info_provider.lua",
+    "path": "ReplicatedStorage.CAM.Global.Character_info_provider",
+    "bytes": 19419
+  },
+  {
+    "file": "new_game_analysis/core_sources/006_Items.lua",
+    "path": "ReplicatedStorage.CAM.Global.Collectibles.Items",
+    "bytes": 3854
+  },
+  {
+    "file": "new_game_analysis/core_sources/007_Skills_Module.lua",
+    "path": "ReplicatedStorage.CAM.Global.Skills_Module",
+    "bytes": 5633
+  },
+  {
+    "file": "new_game_analysis/core_sources/008_PlayerStatResolver.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver",
+    "bytes": 59856
+  },
+  {
+    "file": "new_game_analysis/core_sources/009_Quests.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests",
+    "bytes": 13871
+  },
+  {
+    "file": "new_game_analysis/core_sources/010_ManuelCancel.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.ManuelCancel",
+    "bytes": 2185
+  },
+  {
+    "file": "new_game_analysis/core_sources/011_RecommendedQuest.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.RecommendedQuest",
+    "bytes": 5326
+  },
+  {
+    "file": "new_game_analysis/core_sources/012_Run_Handler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Run_Handler",
+    "bytes": 4126
+  },
+  {
+    "file": "new_game_analysis/core_sources/013_InputHandler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.InputHandler",
+    "bytes": 37144
+  },
+  {
+    "file": "new_game_analysis/core_sources/014_StaminaComponent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.StaminaComponent",
+    "bytes": 6953
+  },
+  {
+    "file": "new_game_analysis/core_sources/015_DialogueComponent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent",
+    "bytes": 41934
+  },
+  {
+    "file": "new_game_analysis/core_sources/016_ProximityPromptChooser.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.ProximityPrompt.ProximityPromptChooser",
+    "bytes": 1763
+  },
+  {
+    "file": "new_game_analysis/core_sources/017_Skills_Provider.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skills_Provider",
+    "bytes": 22693
+  },
+  {
+    "file": "new_game_analysis/core_sources/018_Skill_Controller.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skill_Controller",
+    "bytes": 24836
+  },
+  {
+    "file": "new_game_analysis/core_sources/019_Platform_Handler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Platform_Handler",
+    "bytes": 13105
+  },
+  {
+    "file": "new_game_analysis/core_sources/020_ChestController.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.ChestController",
+    "bytes": 2784
+  },
+  {
+    "file": "new_game_analysis/core_sources/021_LootDropController.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.LootDropController",
+    "bytes": 1380
+  },
+  {
+    "file": "new_game_analysis/core_sources/022_Stats.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.Stats",
+    "bytes": 19353
+  },
+  {
+    "file": "new_game_analysis/core_sources/023_GetMasteryStatus.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.GetMasteryStatus",
+    "bytes": 3032
+  },
+  {
+    "file": "new_game_analysis/core_sources/024_SkillTreeholder.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.SkillTreeholder",
+    "bytes": 12173
+  },
+  {
+    "file": "new_game_analysis/core_sources/025_MorePresets.lua",
+    "path": "ReplicatedStorage.CAM.Global.Combat_presets.MorePresets",
+    "bytes": 6496
+  },
+  {
+    "file": "new_game_analysis/core_sources/026_find_character_from_descendant.lua",
+    "path": "ReplicatedStorage.CAM.Global.Utility.find_character_from_descendant",
+    "bytes": 625
+  },
+  {
+    "file": "new_game_analysis/core_sources/027_RewardsStyling.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.RewardsStyling",
+    "bytes": 1726
+  },
+  {
+    "file": "new_game_analysis/core_sources/028_PickupState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.PickupState",
+    "bytes": 5696
+  },
+  {
+    "file": "new_game_analysis/core_sources/029_CollectState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.CollectState",
+    "bytes": 3169
+  },
+  {
+    "file": "new_game_analysis/core_sources/030_DeliverAction.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.DeliverAction",
+    "bytes": 2944
+  },
+  {
+    "file": "new_game_analysis/core_sources/031_DepositState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.DepositState",
+    "bytes": 12585
+  },
+  {
+    "file": "new_game_analysis/core_sources/032_EscortState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.EscortState",
+    "bytes": 3445
+  },
+  {
+    "file": "new_game_analysis/core_sources/033_AcceptCost.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.AcceptCost",
+    "bytes": 2489
+  },
+  {
+    "file": "new_game_analysis/core_sources/034_UnderwaterRocksState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.UnderwaterRocksState",
+    "bytes": 543
+  },
+  {
+    "file": "new_game_analysis/core_sources/035_EvilArtCores.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.EvilArtCores",
+    "bytes": 3589
+  },
+  {
+    "file": "new_game_analysis/core_sources/036_BossHunts.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.BossHunts",
+    "bytes": 10391
+  },
+  {
+    "file": "new_game_analysis/core_sources/037_RunHandlerSettings.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Run_Handler.RunHandlerSettings",
+    "bytes": 393
+  },
+  {
+    "file": "new_game_analysis/core_sources/038_DialogueUtility.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.DialogueUtility",
+    "bytes": 2777
+  },
+  {
+    "file": "new_game_analysis/core_sources/039_Option.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Option",
+    "bytes": 5880
+  },
+  {
+    "file": "new_game_analysis/core_sources/040_Settings.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skill_Controller.Settings",
+    "bytes": 148
+  },
+  {
+    "file": "new_game_analysis/core_sources/041_ChestAnimations.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.ChestController.ChestAnimations",
+    "bytes": 10644
+  },
+  {
+    "file": "new_game_analysis/core_sources/042_ChestAssets.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.ChestController.ChestAssets",
+    "bytes": 4138
+  },
+  {
+    "file": "new_game_analysis/core_sources/043_ChestSeal.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.ChestController.ChestSeal",
+    "bytes": 3059
+  },
+  {
+    "file": "new_game_analysis/core_sources/044_VisualBinder.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.LootDropController.VisualBinder",
+    "bytes": 11216
+  },
+  {
+    "file": "new_game_analysis/core_sources/045_SkillTreeConfig.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.SkillTreeholder.SkillTreeConfig",
+    "bytes": 2262
+  },
+  {
+    "file": "new_game_analysis/core_sources/046_Accessory.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Accessory",
+    "bytes": 1623
+  },
+  {
+    "file": "new_game_analysis/core_sources/047_ActiveTool.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.ActiveTool",
+    "bytes": 2882
+  },
+  {
+    "file": "new_game_analysis/core_sources/048_Mastery.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Mastery",
+    "bytes": 882
+  },
+  {
+    "file": "new_game_analysis/core_sources/049_PerformanceStats.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.PerformanceStats",
+    "bytes": 1022
+  },
+  {
+    "file": "new_game_analysis/core_sources/050_SkillTree.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.SkillTree",
+    "bytes": 1169
+  },
+  {
+    "file": "new_game_analysis/core_sources/051_ToolbarEquipped.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.ToolbarEquipped",
+    "bytes": 2043
+  },
+  {
+    "file": "new_game_analysis/core_sources/052_ValueFolder.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.ValueFolder",
+    "bytes": 2645
+  },
+  {
+    "file": "new_game_analysis/core_sources/053_Titles.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Titles",
+    "bytes": 298
+  },
+  {
+    "file": "new_game_analysis/core_sources/054_Clan.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Clan",
+    "bytes": 809
+  },
+  {
+    "file": "new_game_analysis/core_sources/055_NpcStats.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.NpcStats",
+    "bytes": 437
+  },
+  {
+    "file": "new_game_analysis/core_sources/056_Power.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Power",
+    "bytes": 951
+  },
+  {
+    "file": "new_game_analysis/core_sources/057_Progression.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver.Solvers.Progression",
+    "bytes": 342
+  },
+  {
+    "file": "new_game_analysis/core_sources/058_Amount.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Amount",
+    "bytes": 4053
+  },
+  {
+    "file": "new_game_analysis/core_sources/059_Shop.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Shop",
+    "bytes": 43286
+  },
+  {
+    "file": "new_game_analysis/core_sources/060_Sell.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Sell",
+    "bytes": 43465
+  },
+  {
+    "file": "new_game_analysis/core_sources/061_Refinement.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Refinement",
+    "bytes": 2537
+  },
+  {
+    "file": "new_game_analysis/core_sources/062_EvilArtSpinning.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.EvilArtSpinning",
+    "bytes": 4700
+  },
+  {
+    "file": "new_game_analysis/core_sources/063_SpinsCounter.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.SpinsCounter",
+    "bytes": 7158
+  },
+  {
+    "file": "new_game_analysis/core_sources/064_PointsCounter.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.PointsCounter",
+    "bytes": 7308
+  },
+  {
+    "file": "new_game_analysis/core_sources/065_Quests.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Quests",
+    "bytes": 18208
+  },
+  {
+    "file": "new_game_analysis/core_sources/066_Blacksmith.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith",
+    "bytes": 10995
+  },
+  {
+    "file": "new_game_analysis/core_sources/067_Exchange.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Exchange",
+    "bytes": 6087
+  },
+  {
+    "file": "new_game_analysis/core_sources/068_Boss.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.SkillTreeholder.Requirements.Boss",
+    "bytes": 2054
+  },
+  {
+    "file": "new_game_analysis/core_sources/069_Mastery.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.SkillTreeholder.Requirements.Mastery",
+    "bytes": 2425
+  },
+  {
+    "file": "new_game_analysis/core_sources/070_SkillPoints.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.SkillTreeholder.Requirements.SkillPoints",
+    "bytes": 1696
+  },
+  {
+    "file": "new_game_analysis/core_sources/071_Spinner.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.EvilArtSpinning.Spinner",
+    "bytes": 15556
+  },
+  {
+    "file": "new_game_analysis/core_sources/072_SpinBuyComponent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.EvilArtSpinning.SpinBuyComponent",
+    "bytes": 14726
+  },
+  {
+    "file": "new_game_analysis/core_sources/073_Slots.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.EvilArtSpinning.Slots",
+    "bytes": 17041
+  },
+  {
+    "file": "new_game_analysis/core_sources/074_Types.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Quests.Types",
+    "bytes": 54
+  },
+  {
+    "file": "new_game_analysis/core_sources/075_HuntCard.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Quests.HuntCard",
+    "bytes": 20426
+  },
+  {
+    "file": "new_game_analysis/core_sources/076_Timer.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Quests.Timer",
+    "bytes": 8030
+  },
+  {
+    "file": "new_game_analysis/core_sources/077_Transition.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Quests.Transition",
+    "bytes": 1611
+  },
+  {
+    "file": "new_game_analysis/core_sources/078_ListRecipe.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.ListRecipe",
+    "bytes": 5937
+  },
+  {
+    "file": "new_game_analysis/core_sources/079_Recipe.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.Recipe",
+    "bytes": 31839
+  },
+  {
+    "file": "new_game_analysis/core_sources/080_MaterialCard.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.MaterialCard",
+    "bytes": 4424
+  },
+  {
+    "file": "new_game_analysis/core_sources/081_MaterialTile.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.MaterialTile",
+    "bytes": 3761
+  },
+  {
+    "file": "new_game_analysis/core_sources/082_RefineBadge.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.RefineBadge",
+    "bytes": 1637
+  },
+  {
+    "file": "new_game_analysis/core_sources/083_TierBadge.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.TierBadge",
+    "bytes": 1168
+  },
+  {
+    "file": "new_game_analysis/core_sources/084_Tile.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Exchange.Tile",
+    "bytes": 7591
+  },
+  {
+    "file": "new_game_analysis/core_sources/085_Row.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Exchange.Row",
+    "bytes": 1641
+  },
+  {
+    "file": "new_game_analysis/core_sources/086_Slot.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.EvilArtSpinning.Slots.Slot",
+    "bytes": 9085
+  }
+]

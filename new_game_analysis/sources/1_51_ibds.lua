@@ -1,0 +1,3 @@
+-- Decompiled with Potassium's decompiler.
+
+return require(script.Parent._Index["ouw2204_ibds@1.0.14"].ibds);

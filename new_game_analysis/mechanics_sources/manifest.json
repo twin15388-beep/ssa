@@ -1,0 +1,1752 @@
+[
+  {
+    "file": "new_game_analysis/mechanics_sources/000_Stats.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.HudBottomLeft.Stats",
+    "bytes": 11806
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/001_Skill_Info.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerProfile.Skill_Info",
+    "bytes": 727
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/002_ServerClientPortal.lua",
+    "path": "ReplicatedStorage.CAM.Global.ServerClientPortal",
+    "bytes": 9832
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/003_StatsFetch.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.StatsFetch",
+    "bytes": 1344
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/004_manage_cd.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.manage_cd",
+    "bytes": 9608
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/005_EffectsEvent.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Effects.EffectsEvent",
+    "bytes": 2310
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/006_QueueSignal.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Signals.QueueSignal",
+    "bytes": 1040
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/007_Stamina_Regen_Elixir.lua",
+    "path": "ReplicatedStorage.Items.Potions.Stamina Regen Elixir",
+    "bytes": 517
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/008_Stamina_Regen_Potion.lua",
+    "path": "ReplicatedStorage.Items.Potions.Stamina Regen Potion",
+    "bytes": 527
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/009_Utility.lua",
+    "path": "ReplicatedStorage.RemotePlus.Handlers.Utility",
+    "bytes": 2752
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/010_Stamina.lua",
+    "path": "Workspace.Humanoids.Kokakoka20.Stamina",
+    "bytes": 994
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/011_StaminaComponent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.StaminaComponent",
+    "bytes": 6953
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/012_Skill_Controller.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skill_Controller",
+    "bytes": 24914
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/013_Skills_Provider.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skills_Provider",
+    "bytes": 22810
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/014_Character_info_provider.lua",
+    "path": "ReplicatedStorage.CAM.Global.Character_info_provider",
+    "bytes": 19419
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/015_Checker.lua",
+    "path": "ReplicatedStorage.CAM.Global.Checker",
+    "bytes": 20266
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/016_ItemRequirements.lua",
+    "path": "ReplicatedStorage.CAM.Global.Collectibles.ItemRequirements",
+    "bytes": 5406
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/017_PlayerStatResolver.lua",
+    "path": "ReplicatedStorage.CAM.Global.PlayerStatResolver",
+    "bytes": 59911
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/018_Stats.lua",
+    "path": "ReplicatedStorage.CAM.Global.SkillService.Stats",
+    "bytes": 19132
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/019_Skills_Module.lua",
+    "path": "ReplicatedStorage.CAM.Global.Skills_Module",
+    "bytes": 5799
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/020_ToolbarItemRestrictions.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.ToolbarItemRestrictions",
+    "bytes": 8308
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/021_Utility.lua",
+    "path": "ReplicatedStorage.CAM.Global.Utility",
+    "bytes": 46747
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/022_gameSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.gameSettings",
+    "bytes": 11578
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/023_SignalEvent.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Signals.SignalEvent",
+    "bytes": 2088
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/024_SignalFunction.lua",
+    "path": "ReplicatedStorage.Communication.ServerAndClient.Signals.SignalFunction",
+    "bytes": 2066
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/025_Dashing.lua",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.Dashing",
+    "bytes": 9541
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/026_SunDamage.lua",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.SunDamage",
+    "bytes": 4086
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/027_RagDolling.lua",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.RagDolling",
+    "bytes": 3265
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/028_Minigame_FinalSelection.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_FinalSelection",
+    "bytes": 1167
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/029_Minigame_Ouwigahara.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara",
+    "bytes": 650
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/030_Minigame_Ouwigahara_Climbing_Desert_Dungeon.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_Desert Dungeon",
+    "bytes": 161
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/031_Minigame_Ouwigahara_Climbing_Ice_Dungeon.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_Ice Dungeon",
+    "bytes": 161
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/032_Minigame_Ouwigahara_Climbing_LightsOut.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_LightsOut",
+    "bytes": 645
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/033_Minigame_PvP.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_PvP",
+    "bytes": 756
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/034_MuzanLair.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.MuzanLair",
+    "bytes": 515
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/035_Parkour_Dungeon.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Parkour Dungeon",
+    "bytes": 209
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/036_MuzanLairModel.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Muzan.MuzanLairModel",
+    "bytes": 5017
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/037_MuzanWhispers.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Muzan.MuzanWhispers",
+    "bytes": 4097
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/038_ChestState.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Chest.ChestState",
+    "bytes": 368
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/039_OpenDialogue.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OpenDialogue",
+    "bytes": 365
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/040_OuwigaharaBoard.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OuwigaharaBoard",
+    "bytes": 659
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/041_OuwigaharaMapTeleport.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OuwigaharaMapTeleport",
+    "bytes": 520
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/042_RankedBoard.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Ranked.RankedBoard",
+    "bytes": 316
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/043_RankedResult.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Ranked.RankedResult",
+    "bytes": 317
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/044_GauntletStatue.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.WorldEvents.GauntletStatue",
+    "bytes": 347
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/045_Blocking.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.Blocking",
+    "bytes": 13824
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/046_QuestGate.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.QuestGate",
+    "bytes": 2575
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/047_QuestStates.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.QuestStates",
+    "bytes": 9718
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/048_Training.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Training",
+    "bytes": 1749
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/049_Quests.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.markers.adders.Quests",
+    "bytes": 8915
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/050_ChestMound.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.ChestMound",
+    "bytes": 5814
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/051_Ragdoll_Client.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.Ragdoll_Client",
+    "bytes": 160
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/052_AiMimic.lua",
+    "path": "ReplicatedStorage.CAM.AiStuffGlobal.AiMimic",
+    "bytes": 1662
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/053_Footer.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.Footer",
+    "bytes": 9019
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/054_Header.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.Header",
+    "bytes": 1763
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/055_TierTransfer.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.DialogueComponent.Components.Blacksmith.TierTransfer",
+    "bytes": 14720
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/056_QuestsComponents.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents",
+    "bytes": 5837
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/057_Escort.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort",
+    "bytes": 10278
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/058_Health.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Health",
+    "bytes": 3498
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/059_Profile.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Profile",
+    "bytes": 2138
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/060_Route.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Route",
+    "bytes": 1542
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/061_Ambush.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Route.Ambush",
+    "bytes": 3150
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/062_Leg.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Route.Leg",
+    "bytes": 1767
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/063_Row.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Row",
+    "bytes": 2173
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/064_Types.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.Events.Escort.Types",
+    "bytes": 162
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/065_IndividualQuest.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.IndividualQuest",
+    "bytes": 28983
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/066_TaskComponent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.CenterLeft.QuestsComponents.TaskComponent",
+    "bytes": 12347
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/067_Inventory.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory",
+    "bytes": 32760
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/068_Item.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.Item",
+    "bytes": 20367
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/069_ItemEquipepdFrame.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame",
+    "bytes": 2597
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/070_Accessories.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame.EquippedOptions.Accessories",
+    "bytes": 13862
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/071_Slot.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame.EquippedOptions.Accessories.Slot",
+    "bytes": 3391
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/072_Bait.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame.EquippedOptions.Bait",
+    "bytes": 8703
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/073_ItemViewer.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemViewer",
+    "bytes": 16632
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/074_Loadouts.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.Loadouts",
+    "bytes": 5146
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/075_Individual.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.Loadouts.Individual",
+    "bytes": 9327
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/076_ModuleScript.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ModuleScript",
+    "bytes": 6410
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/077_SelectModeHandler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.SelectModeHandler",
+    "bytes": 5570
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/078_Shop.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Shop",
+    "bytes": 18793
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/079_Full.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Shop.Full",
+    "bytes": 488
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/080_GiftBox.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Shop.GiftBox",
+    "bytes": 19117
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/081_GridContent.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Shop.GridContent",
+    "bytes": 17021
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/082_Half.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Shop.Half",
+    "bytes": 630
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/083_SkillTreeZoomSlider.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Skill Tree.MiscComponents.SkillTreeZoomSlider",
+    "bytes": 3922
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/084_Question.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Minimap.Question",
+    "bytes": 6143
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/085_CenterBottomQuestion.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Popups.Prompt.CenterBottomQuestion",
+    "bytes": 9450
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/086_Question.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Popups.Prompt.Question",
+    "bytes": 11902
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/087_InCombat.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.BottomCenterNotifications.States.InCombat",
+    "bytes": 6133
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/088_MobileMastery.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.MobileMastery",
+    "bytes": 2012
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/089_Dash.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.Mobile.Dash",
+    "bytes": 18084
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/090_Training.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.Training",
+    "bytes": 79
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/091_ClimbBar.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.ClimbBar",
+    "bytes": 4875
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/092_BarKeepup.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Minigames.BarKeepup",
+    "bytes": 15704
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/093_CupGame.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Minigames.CupGame",
+    "bytes": 454
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/094_Shrinking.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Minigames.Shrinking",
+    "bytes": 15783
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/095_SlideBubbles.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Minigames.SlideBubbles",
+    "bytes": 13096
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/096_Slider.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Minigames.Slider",
+    "bytes": 28098
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/097_SwimmingBreathUI.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.SwimmingBreathUI",
+    "bytes": 5679
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/098_BoulderPushUI.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Training.BoulderPushUI",
+    "bytes": 7397
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/099_CupGameUI.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Training.CupGameUI",
+    "bytes": 9404
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/100_DartShootingUI.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Training.DartShootingUI",
+    "bytes": 7027
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/101_ParkourTrainingUI.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.NonePackagedMisc.Training.ParkourTrainingUI",
+    "bytes": 12129
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/102_Card.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.ProximityPrompt.CustomPrompts.Card",
+    "bytes": 28782
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/103_InCombat.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.ProximityPrompt.CustomPrompts.Card.Checks.InCombat",
+    "bytes": 680
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/104_SkillOwnership.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.ProximityPrompt.CustomPrompts.Card.Checks.SkillOwnership",
+    "bytes": 913
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/105_GauntletStatuesController.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.GauntletStatuesController",
+    "bytes": 2711
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/106_RankedController.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.RankedController",
+    "bytes": 6500
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/107_CombatAvailable.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.CombatAvailable",
+    "bytes": 1249
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/108_TrainingUiScale.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.TrainingUiScale",
+    "bytes": 741
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/109_BadgeRewards.lua",
+    "path": "ReplicatedStorage.CAM.Global.BadgeRewards",
+    "bytes": 589
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/110_MasterySource.lua",
+    "path": "ReplicatedStorage.CAM.Global.Collectibles.MasterySource",
+    "bytes": 1289
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/111_CombatBalance.lua",
+    "path": "ReplicatedStorage.CAM.Global.CombatBalance",
+    "bytes": 4065
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/112_CombatMode.lua",
+    "path": "ReplicatedStorage.CAM.Global.CombatMode",
+    "bytes": 1448
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/113_Crafting.lua",
+    "path": "ReplicatedStorage.CAM.Global.Crafting",
+    "bytes": 6229
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/114_DefaultConfigs.lua",
+    "path": "ReplicatedStorage.CAM.Global.Crafting.DefaultConfigs",
+    "bytes": 25179
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/115_MinigameSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.MinigameSettings",
+    "bytes": 8145
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/116_MuzanSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.MuzanSettings",
+    "bytes": 2765
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/117_Breathings.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings",
+    "bytes": 160
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/118_Flame.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Flame",
+    "bytes": 1896
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/119_Insect.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Insect",
+    "bytes": 1765
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/120_Serpent.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Serpent",
+    "bytes": 1727
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/121_Sound.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Sound",
+    "bytes": 1764
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/122_Stone.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Stone",
+    "bytes": 2024
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/123_Thunder.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Thunder",
+    "bytes": 1677
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/124_Water.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Water",
+    "bytes": 1896
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/125_Wind.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.Breathings.Wind",
+    "bytes": 1613
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/126_Shockwave.lua",
+    "path": "ReplicatedStorage.CAM.Global.Powers.DemonArts.Shockwave",
+    "bytes": 3104
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/127_Ranked.lua",
+    "path": "ReplicatedStorage.CAM.Global.Ranked",
+    "bytes": 9061
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/128_Rating.lua",
+    "path": "ReplicatedStorage.CAM.Global.Ranked.Rating",
+    "bytes": 2373
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/129_Rules.lua",
+    "path": "ReplicatedStorage.CAM.Global.Ranked.Rules",
+    "bytes": 7449
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/130_ShopSettingsLive.lua",
+    "path": "ReplicatedStorage.CAM.Global.ShopSettingsLive",
+    "bytes": 323
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/131_InCombat.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.InCombat",
+    "bytes": 2542
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/132_RotatingShop.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.RotatingShop",
+    "bytes": 8719
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/133_SkillHitCache.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.SkillHitCache",
+    "bytes": 1268
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/134_GetCombatCooldown.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.StatsFetch.Functions.Combat.GetCombatCooldown",
+    "bytes": 707
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/135_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Boulder Push.Client",
+    "bytes": 8253
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/136_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Boulder Push.Server",
+    "bytes": 3855
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/137_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Boulder Split.Client",
+    "bytes": 3858
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/138_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Boulder Split.Server",
+    "bytes": 6052
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/139_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Cup Game.Client",
+    "bytes": 20918
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/140_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Cup Game.Server",
+    "bytes": 750
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/141_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Horse.Client",
+    "bytes": 3642
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/142_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Horse.Server",
+    "bytes": 16167
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/143_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Meditation.Client",
+    "bytes": 2958
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/144_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Meditation.Server",
+    "bytes": 746
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/145_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Parkour Dungeon.Client",
+    "bytes": 22946
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/146_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Parkour Dungeon.Server",
+    "bytes": 4403
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/147_checkpoint.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Parkour Dungeon.checkpoint",
+    "bytes": 10187
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/148_dropper.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Parkour Dungeon.dropper",
+    "bytes": 13744
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/149_lever.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Parkour Dungeon.lever",
+    "bytes": 22615
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/150_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Pushups.Client",
+    "bytes": 2841
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/151_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Pushups.Server",
+    "bytes": 746
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/152_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Squat.Client",
+    "bytes": 3527
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/153_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Squat.Server",
+    "bytes": 2127
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/154_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Target Shooting.Client",
+    "bytes": 16425
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/155_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Target Shooting.Server",
+    "bytes": 750
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/156_Client.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Template.Client",
+    "bytes": 313
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/157_Server.lua",
+    "path": "ReplicatedStorage.CAM.Global.Training.Template.Server",
+    "bytes": 690
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/158_ChestTypes.lua",
+    "path": "ReplicatedStorage.CAM.Global.Types.ChestTypes",
+    "bytes": 54
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/159_CombatTypes.lua",
+    "path": "ReplicatedStorage.CAM.Global.Types.CombatTypes",
+    "bytes": 55
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/160_CraftingTypes.lua",
+    "path": "ReplicatedStorage.CAM.Global.Types.CraftingTypes",
+    "bytes": 54
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/161_DemonRaces.lua",
+    "path": "ReplicatedStorage.CAM.Global.Validators.DemonRaces",
+    "bytes": 729
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/162_SlayerRaces.lua",
+    "path": "ReplicatedStorage.CAM.Global.Validators.SlayerRaces",
+    "bytes": 730
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/163_shopSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.shopSettings",
+    "bytes": 3514
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/164_Shockwave_Orb.lua",
+    "path": "ReplicatedStorage.Items.Evil Art Orbs.Shockwave Orb",
+    "bytes": 496
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/165_Basic_Fishing_Rod.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Basic Fishing Rod",
+    "bytes": 658
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/166_Clown_Fish.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Clown Fish",
+    "bytes": 345
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/167_Coral.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Coral",
+    "bytes": 335
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/168_Crustadon.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Crustadon",
+    "bytes": 329
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/169_Drowned_Lure.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Drowned Lure",
+    "bytes": 624
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/170_Fish_Head.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Fish Head",
+    "bytes": 632
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/171_Golden_Fish.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Golden Fish",
+    "bytes": 350
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/172_Golden_Tentacle.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Golden Tentacle",
+    "bytes": 578
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/173_Golden_Tentacle_x10.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Golden Tentacle x10",
+    "bytes": 396
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/174_Golden_Tentacle_x75.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Golden Tentacle x75",
+    "bytes": 406
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/175_Krathulon.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Krathulon",
+    "bytes": 348
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/176_Legendary_Fishing_Rod.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Legendary Fishing Rod",
+    "bytes": 776
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/177_OuwFish.lua",
+    "path": "ReplicatedStorage.Items.Fishing.OuwFish",
+    "bytes": 325
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/178_OuwFwesh.lua",
+    "path": "ReplicatedStorage.Items.Fishing.OuwFwesh",
+    "bytes": 332
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/179_Rare_Fishing_Rod.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Rare Fishing Rod",
+    "bytes": 756
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/180_Sea_Horse.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Sea Horse",
+    "bytes": 324
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/181_Worm.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Worm",
+    "bytes": 612
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/182_Zebra_Fish.lua",
+    "path": "ReplicatedStorage.Items.Fishing.Zebra Fish",
+    "bytes": 336
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/183_Shopkeeper_s_Hat.lua",
+    "path": "ReplicatedStorage.Items.Head.Shopkeeper's Hat",
+    "bytes": 478
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/184_Ocean_Wave_Katana.lua",
+    "path": "ReplicatedStorage.Items.Katana.Ocean Wave Katana",
+    "bytes": 821
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/185_Horse.lua",
+    "path": "ReplicatedStorage.Items.Mounts.Horse",
+    "bytes": 617
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/186_Shockwave_Necklace.lua",
+    "path": "ReplicatedStorage.Items.Neck.Shockwave Necklace",
+    "bytes": 675
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/187_Shopkeeper_s_Garb.lua",
+    "path": "ReplicatedStorage.Items.Outfits.Shopkeeper's Garb",
+    "bytes": 532
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/188_Health_Elixir.lua",
+    "path": "ReplicatedStorage.Items.Potions.Health Elixir",
+    "bytes": 524
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/189_Health_Potion.lua",
+    "path": "ReplicatedStorage.Items.Potions.Health Potion",
+    "bytes": 467
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/190_Health_Regen_Elixir.lua",
+    "path": "ReplicatedStorage.Items.Potions.Health Regen Elixir",
+    "bytes": 524
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/191_Health_Regen_Potion.lua",
+    "path": "ReplicatedStorage.Items.Potions.Health Regen Potion",
+    "bytes": 509
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/192_Muzan_s_Blood.lua",
+    "path": "ReplicatedStorage.Items.Potions.Muzan's Blood",
+    "bytes": 550
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/193_Underwater_Breathing_Potion.lua",
+    "path": "ReplicatedStorage.Items.Potions.Underwater Breathing Potion",
+    "bytes": 566
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/194_Bandage.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Bandage",
+    "bytes": 511
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/195_Bear_Claws.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Bear Claws",
+    "bytes": 277
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/196_Bear_Meat.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Bear Meat",
+    "bytes": 285
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/197_Beast_Core.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Beast Core",
+    "bytes": 301
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/198_Biwa_Bell.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Biwa Bell",
+    "bytes": 578
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/199_Book_of_Guidance.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Book of Guidance",
+    "bytes": 302
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/200_Broken_Nichirin_Katana.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Broken Nichirin Katana",
+    "bytes": 288
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/201_Cooked_Bear_Meat.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Cooked Bear Meat",
+    "bytes": 509
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/202_Fishing_Permit.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Fishing Permit",
+    "bytes": 346
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/203_Frozen_Heart.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Frozen Heart",
+    "bytes": 346
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/204_Frozen_Heart_Cache.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Frozen Heart Cache",
+    "bytes": 399
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/205_Frozen_Heart_Cache_x5.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Frozen Heart Cache x5",
+    "bytes": 383
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/206_Gemstone.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Gemstone",
+    "bytes": 298
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/207_Jewelry_Box.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Jewelry Box",
+    "bytes": 583
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/208_Letter.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Letter",
+    "bytes": 297
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/209_Ore.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Ore",
+    "bytes": 306
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/210_Package.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Package",
+    "bytes": 501
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/211_Permit_Stamp.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Permit Stamp",
+    "bytes": 582
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/212_Serpent_Key.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Serpent Key",
+    "bytes": 333
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/213_Shovel.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Shovel",
+    "bytes": 356
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/214_Supply_Box.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Supply Box",
+    "bytes": 502
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/215_Suspicious_Note.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Suspicious Note",
+    "bytes": 290
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/216_Wagwan_s_Ring.lua",
+    "path": "ReplicatedStorage.Items.Quest Items.Wagwan's Ring",
+    "bytes": 274
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/217_Firstlight_Bladed_Wagasa_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Bladed Wagasa Schematic",
+    "bytes": 348
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/218_Firstlight_Bottom_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Bottom Schematic",
+    "bytes": 352
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/219_Firstlight_Haori_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Haori Schematic",
+    "bytes": 356
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/220_Firstlight_Insect_Katana_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Insect Katana Schematic",
+    "bytes": 345
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/221_Firstlight_Katana_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Katana Schematic",
+    "bytes": 357
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/222_Firstlight_Lantern_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Lantern Schematic",
+    "bytes": 333
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/223_Firstlight_Mask_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Mask Schematic",
+    "bytes": 334
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/224_Firstlight_Sound_Cleavers_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Sound Cleavers Schematic",
+    "bytes": 356
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/225_Firstlight_Spear_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Spear Schematic",
+    "bytes": 358
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/226_Firstlight_Tanto_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Tanto Schematic",
+    "bytes": 351
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/227_Firstlight_Top_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight Top Schematic",
+    "bytes": 360
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/228_Firstlight_War_Fans_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Firstlight War Fans Schematic",
+    "bytes": 346
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/229_Lost_Shotgun_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Lost Shotgun Schematic",
+    "bytes": 375
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/230_Nightfall_Axe_and_Mace_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Axe and Mace Schematic",
+    "bytes": 374
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/231_Nightfall_Bottom_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Bottom Schematic",
+    "bytes": 345
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/232_Nightfall_Cape_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Cape Schematic",
+    "bytes": 343
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/233_Nightfall_Claws_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Claws Schematic",
+    "bytes": 339
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/234_Nightfall_Gauntlet_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Gauntlet Schematic",
+    "bytes": 366
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/235_Nightfall_Katana_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Katana Schematic",
+    "bytes": 339
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/236_Nightfall_Mask_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Mask Schematic",
+    "bytes": 351
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/237_Nightfall_Scythe_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Scythe Schematic",
+    "bytes": 339
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/238_Nightfall_Serpent_Katana_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Serpent Katana Schematic",
+    "bytes": 370
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/239_Nightfall_Sickles_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Sickles Schematic",
+    "bytes": 360
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/240_Nightfall_Top_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Nightfall Top Schematic",
+    "bytes": 362
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/241_Shotgun_Schematic.lua",
+    "path": "ReplicatedStorage.Items.Schematics.Shotgun Schematic",
+    "bytes": 287
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/242_Combat.lua",
+    "path": "ReplicatedStorage.Items.Style.Combat",
+    "bytes": 810
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/243_Damascus_Gauntlet.lua",
+    "path": "ReplicatedStorage.Items.Weapons.Damascus Gauntlet",
+    "bytes": 1687
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/244_Gauntlet.lua",
+    "path": "ReplicatedStorage.Items.Weapons.Gauntlet",
+    "bytes": 1650
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/245_Nightfall_Gauntlet.lua",
+    "path": "ReplicatedStorage.Items.Weapons.Nightfall Gauntlet",
+    "bytes": 1741
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/246_RagdollHandler.lua",
+    "path": "ReplicatedStorage.RagdollHandler",
+    "bytes": 3028
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/247_Config.lua",
+    "path": "ReplicatedStorage.Skills.Bladed Wagasa.Floating Grace.Config",
+    "bytes": 698
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/248_Floating_Grace.lua",
+    "path": "ReplicatedStorage.Skills.Bladed Wagasa.Floating Grace.Floating Grace",
+    "bytes": 4396
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/249_Floating_GraceServer.lua",
+    "path": "ReplicatedStorage.Skills.Bladed Wagasa.Floating Grace.Floating GraceServer",
+    "bytes": 9297
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/250_Combat_Intuition.lua",
+    "path": "ReplicatedStorage.Skills.Clan.Combat Intuition.Combat Intuition",
+    "bytes": 270
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/251_Combat_IntuitionServer.lua",
+    "path": "ReplicatedStorage.Skills.Clan.Combat Intuition.Combat IntuitionServer",
+    "bytes": 219
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/252_EffectServer.lua",
+    "path": "ReplicatedStorage.Skills.Clan.Combat Intuition.EffectServer",
+    "bytes": 5860
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/253_Blazing_Universe.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Blazing Universe.Blazing Universe",
+    "bytes": 13912
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/254_Blazing_UniverseServer.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Blazing Universe.Blazing UniverseServer",
+    "bytes": 6178
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/255_Config.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Blazing Universe.Config",
+    "bytes": 594
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/256_Config.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Tiger.Config",
+    "bytes": 1874
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/257_Flame_Tiger.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Tiger.Flame Tiger",
+    "bytes": 6272
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/258_Flame_TigerServer.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Tiger.Flame TigerServer",
+    "bytes": 20862
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/259_Config.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Undulation.Config",
+    "bytes": 591
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/260_Flame_Undulation.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Undulation.Flame Undulation",
+    "bytes": 6249
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/261_Flame_UndulationServer.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Flame Undulation.Flame UndulationServer",
+    "bytes": 6061
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/262_Config.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Purgatory.Config",
+    "bytes": 599
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/263_Purgatory.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Purgatory.Purgatory",
+    "bytes": 4050
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/264_PurgatoryServer.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Purgatory.PurgatoryServer",
+    "bytes": 9214
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/265_Config.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Unknowing Fire.Config",
+    "bytes": 943
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/266_Unknowing_Fire.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Unknowing Fire.Unknowing Fire",
+    "bytes": 8752
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/267_Unknowing_FireServer.lua",
+    "path": "ReplicatedStorage.Skills.Flame Breathing.Unknowing Fire.Unknowing FireServer",
+    "bytes": 13966
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/268_Config.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Flash Fist.Config",
+    "bytes": 630
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/269_Flash_Fist.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Flash Fist.Flash Fist",
+    "bytes": 3576
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/270_Flash_FistServer.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Flash Fist.Flash FistServer",
+    "bytes": 7263
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/271_Config.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shatter Step.Config",
+    "bytes": 918
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/272_Shatter_Step.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shatter Step.Shatter Step",
+    "bytes": 10053
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/273_Shatter_StepServer.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shatter Step.Shatter StepServer",
+    "bytes": 13976
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/274_Config.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shoulder Throw.Config",
+    "bytes": 308
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/275_Shoulder_Throw.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shoulder Throw.Shoulder Throw",
+    "bytes": 2745
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/276_Shoulder_ThrowServer.lua",
+    "path": "ReplicatedStorage.Skills.Gauntlet.Shoulder Throw.Shoulder ThrowServer",
+    "bytes": 5952
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/277_Compound_Eye_Hexagon.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Compound Eye Hexagon.Compound Eye Hexagon",
+    "bytes": 4734
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/278_Compound_Eye_HexagonServer.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Compound Eye Hexagon.Compound Eye HexagonServer",
+    "bytes": 8873
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/279_Config.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Compound Eye Hexagon.Config",
+    "bytes": 921
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/280_Config.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Fluttering Sting.Config",
+    "bytes": 776
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/281_Fluttering_Sting.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Fluttering Sting.Fluttering Sting",
+    "bytes": 13641
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/282_Fluttering_StingServer.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Fluttering Sting.Fluttering StingServer",
+    "bytes": 15391
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/283_Config.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Hundred-Legged Zigzag.Config",
+    "bytes": 1252
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/284_Hundred-Legged_Zigzag.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Hundred-Legged Zigzag.Hundred-Legged Zigzag",
+    "bytes": 4923
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/285_Hundred-Legged_ZigzagServer.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Hundred-Legged Zigzag.Hundred-Legged ZigzagServer",
+    "bytes": 21790
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/286_Config.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Illusory Light.Config",
+    "bytes": 535
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/287_Illusory_Light.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Illusory Light.Illusory Light",
+    "bytes": 3577
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/288_Illusory_LightServer.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.Illusory Light.Illusory LightServer",
+    "bytes": 9329
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/289_Config.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.True Flutter.Config",
+    "bytes": 926
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/290_True_Flutter.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.True Flutter.True Flutter",
+    "bytes": 6533
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/291_True_FlutterServer.lua",
+    "path": "ReplicatedStorage.Skills.Insect Breathing.True Flutter.True FlutterServer",
+    "bytes": 14205
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/292_Blocking.lua",
+    "path": "ReplicatedStorage.Skills.Misc.Blocking",
+    "bytes": 1119
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/293_BlockingServer.lua",
+    "path": "ReplicatedStorage.Skills.Misc.BlockingServer",
+    "bytes": 8981
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/294_Config.lua",
+    "path": "ReplicatedStorage.Skills.Misc.Dashes.Config",
+    "bytes": 1482
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/295_Dash.lua",
+    "path": "ReplicatedStorage.Skills.Misc.Dashes.Dash",
+    "bytes": 7819
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/296_DashServer.lua",
+    "path": "ReplicatedStorage.Skills.Misc.Dashes.DashServer",
+    "bytes": 2507
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/297_Breathing_Boost.lua",
+    "path": "ReplicatedStorage.Skills.Progression.Breathing Boost.Breathing Boost",
+    "bytes": 6279
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/298_Breathing_BoostServer.lua",
+    "path": "ReplicatedStorage.Skills.Progression.Breathing Boost.Breathing BoostServer",
+    "bytes": 5150
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/299_Config.lua",
+    "path": "ReplicatedStorage.Skills.Progression.Breathing Boost.Config",
+    "bytes": 294
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/300_Coil_Choke.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Coil Choke.Coil Choke",
+    "bytes": 6742
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/301_Coil_ChokeServer.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Coil Choke.Coil ChokeServer",
+    "bytes": 18686
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/302_Config.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Coil Choke.Config",
+    "bytes": 1120
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/303_Config.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Serpent Slash.Config",
+    "bytes": 694
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/304_Serpent_Slash.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Serpent Slash.Serpent Slash",
+    "bytes": 6051
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/305_Serpent_SlashServer.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Serpent Slash.Serpent SlashServer",
+    "bytes": 14509
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/306_Config.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Slithering Serpent.Config",
+    "bytes": 704
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/307_Slithering_Serpent.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Slithering Serpent.Slithering Serpent",
+    "bytes": 7110
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/308_Slithering_SerpentServer.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Slithering Serpent.Slithering SerpentServer",
+    "bytes": 15848
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/309_Config.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Twin-Headed Reptile.Config",
+    "bytes": 797
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/310_Twin-Headed_Reptile.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Twin-Headed Reptile.Twin-Headed Reptile",
+    "bytes": 7624
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/311_Twin-Headed_ReptileServer.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Twin-Headed Reptile.Twin-Headed ReptileServer",
+    "bytes": 14245
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/312_Config.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Venom Fangs.Config",
+    "bytes": 810
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/313_Venom_Fangs.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Venom Fangs.Venom Fangs",
+    "bytes": 8342
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/314_Venom_FangsServer.lua",
+    "path": "ReplicatedStorage.Skills.Serpent Breathing.Venom Fangs.Venom FangsServer",
+    "bytes": 9978
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/315_Annihilation_Type.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Annihilation Type.Annihilation Type",
+    "bytes": 3347
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/316_Annihilation_TypeServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Annihilation Type.Annihilation TypeServer",
+    "bytes": 12110
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/317_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Annihilation Type.Config",
+    "bytes": 1028
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/318_Chaotic_Afterglow.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Chaotic Afterglow.Chaotic Afterglow",
+    "bytes": 1975
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/319_Chaotic_AfterglowServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Chaotic Afterglow.Chaotic AfterglowServer",
+    "bytes": 6963
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/320_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Chaotic Afterglow.Config",
+    "bytes": 559
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/321_Compass_Needle.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Compass Needle.Compass Needle",
+    "bytes": 3959
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/322_Compass_NeedleServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Compass Needle.Compass NeedleServer",
+    "bytes": 5510
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/323_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Compass Needle.Config",
+    "bytes": 573
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/324_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Demon Core.Config",
+    "bytes": 909
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/325_Demon_Core.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Demon Core.Demon Core",
+    "bytes": 6547
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/326_Demon_CoreServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Demon Core.Demon CoreServer",
+    "bytes": 16960
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/327_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Explosive Fury.Config",
+    "bytes": 599
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/328_Explosive_Fury.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Explosive Fury.Explosive Fury",
+    "bytes": 5614
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/329_Explosive_FuryServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Explosive Fury.Explosive FuryServer",
+    "bytes": 10094
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/330_Config.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Flashing Willow.Config",
+    "bytes": 1126
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/331_Flashing_Willow.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Flashing Willow.Flashing Willow",
+    "bytes": 4848
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/332_Flashing_Willow_Aerial.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Flashing Willow.Flashing Willow Aerial",
+    "bytes": 1378
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/333_Flashing_Willow_AerialServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Flashing Willow.Flashing Willow AerialServer",
+    "bytes": 9023
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/334_Flashing_WillowServer.lua",
+    "path": "ReplicatedStorage.Skills.Shockwave.Flashing Willow.Flashing WillowServer",
+    "bytes": 9514
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/335_Arcs_of_Justice.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Arcs of Justice.Arcs of Justice",
+    "bytes": 4979
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/336_Arcs_of_JusticeServer.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Arcs of Justice.Arcs of JusticeServer",
+    "bytes": 12975
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/337_Config.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Arcs of Justice.Config",
+    "bytes": 930
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/338_Config.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Seismic Burst.Config",
+    "bytes": 503
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/339_Seismic_Burst.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Seismic Burst.Seismic Burst",
+    "bytes": 6850
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/340_Seismic_BurstServer.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Seismic Burst.Seismic BurstServer",
+    "bytes": 6113
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/341_Config.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Stone Wall.Config",
+    "bytes": 1526
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/342_Stone_Wall.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Stone Wall.Stone Wall",
+    "bytes": 5428
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/343_Stone_WallServer.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Stone Wall.Stone WallServer",
+    "bytes": 17187
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/344_Config.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Upper Smash.Config",
+    "bytes": 767
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/345_Upper_Smash.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Upper Smash.Upper Smash",
+    "bytes": 4527
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/346_Upper_SmashServer.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Upper Smash.Upper SmashServer",
+    "bytes": 6477
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/347_Config.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Volcanic Conquest.Config",
+    "bytes": 907
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/348_Volcanic_Conquest.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Volcanic Conquest.Volcanic Conquest",
+    "bytes": 3521
+  },
+  {
+    "file": "new_game_analysis/mechanics_sources/349_Volcanic_ConquestServer.lua",
+    "path": "ReplicatedStorage.Skills.Stone Breathing.Volcanic Conquest.Volcanic ConquestServer",
+    "bytes": 11393
+  }
+]

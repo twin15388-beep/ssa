@@ -1,0 +1,2240 @@
+[
+  {
+    "file": "1_2_SmartBone.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone",
+    "bytes": 16913
+  },
+  {
+    "file": "1_3_Regions.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Regions",
+    "bytes": 32058
+  },
+  {
+    "file": "1_4_buildRagdoll.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.buildRagdoll",
+    "bytes": 1678
+  },
+  {
+    "file": "1_5_RagdollHandler.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RagdollHandler",
+    "bytes": 2268
+  },
+  {
+    "file": "1_24___CAM_DriftFix_Shared_v1__.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.__CAM_DriftFix_Shared_v1__",
+    "bytes": 2339
+  },
+  {
+    "file": "1_30_buildConstraints.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.buildRagdoll.buildConstraints",
+    "bytes": 1126
+  },
+  {
+    "file": "1_31_buildCollisionFilters.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.buildRagdoll.buildCollisionFilters",
+    "bytes": 2819
+  },
+  {
+    "file": "1_32_getLastWordFromPascalCase.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.buildRagdoll.getLastWordFromPascalCase",
+    "bytes": 166
+  },
+  {
+    "file": "1_36_Configuration.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Configuration",
+    "bytes": 911
+  },
+  {
+    "file": "1_43_Eventer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Eventer",
+    "bytes": 2088
+  },
+  {
+    "file": "1_44_Invoker.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Invoker",
+    "bytes": 2066
+  },
+  {
+    "file": "1_45_Unreliable.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Unreliable",
+    "bytes": 2093
+  },
+  {
+    "file": "1_48_data-serializer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.data-serializer",
+    "bytes": 133
+  },
+  {
+    "file": "1_49_cleanit.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.cleanit",
+    "bytes": 114
+  },
+  {
+    "file": "1_50_faye.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.faye",
+    "bytes": 108
+  },
+  {
+    "file": "1_51_ibds.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.ibds",
+    "bytes": 109
+  },
+  {
+    "file": "1_52_simplesignal.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.simplesignal",
+    "bytes": 129
+  },
+  {
+    "file": "1_53_textplus.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.textplus",
+    "bytes": 117
+  },
+  {
+    "file": "1_54_uidragger.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.uidragger",
+    "bytes": 123
+  },
+  {
+    "file": "1_55_interfaceutility.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.interfaceutility",
+    "bytes": 132
+  },
+  {
+    "file": "1_56_spritesheetplayer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Packages.spritesheetplayer",
+    "bytes": 134
+  },
+  {
+    "file": "1_59_TemplateServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.TemplateServer",
+    "bytes": 392
+  },
+  {
+    "file": "1_60_Template.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.Template",
+    "bytes": 367
+  },
+  {
+    "file": "1_99_Recover_the_Lost_Pages.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Recover the Lost Pages",
+    "bytes": 317
+  },
+  {
+    "file": "1_100_Find_Betty_s_Gemstone.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Find Betty's Gemstone",
+    "bytes": 322
+  },
+  {
+    "file": "1_101_Find_the_Lucky_Penny.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Find the Lucky Penny",
+    "bytes": 343
+  },
+  {
+    "file": "1_102_Five_Hundred_Pennies.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Five Hundred Pennies",
+    "bytes": 330
+  },
+  {
+    "file": "1_103_Five_Broken_Blades.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Five Broken Blades",
+    "bytes": 263
+  },
+  {
+    "file": "1_104_Retrieve_Ginzo_s_Jewelry_Box.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Retrieve Ginzo's Jewelry Box",
+    "bytes": 346
+  },
+  {
+    "file": "1_105_Muzan_Quest.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Muzan Quest",
+    "bytes": 4208
+  },
+  {
+    "file": "1_106_Restock_the_Infirmary.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Restock the Infirmary",
+    "bytes": 634
+  },
+  {
+    "file": "1_107_Earn_a_Fishing_Permit.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Earn a Fishing Permit",
+    "bytes": 354
+  },
+  {
+    "file": "1_108_The_Morning_Haul.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Morning Haul",
+    "bytes": 608
+  },
+  {
+    "file": "1_109_The_Good_Catch.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Good Catch",
+    "bytes": 651
+  },
+  {
+    "file": "1_110_The_Full_Pantry.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Full Pantry",
+    "bytes": 602
+  },
+  {
+    "file": "1_111_Supply_the_Settlement.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Supply the Settlement",
+    "bytes": 604
+  },
+  {
+    "file": "1_112_Escort_Akio_to_Windy_Peak.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Escort Akio to Windy Peak",
+    "bytes": 228
+  },
+  {
+    "file": "1_113_Locate_Ren_s_Lost_Nichirin.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Locate Ren's Lost Nichirin",
+    "bytes": 358
+  },
+  {
+    "file": "1_114_The_Winter_Catch.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Winter Catch",
+    "bytes": 649
+  },
+  {
+    "file": "1_115_The_Deep_Catch.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Deep Catch",
+    "bytes": 602
+  },
+  {
+    "file": "1_116_Sound_Breathing_Training.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Sound Breathing Training",
+    "bytes": 235
+  },
+  {
+    "file": "1_117_Water_Breathing_Training.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Water Breathing Training",
+    "bytes": 235
+  },
+  {
+    "file": "1_118_Cryokinesis_Core_Training.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.Cryokinesis Core Training",
+    "bytes": 329
+  },
+  {
+    "file": "1_119_The_Soryu_Trial.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Soryu Trial",
+    "bytes": 413
+  },
+  {
+    "file": "1_120_The_Tai_Chi_Trial.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Tai Chi Trial",
+    "bytes": 419
+  },
+  {
+    "file": "1_121_The_Reaper_s_Trial.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.QuestStates.The Reaper's Trial",
+    "bytes": 425
+  },
+  {
+    "file": "1_122_Biomes.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Biomes",
+    "bytes": 1121
+  },
+  {
+    "file": "1_190_template.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Items.template",
+    "bytes": 642
+  },
+  {
+    "file": "1_212_DebrisModule.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.CAM.DebrisModule",
+    "bytes": 1114
+  },
+  {
+    "file": "1_213_Worlds.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.CAM.Worlds",
+    "bytes": 4045
+  },
+  {
+    "file": "1_214_HudGrid.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.CAM.HudGrid",
+    "bytes": 2059
+  },
+  {
+    "file": "1_215_Clans.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.CAM.Clans",
+    "bytes": 5193
+  },
+  {
+    "file": "1_216_Emotes.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.CAM.Emotes",
+    "bytes": 22973
+  },
+  {
+    "file": "1_270_Bone.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Components.Bone",
+    "bytes": 26594
+  },
+  {
+    "file": "1_271_BoneTree.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Components.BoneTree",
+    "bytes": 10585
+  },
+  {
+    "file": "1_274_Config.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Config",
+    "bytes": 868
+  },
+  {
+    "file": "1_275_DefaultObjectSettings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.DefaultObjectSettings",
+    "bytes": 535
+  },
+  {
+    "file": "1_276_Frustum.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Frustum",
+    "bytes": 2098
+  },
+  {
+    "file": "1_277_spec.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Frustum.spec",
+    "bytes": 2579
+  },
+  {
+    "file": "1_278_Runtime.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "1_279_Utilities.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Utilities",
+    "bytes": 11126
+  },
+  {
+    "file": "1_280_Iris.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.SmartBone.Dependencies.Iris",
+    "bytes": 5119
+  },
+  {
+    "file": "1_333_Give.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Give",
+    "bytes": 3189
+  },
+  {
+    "file": "1_334_Toggle.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Toggle",
+    "bytes": 1381
+  },
+  {
+    "file": "1_335_Set.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Set",
+    "bytes": 1502
+  },
+  {
+    "file": "1_336_Mastery.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Mastery",
+    "bytes": 3575
+  },
+  {
+    "file": "1_337_Chest.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Chest",
+    "bytes": 5249
+  },
+  {
+    "file": "1_338_SpawnNpc.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.SpawnNpc",
+    "bytes": 1715
+  },
+  {
+    "file": "1_339_Respawn.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Respawn",
+    "bytes": 1342
+  },
+  {
+    "file": "1_340_Pvp.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Pvp",
+    "bytes": 2672
+  },
+  {
+    "file": "1_341_Explorer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Explorer",
+    "bytes": 1513
+  },
+  {
+    "file": "1_342_Reset.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Reset",
+    "bytes": 4267
+  },
+  {
+    "file": "1_343_TestClan.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.TestClan",
+    "bytes": 1480
+  },
+  {
+    "file": "1_344_Tick.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Tick",
+    "bytes": 1974
+  },
+  {
+    "file": "1_345_Ultimates.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Ultimates",
+    "bytes": 3277
+  },
+  {
+    "file": "1_346_Damage.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Damage",
+    "bytes": 1004
+  },
+  {
+    "file": "1_347_ModeBar.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.ModeBar",
+    "bytes": 793
+  },
+  {
+    "file": "1_348_CompleteQuest.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.CompleteQuest",
+    "bytes": 5543
+  },
+  {
+    "file": "1_349_CompleteTask.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.CompleteTask",
+    "bytes": 6766
+  },
+  {
+    "file": "1_350_ToNpc.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.ToNpc",
+    "bytes": 4128
+  },
+  {
+    "file": "1_351_Private.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Private",
+    "bytes": 3822
+  },
+  {
+    "file": "1_352_Minigame.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Minigame",
+    "bytes": 5675
+  },
+  {
+    "file": "1_353_Ouwigahara.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Ouwigahara",
+    "bytes": 3608
+  },
+  {
+    "file": "1_354_Telegraph.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Telegraph",
+    "bytes": 3068
+  },
+  {
+    "file": "1_355_Balancer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Balancer",
+    "bytes": 6430
+  },
+  {
+    "file": "1_356_Ranked.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Ranked",
+    "bytes": 11118
+  },
+  {
+    "file": "1_357_PrivateServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.PrivateServer",
+    "bytes": 6102
+  },
+  {
+    "file": "1_358_Staff.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Staff",
+    "bytes": 7361
+  },
+  {
+    "file": "1_359_Title.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Title",
+    "bytes": 3373
+  },
+  {
+    "file": "1_360_ClanEvent.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.ClanEvent",
+    "bytes": 4774
+  },
+  {
+    "file": "1_361_Grant.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.OCIFolder.Commands.Grant",
+    "bytes": 3332
+  },
+  {
+    "file": "1_373_EventerMain.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Handlers.EventerMain",
+    "bytes": 3557
+  },
+  {
+    "file": "1_374_InvokerMain.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Handlers.InvokerMain",
+    "bytes": 4444
+  },
+  {
+    "file": "1_375_Utility.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.RemotePlus.Handlers.Utility",
+    "bytes": 2377
+  },
+  {
+    "file": "1_386_Blocking.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.Misc.Blocking",
+    "bytes": 1119
+  },
+  {
+    "file": "1_387_BlockingServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.Misc.BlockingServer",
+    "bytes": 8595
+  },
+  {
+    "file": "1_388_Double_Jump.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.Misc.Double Jump",
+    "bytes": 3475
+  },
+  {
+    "file": "1_389_Double_JumpServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Skills.Misc.Double JumpServer",
+    "bytes": 1476
+  },
+  {
+    "file": "1_549_Windy_Peak.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak",
+    "bytes": 2564
+  },
+  {
+    "file": "1_550_Bamboo_Grove.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove",
+    "bytes": 2424
+  },
+  {
+    "file": "1_551_Mistfall_Harbor.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor",
+    "bytes": 3377
+  },
+  {
+    "file": "1_552_Hidden_Mist_Village.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village",
+    "bytes": 1952
+  },
+  {
+    "file": "1_553_Misc.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc",
+    "bytes": 895
+  },
+  {
+    "file": "1_554_Butterfly_Estate.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate",
+    "bytes": 2649
+  },
+  {
+    "file": "1_555_Iceveil_Valley.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley",
+    "bytes": 3235
+  },
+  {
+    "file": "1_556_Final_Selection_Plains.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains",
+    "bytes": 3265
+  },
+  {
+    "file": "1_557_Verdant_Cliffs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Verdant Cliffs",
+    "bytes": 1159
+  },
+  {
+    "file": "1_558_Stone_Sanctuary.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Stone Sanctuary",
+    "bytes": 1111
+  },
+  {
+    "file": "1_559_Forgotten_Ruins.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Ouwland.Content.Forgotten Ruins",
+    "bytes": 1292
+  },
+  {
+    "file": "1_560_Final_Selection.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Situations.Final Selection.Final Selection",
+    "bytes": 1122
+  },
+  {
+    "file": "1_562_Example_Tool_Script.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Example Tool Script.Example Tool Script",
+    "bytes": 511
+  },
+  {
+    "file": "1_563_Example_Tool_ScriptServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Example Tool Script.Example Tool ScriptServer",
+    "bytes": 514
+  },
+  {
+    "file": "1_564_Health_Potion.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Health Potion.Health Potion",
+    "bytes": 5805
+  },
+  {
+    "file": "1_565_Health_PotionServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Health Potion.Health PotionServer",
+    "bytes": 8556
+  },
+  {
+    "file": "1_566_Horse.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Horse.Horse",
+    "bytes": 21494
+  },
+  {
+    "file": "1_567_HorseServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Horse.HorseServer",
+    "bytes": 26444
+  },
+  {
+    "file": "1_568_RideAnimator.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Horse.RideAnimator",
+    "bytes": 2314
+  },
+  {
+    "file": "1_570_Cooked_Bear_Meat.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Cooked Bear Meat.Cooked Bear Meat",
+    "bytes": 3759
+  },
+  {
+    "file": "1_571_Cooked_Bear_MeatServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Cooked Bear Meat.Cooked Bear MeatServer",
+    "bytes": 2576
+  },
+  {
+    "file": "1_572_Crow.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Crow.Crow",
+    "bytes": 9745
+  },
+  {
+    "file": "1_573_CrowServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Crow.CrowServer",
+    "bytes": 6522
+  },
+  {
+    "file": "1_576_Bandage.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Bandage.Bandage",
+    "bytes": 3356
+  },
+  {
+    "file": "1_577_BandageServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Bandage.BandageServer",
+    "bytes": 2496
+  },
+  {
+    "file": "1_578_Biwa_BellServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Biwa Bell.Biwa BellServer",
+    "bytes": 9567
+  },
+  {
+    "file": "1_579_Biwa_Bell.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Biwa Bell.Biwa Bell",
+    "bytes": 9312
+  },
+  {
+    "file": "1_581_Muzan_s_Blood.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Muzan's Blood.Muzan's Blood",
+    "bytes": 4275
+  },
+  {
+    "file": "1_582_Muzan_s_BloodServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Muzan's Blood.Muzan's BloodServer",
+    "bytes": 7274
+  },
+  {
+    "file": "1_584_Rare_Fishing_Rod.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Rare Fishing Rod.Rare Fishing Rod",
+    "bytes": 4386
+  },
+  {
+    "file": "1_585_Rare_Fishing_RodServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Rare Fishing Rod.Rare Fishing RodServer",
+    "bytes": 61944
+  },
+  {
+    "file": "1_587_Evil_Art_Orb.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Evil Art Orb.Evil Art Orb",
+    "bytes": 5896
+  },
+  {
+    "file": "1_588_Evil_Art_OrbServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Evil Art Orb.Evil Art OrbServer",
+    "bytes": 4668
+  },
+  {
+    "file": "1_590_Small_GourdServer.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Small Gourd.Small GourdServer",
+    "bytes": 3936
+  },
+  {
+    "file": "1_591_Small_Gourd.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.ToolScripts.Small Gourd.Small Gourd",
+    "bytes": 6757
+  },
+  {
+    "file": "1_592_Sword_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Sword_Swings",
+    "bytes": 225
+  },
+  {
+    "file": "1_593_Combat_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Combat_Swings",
+    "bytes": 978
+  },
+  {
+    "file": "1_594_Sickles_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Sickles_Swings",
+    "bytes": 1465
+  },
+  {
+    "file": "1_595_Regular_Katana_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Regular Katana_Swings",
+    "bytes": 229
+  },
+  {
+    "file": "1_596_Obi_Manipulation_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Obi Manipulation_Swings",
+    "bytes": 2281
+  },
+  {
+    "file": "1_597_Axe_and_Mace_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Axe and Mace_Swings",
+    "bytes": 8047
+  },
+  {
+    "file": "1_598_Shotgun_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Shotgun_Swings",
+    "bytes": 2778
+  },
+  {
+    "file": "1_599_Insect_Katana_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Insect Katana_Swings",
+    "bytes": 229
+  },
+  {
+    "file": "1_600_Sound_Katanas_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Sound Katanas_Swings",
+    "bytes": 327
+  },
+  {
+    "file": "1_601_Scythe_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Scythe_Swings",
+    "bytes": 229
+  },
+  {
+    "file": "1_602_Bladed_Wagasa_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Bladed Wagasa_Swings",
+    "bytes": 1061
+  },
+  {
+    "file": "1_603_Spear_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Spear_Swings",
+    "bytes": 353
+  },
+  {
+    "file": "1_604_Tanto_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Tanto_Swings",
+    "bytes": 484
+  },
+  {
+    "file": "1_605_War_Fans_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.War Fans_Swings",
+    "bytes": 1039
+  },
+  {
+    "file": "1_606_Claws_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Claws_Swings",
+    "bytes": 1136
+  },
+  {
+    "file": "1_607_WeaponAuras.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.WeaponAuras",
+    "bytes": 5950
+  },
+  {
+    "file": "1_608_Gauntlet_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Gauntlet_Swings",
+    "bytes": 3217
+  },
+  {
+    "file": "1_609_Damascus_Gauntlet_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Damascus Gauntlet_Swings",
+    "bytes": 106
+  },
+  {
+    "file": "1_610_Nightfall_Gauntlet_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Nightfall Gauntlet_Swings",
+    "bytes": 106
+  },
+  {
+    "file": "1_611_Tamari_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Tamari_Swings",
+    "bytes": 1742
+  },
+  {
+    "file": "1_612_Blood_Manipulation_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Blood Manipulation_Swings",
+    "bytes": 105
+  },
+  {
+    "file": "1_613_Soryu_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Soryu_Swings",
+    "bytes": 2404
+  },
+  {
+    "file": "1_614_Tai_Chi_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Tai Chi_Swings",
+    "bytes": 2407
+  },
+  {
+    "file": "1_615_Reaping_Blades_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Reaping Blades_Swings",
+    "bytes": 233
+  },
+  {
+    "file": "1_616_Dream_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Dream_Swings",
+    "bytes": 6434
+  },
+  {
+    "file": "1_617_Reaper_Swings.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Swings.Reaper_Swings",
+    "bytes": 2448
+  },
+  {
+    "file": "1_618_RotatingBloodScythe_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Blood Manipulation.RotatingBloodScythe_effs",
+    "bytes": 6755
+  },
+  {
+    "file": "1_619_BloodSickleBend_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Blood Manipulation.BloodSickleBend_effs",
+    "bytes": 12498
+  },
+  {
+    "file": "1_620_OnSlaught_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Blood Manipulation.OnSlaught_effs",
+    "bytes": 11442
+  },
+  {
+    "file": "1_621_CircularSlashes_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Blood Manipulation.CircularSlashes_effs",
+    "bytes": 14545
+  },
+  {
+    "file": "1_622_RampantArcRampage_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Blood Manipulation.RampantArcRampage_effs",
+    "bytes": 6007
+  },
+  {
+    "file": "1_623_air_combo_up_tilt_prepare.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Server_Sided_Adjustements.air_combo_up_tilt_prepare",
+    "bytes": 273
+  },
+  {
+    "file": "1_624_WaterSurfaceSlashEff.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.WaterSurfaceSlashEff",
+    "bytes": 8236
+  },
+  {
+    "file": "1_625_Dead_Calm_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.Dead Calm VFX",
+    "bytes": 8255
+  },
+  {
+    "file": "1_626_Water_Wheel_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.Water Wheel VFX",
+    "bytes": 17893
+  },
+  {
+    "file": "1_627_Whirl_Pool_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.Whirl Pool VFX",
+    "bytes": 10701
+  },
+  {
+    "file": "1_628_water_effect_template.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.water_effect_template",
+    "bytes": 1146
+  },
+  {
+    "file": "1_629_Constant_Flux_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Water Breathing.Constant Flux VFX",
+    "bytes": 16008
+  },
+  {
+    "file": "1_631_Blood_Strike_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Pyrokinesis.Blood Strike VFX",
+    "bytes": 9301
+  },
+  {
+    "file": "1_632_Heel_Bash_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Pyrokinesis.Heel Bash VFX",
+    "bytes": 7251
+  },
+  {
+    "file": "1_633_Blood_Rupture_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Pyrokinesis.Blood Rupture VFX",
+    "bytes": 18393
+  },
+  {
+    "file": "1_634_Fiery_Slash_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Pyrokinesis.Fiery Slash VFX",
+    "bytes": 27922
+  },
+  {
+    "file": "1_635_Blood_Tiles_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Pyrokinesis.Blood Tiles VFX",
+    "bytes": 12783
+  },
+  {
+    "file": "1_636_ObiBarrage_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Obi Manipulation.ObiBarrage_effs",
+    "bytes": 9080
+  },
+  {
+    "file": "1_637_ObiPursuit_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Obi Manipulation.ObiPursuit_effs",
+    "bytes": 9472
+  },
+  {
+    "file": "1_638_ObiGrab_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Obi Manipulation.ObiGrab_effs",
+    "bytes": 7775
+  },
+  {
+    "file": "1_639_ObiField_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Obi Manipulation.ObiField_effs",
+    "bytes": 7699
+  },
+  {
+    "file": "1_640_ObiCharge_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Obi Manipulation.ObiCharge_effs",
+    "bytes": 12862
+  },
+  {
+    "file": "1_641_ReaperSlash_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Scythe.ReaperSlash_effs",
+    "bytes": 4984
+  },
+  {
+    "file": "1_642_BloodLust_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Scythe.BloodLust_effs",
+    "bytes": 8513
+  },
+  {
+    "file": "1_643_NpcNoticeEffect.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.NpcsRelated.NpcNoticeEffect",
+    "bytes": 997
+  },
+  {
+    "file": "1_644_NpcOutOfBounds.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.NpcsRelated.NpcOutOfBounds",
+    "bytes": 1251
+  },
+  {
+    "file": "1_645_CoilChoke_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.CoilChoke_effs",
+    "bytes": 9952
+  },
+  {
+    "file": "1_646_VenomFangs_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.VenomFangs_effs",
+    "bytes": 9949
+  },
+  {
+    "file": "1_647_SlitheringSerpent_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.SlitheringSerpent_effs",
+    "bytes": 13053
+  },
+  {
+    "file": "1_648_AuraEffects.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.AuraEffects",
+    "bytes": 1814
+  },
+  {
+    "file": "1_649_SerpentSlash_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.SerpentSlash_effs",
+    "bytes": 22322
+  },
+  {
+    "file": "1_650_TwinHeadedReptile_effs.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Serpent Breathing.TwinHeadedReptile_effs",
+    "bytes": 18048
+  },
+  {
+    "file": "1_651_Buck_Shot_VFXOld.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.ShotgunOld.Buck Shot VFXOld",
+    "bytes": 4204
+  },
+  {
+    "file": "1_652_Point_Blank_VFXOld.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.ShotgunOld.Point Blank VFXOld",
+    "bytes": 3337
+  },
+  {
+    "file": "1_653_Shellshock_Frenzy_VFXOld.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.ShotgunOld.Shellshock Frenzy VFXOld",
+    "bytes": 5391
+  },
+  {
+    "file": "1_654_Godspeed_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Godspeed_VFX",
+    "bytes": 8919
+  },
+  {
+    "file": "1_655_Rice_Spirit_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Rice_Spirit_VFX",
+    "bytes": 11789
+  },
+  {
+    "file": "1_656_Thunder_Bell_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Thunder_Bell_VFX",
+    "bytes": 6989
+  },
+  {
+    "file": "1_657_Thunder_Clap_And_Flash_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Thunder_Clap_And_Flash_VFX",
+    "bytes": 18243
+  },
+  {
+    "file": "1_658_Eightfold_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Eightfold_VFX",
+    "bytes": 14107
+  },
+  {
+    "file": "1_659_Flaming_Thunder_God_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Thunder Breathing.Flaming_Thunder_God_VFX",
+    "bytes": 12166
+  },
+  {
+    "file": "1_660_Illusory_Light_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Insect Breathing.Illusory_Light_VFX",
+    "bytes": 22961
+  },
+  {
+    "file": "1_661_Compound_Eye_Hexagon_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Insect Breathing.Compound_Eye_Hexagon_VFX",
+    "bytes": 9104
+  },
+  {
+    "file": "1_662_Hundred-Legged_Zigzag_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Insect Breathing.Hundred-Legged_Zigzag_VFX",
+    "bytes": 20717
+  },
+  {
+    "file": "1_663_True_Flutter_VFX.lua",
+    "profile": "replicated",
+    "path": "ReplicatedStorage.Effects.Insect Breathing.True_Flutter_VFX",
+    "bytes": 14869
+  },
+  {
+    "file": "2_6_Players_Tilt.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Players_Tilt",
+    "bytes": 2204
+  },
+  {
+    "file": "2_7_Version.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Version",
+    "bytes": 1381
+  },
+  {
+    "file": "2_8_PlayerModule.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule",
+    "bytes": 2937
+  },
+  {
+    "file": "2_9_PlayerScriptsLoader.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerScriptsLoader",
+    "bytes": 96
+  },
+  {
+    "file": "2_10_RbxCharacterSounds.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.RbxCharacterSounds",
+    "bytes": 18138
+  },
+  {
+    "file": "2_11_Ragdoll_Client.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ragdoll_Client",
+    "bytes": 160
+  },
+  {
+    "file": "2_26_Animate.lua",
+    "profile": "clients",
+    "path": "Workspace.Humanoids.Kokakoka20.Animate",
+    "bytes": 23002
+  },
+  {
+    "file": "2_27_Stamina.lua",
+    "profile": "clients",
+    "path": "Workspace.Humanoids.Kokakoka20.Stamina",
+    "bytes": 994
+  },
+  {
+    "file": "2_29_Mouvement_Trail.lua",
+    "profile": "clients",
+    "path": "Workspace.Humanoids.Kokakoka20.Mouvement_Trail",
+    "bytes": 2453
+  },
+  {
+    "file": "2_59_SmartBoneRuntime.lua",
+    "profile": "clients",
+    "path": "ReplicatedFirst.SmartBoneRuntime",
+    "bytes": 124
+  },
+  {
+    "file": "2_63_PlayerScriptsLoader.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.PlayerScriptsLoader",
+    "bytes": 149
+  },
+  {
+    "file": "2_64_CameraModule.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule",
+    "bytes": 20025
+  },
+  {
+    "file": "2_65_ServerAuthority.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ServerAuthority",
+    "bytes": 1595
+  },
+  {
+    "file": "2_66_CommonUtils.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils",
+    "bytes": 478
+  },
+  {
+    "file": "2_67_ControlModule.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule",
+    "bytes": 36148
+  },
+  {
+    "file": "2_70_AtomicBinding.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.RbxCharacterSounds.AtomicBinding",
+    "bytes": 7438
+  },
+  {
+    "file": "2_71_LoadAreasToLocator.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.LoadAreasToLocator",
+    "bytes": 549
+  },
+  {
+    "file": "2_72_SnowBiome.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.SnowBiome",
+    "bytes": 2287
+  },
+  {
+    "file": "2_75_Combat.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Combat",
+    "bytes": 8145
+  },
+  {
+    "file": "2_76_AreasHandler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.AreasHandler",
+    "bytes": 516
+  },
+  {
+    "file": "2_77_Players_Tilt.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Players_Tilt",
+    "bytes": 2655
+  },
+  {
+    "file": "2_78_ProximityPromptHandler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ProximityPromptHandler",
+    "bytes": 2960
+  },
+  {
+    "file": "2_79_ThemePlayer.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ThemePlayer",
+    "bytes": 2514
+  },
+  {
+    "file": "2_80_Preloader.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Preloader",
+    "bytes": 1147
+  },
+  {
+    "file": "2_81_ClientEffectSignalReceiver.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ClientEffectSignalReceiver",
+    "bytes": 1276
+  },
+  {
+    "file": "2_82_OuwWeldClientCode.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.OuwWeldClientCode",
+    "bytes": 4419
+  },
+  {
+    "file": "2_83_Training.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Training",
+    "bytes": 1749
+  },
+  {
+    "file": "2_84_Biomes.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes",
+    "bytes": 5825
+  },
+  {
+    "file": "2_85_Ambience.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Ambience",
+    "bytes": 1720
+  },
+  {
+    "file": "2_86_Overhead.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead",
+    "bytes": 13389
+  },
+  {
+    "file": "2_87_SkillLandSoundMuter.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.SkillLandSoundMuter",
+    "bytes": 3164
+  },
+  {
+    "file": "2_88_QuestStates.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.QuestStates",
+    "bytes": 9718
+  },
+  {
+    "file": "2_89_HiddenNpcGate.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.HiddenNpcGate",
+    "bytes": 9968
+  },
+  {
+    "file": "2_90_SituationsClient.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.SituationsClient",
+    "bytes": 954
+  },
+  {
+    "file": "2_91_DisableResetHandler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.DisableResetHandler",
+    "bytes": 2639
+  },
+  {
+    "file": "2_92_QuestGate.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.QuestGate",
+    "bytes": 2575
+  },
+  {
+    "file": "2_93_JoinCover.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.JoinCover",
+    "bytes": 877
+  },
+  {
+    "file": "2_94_ControllersBootstrap.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ControllersBootstrap",
+    "bytes": 1582
+  },
+  {
+    "file": "2_95_RequirementGate.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.RequirementGate",
+    "bytes": 3457
+  },
+  {
+    "file": "2_96_AimAssist.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.AimAssist",
+    "bytes": 24338
+  },
+  {
+    "file": "2_97_HoverInfo.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.HoverInfo",
+    "bytes": 8190
+  },
+  {
+    "file": "2_98_DeviceReport.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.DeviceReport",
+    "bytes": 800
+  },
+  {
+    "file": "2_99_RegionVisits.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.RegionVisits",
+    "bytes": 1769
+  },
+  {
+    "file": "2_100_ArchiveNotifications.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ArchiveNotifications",
+    "bytes": 1488
+  },
+  {
+    "file": "2_101_Keybinds.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Keybinds",
+    "bytes": 6719
+  },
+  {
+    "file": "2_102_Shrines.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Shrines",
+    "bytes": 1541
+  },
+  {
+    "file": "2_103_MapMaterials.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.MapMaterials",
+    "bytes": 175
+  },
+  {
+    "file": "2_104_AmbiencePlayer.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.AmbiencePlayer",
+    "bytes": 4049
+  },
+  {
+    "file": "2_105_ForcedPlatform.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ForcedPlatform",
+    "bytes": 876
+  },
+  {
+    "file": "2_106_BossUIVisibility.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.BossUIVisibility",
+    "bytes": 739
+  },
+  {
+    "file": "2_107_ParkourTouchHazards.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.ParkourTouchHazards",
+    "bytes": 8288
+  },
+  {
+    "file": "2_160_RagDolling.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.RagDolling",
+    "bytes": 3265
+  },
+  {
+    "file": "2_161_Roblox_Uis_Disabler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Roblox_Uis_Disabler",
+    "bytes": 250
+  },
+  {
+    "file": "2_162_Foot_Sounds.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Foot_Sounds",
+    "bytes": 5286
+  },
+  {
+    "file": "2_163_Humanoid_handler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Humanoid_handler",
+    "bytes": 22873
+  },
+  {
+    "file": "2_201_Swimming.lua",
+    "profile": "clients",
+    "path": "Workspace.Humanoids.Kokakoka20.Character Scripts.Swimming",
+    "bytes": 56997
+  },
+  {
+    "file": "2_202_Climbing.lua",
+    "profile": "clients",
+    "path": "Workspace.Humanoids.Kokakoka20.Character Scripts.Climbing",
+    "bytes": 22371
+  },
+  {
+    "file": "2_333_BaseOcclusion.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.BaseOcclusion",
+    "bytes": 1015
+  },
+  {
+    "file": "2_334_VRVehicleCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VRVehicleCamera",
+    "bytes": 11696
+  },
+  {
+    "file": "2_335_BaseCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.BaseCamera",
+    "bytes": 23853
+  },
+  {
+    "file": "2_336_CameraUI.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.CameraUI",
+    "bytes": 793
+  },
+  {
+    "file": "2_337_ClassicCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.ClassicCamera",
+    "bytes": 7953
+  },
+  {
+    "file": "2_338_OrbitalCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.OrbitalCamera",
+    "bytes": 9417
+  },
+  {
+    "file": "2_339_TransparencyController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.TransparencyController",
+    "bytes": 6845
+  },
+  {
+    "file": "2_340_CameraUtils.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.CameraUtils",
+    "bytes": 9836
+  },
+  {
+    "file": "2_341_VRCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VRCamera",
+    "bytes": 14970
+  },
+  {
+    "file": "2_342_MouseLockController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.MouseLockController",
+    "bytes": 4538
+  },
+  {
+    "file": "2_343_VRBaseCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VRBaseCamera",
+    "bytes": 11994
+  },
+  {
+    "file": "2_344_Invisicam.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.Invisicam",
+    "bytes": 18176
+  },
+  {
+    "file": "2_345_VehicleCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VehicleCamera",
+    "bytes": 6366
+  },
+  {
+    "file": "2_346_LegacyCamera.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.LegacyCamera",
+    "bytes": 3741
+  },
+  {
+    "file": "2_347_CameraToggleStateController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.CameraToggleStateController",
+    "bytes": 2458
+  },
+  {
+    "file": "2_348_Poppercam.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.Poppercam",
+    "bytes": 3777
+  },
+  {
+    "file": "2_349_CameraInput.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.CameraInput",
+    "bytes": 13293
+  },
+  {
+    "file": "2_350_VRCameraTeleportDetector.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VRCameraTeleportDetector",
+    "bytes": 463
+  },
+  {
+    "file": "2_351_ZoomController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.ZoomController",
+    "bytes": 3376
+  },
+  {
+    "file": "2_352_ServerAuthorityClient.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ServerAuthority.ServerAuthorityClient",
+    "bytes": 162
+  },
+  {
+    "file": "2_354_CameraWrapper.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.CameraWrapper",
+    "bytes": 1848
+  },
+  {
+    "file": "2_355_FlagUtil.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.FlagUtil",
+    "bytes": 331
+  },
+  {
+    "file": "2_356_PlayerModuleEventBus.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.PlayerModuleEventBus",
+    "bytes": 135
+  },
+  {
+    "file": "2_357_ConnectionUtil.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.ConnectionUtil",
+    "bytes": 940
+  },
+  {
+    "file": "2_358_EventBus.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.EventBus",
+    "bytes": 694
+  },
+  {
+    "file": "2_359_CharacterUtil.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CommonUtils.CharacterUtil",
+    "bytes": 3196
+  },
+  {
+    "file": "2_360_InputSlots.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.InputSlots",
+    "bytes": 10811
+  },
+  {
+    "file": "2_361_InputReplication.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.InputReplication",
+    "bytes": 15592
+  },
+  {
+    "file": "2_362_ActionController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.ActionController",
+    "bytes": 1430
+  },
+  {
+    "file": "2_363_DynamicThumbstick.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.DynamicThumbstick",
+    "bytes": 33497
+  },
+  {
+    "file": "2_364_AvatarAbilitiesInterface.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.AvatarAbilitiesInterface",
+    "bytes": 13011
+  },
+  {
+    "file": "2_365_ClassicThumbstick.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.ClassicThumbstick",
+    "bytes": 15326
+  },
+  {
+    "file": "2_366_ClickToMoveDisplay.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.ClickToMoveDisplay",
+    "bytes": 18957
+  },
+  {
+    "file": "2_367_TouchJump.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.TouchJump",
+    "bytes": 10555
+  },
+  {
+    "file": "2_368_VehicleController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.VehicleController",
+    "bytes": 1989
+  },
+  {
+    "file": "2_369_TouchAbilities.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.TouchAbilities",
+    "bytes": 12947
+  },
+  {
+    "file": "2_370_ClickToMoveController.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.ControlModule.ClickToMoveController",
+    "bytes": 59927
+  },
+  {
+    "file": "2_376_Foxfire.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.Foxfire",
+    "bytes": 11304
+  },
+  {
+    "file": "2_377_ChestMound.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.ChestMound",
+    "bytes": 5814
+  },
+  {
+    "file": "2_378_StudyProp.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.StudyProp",
+    "bytes": 1616
+  },
+  {
+    "file": "2_379_SerpentBox.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.SerpentBox",
+    "bytes": 1866
+  },
+  {
+    "file": "2_380_SicklesSewer.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.Ouwland.WorldEvents.SicklesSewer",
+    "bytes": 7275
+  },
+  {
+    "file": "2_381_Main_Combat_Script_Client.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Combat.Main_Combat_Script_Client",
+    "bytes": 7009
+  },
+  {
+    "file": "2_385_Default.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Default",
+    "bytes": 1972
+  },
+  {
+    "file": "2_386_Parkour_Dungeon.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Parkour Dungeon",
+    "bytes": 209
+  },
+  {
+    "file": "2_387_MuzanLair.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.MuzanLair",
+    "bytes": 515
+  },
+  {
+    "file": "2_388_Minigame_FinalSelection.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_FinalSelection",
+    "bytes": 1167
+  },
+  {
+    "file": "2_389_Minigame_PvP.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_PvP",
+    "bytes": 756
+  },
+  {
+    "file": "2_390_Minigame_Ouwigahara.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara",
+    "bytes": 650
+  },
+  {
+    "file": "2_391_Minigame_Ouwigahara_Climbing_Desert_Dungeon.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_Desert Dungeon",
+    "bytes": 161
+  },
+  {
+    "file": "2_392_Minigame_Ouwigahara_Climbing_LightsOut.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_LightsOut",
+    "bytes": 645
+  },
+  {
+    "file": "2_393_Minigame_Ouwigahara_Climbing_Ice_Dungeon.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Biomes.Minigame_Ouwigahara_Climbing_Ice Dungeon",
+    "bytes": 161
+  },
+  {
+    "file": "2_395__Name.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead._Name",
+    "bytes": 6024
+  },
+  {
+    "file": "2_396_Health.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.Health",
+    "bytes": 4856
+  },
+  {
+    "file": "2_397_Blocking.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.Blocking",
+    "bytes": 13824
+  },
+  {
+    "file": "2_398_Debuffs.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.Debuffs",
+    "bytes": 4042
+  },
+  {
+    "file": "2_399_AFaction.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.AFaction",
+    "bytes": 2584
+  },
+  {
+    "file": "2_400_VanityTitle.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.VanityTitle",
+    "bytes": 2639
+  },
+  {
+    "file": "2_401_Reputation.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Overhead.Reputation",
+    "bytes": 8741
+  },
+  {
+    "file": "2_407_SkillCanceler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Spam.SkillCanceler",
+    "bytes": 1812
+  },
+  {
+    "file": "2_408_Componentloader.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.Componentloader",
+    "bytes": 4785
+  },
+  {
+    "file": "2_409_VisibilityHandler.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.VisibilityHandler",
+    "bytes": 5419
+  },
+  {
+    "file": "2_410_Keycodes.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.Keycodes",
+    "bytes": 2146
+  },
+  {
+    "file": "2_411_NpcAnimPlayer.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NpcsClient.NpcAnimPlayer",
+    "bytes": 13060
+  },
+  {
+    "file": "2_412_Actuate.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Scenarios.Actuate",
+    "bytes": 6365
+  },
+  {
+    "file": "2_413_adders.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.markers.adders",
+    "bytes": 400
+  },
+  {
+    "file": "2_414_clientruncode.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.markers.clientruncode",
+    "bytes": 27027
+  },
+  {
+    "file": "2_415_MuzanWhispers.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Muzan.MuzanWhispers",
+    "bytes": 4097
+  },
+  {
+    "file": "2_416_MuzanLairModel.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Muzan.MuzanLairModel",
+    "bytes": 5017
+  },
+  {
+    "file": "2_417_Receive.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Receive",
+    "bytes": 703
+  },
+  {
+    "file": "2_418_InferPopup.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.InferPopup",
+    "bytes": 320
+  },
+  {
+    "file": "2_419_ForceEquip.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.ForceEquip",
+    "bytes": 549
+  },
+  {
+    "file": "2_420_OpenDialogue.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OpenDialogue",
+    "bytes": 365
+  },
+  {
+    "file": "2_421_TeleportCover.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.TeleportCover",
+    "bytes": 530
+  },
+  {
+    "file": "2_422_BigMessage.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.BigMessage",
+    "bytes": 569
+  },
+  {
+    "file": "2_423_OuwigaharaMapTeleport.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OuwigaharaMapTeleport",
+    "bytes": 520
+  },
+  {
+    "file": "2_424_CustomPowerKit.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.CustomPowerKit",
+    "bytes": 580
+  },
+  {
+    "file": "2_425_OuwigaharaBoard.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.OuwigaharaBoard",
+    "bytes": 659
+  },
+  {
+    "file": "2_426_FactionChanged.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.FactionChanged",
+    "bytes": 376
+  },
+  {
+    "file": "2_427_TrackedSpawn.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.TrackedSpawn",
+    "bytes": 3016
+  },
+  {
+    "file": "2_434_Runtime.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.Cylinder - 6BC98583-8F36-4E22-8AE9-87A8DB0E08E7.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "2_435_Runtime.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.Cylinder - F659FD5A-2148-40D0-9B7E-E1CF582B58A2.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "2_436_Runtime.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.HAIR.005 - 644DDF42-7AF2-4940-9E00-E29ED3A55D48.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "2_437_Runtime.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.RootPart - 69F540D8-91AF-4AD1-9EAA-87756E648B1C.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "2_438_Runtime.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.SmartBone-Actors.UpperTorso - D5D0A871-8D1E-4EEE-9999-C8BE921CB432.Runtime",
+    "bytes": 2884
+  },
+  {
+    "file": "2_717_GlobalVariableStates.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Humanoid_handler.GlobalVariableStates",
+    "bytes": 1247
+  },
+  {
+    "file": "2_721_LocalScript.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Watermark.LocalScript",
+    "bytes": 745
+  },
+  {
+    "file": "2_722_Dashing.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.Dashing",
+    "bytes": 9541
+  },
+  {
+    "file": "2_723_Run_Initiator.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.Run_Initiator",
+    "bytes": 3265
+  },
+  {
+    "file": "2_724_Client_Reset.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.Client_Reset",
+    "bytes": 867
+  },
+  {
+    "file": "2_726_SunDamage.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.SunDamage",
+    "bytes": 4086
+  },
+  {
+    "file": "2_888_VehicleCameraConfig.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VehicleCamera.VehicleCameraConfig",
+    "bytes": 624
+  },
+  {
+    "file": "2_889_VehicleCameraCore.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.VehicleCamera.VehicleCameraCore",
+    "bytes": 5226
+  },
+  {
+    "file": "2_890_Popper.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper",
+    "bytes": 16458
+  },
+  {
+    "file": "2_965_Sets.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.VisibilityHandler.Sets",
+    "bytes": 3118
+  },
+  {
+    "file": "2_969_Quests.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.markers.adders.Quests",
+    "bytes": 8915
+  },
+  {
+    "file": "2_970_PartyMarkers.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.markers.adders.PartyMarkers",
+    "bytes": 13773
+  },
+  {
+    "file": "2_971_CurrencyNotification.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Notifications.CurrencyNotification",
+    "bytes": 1084
+  },
+  {
+    "file": "2_972_Notify.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Notifications.Notify",
+    "bytes": 291
+  },
+  {
+    "file": "2_973_NewItemNotification.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Notifications.NewItemNotification",
+    "bytes": 298
+  },
+  {
+    "file": "2_974_NpcNotify.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Notifications.NpcNotify",
+    "bytes": 513
+  },
+  {
+    "file": "2_975_ChestState.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Chest.ChestState",
+    "bytes": 368
+  },
+  {
+    "file": "2_976_ServerBrowserState.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.ServerBrowser.ServerBrowserState",
+    "bytes": 343
+  },
+  {
+    "file": "2_977_RankedBoard.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Ranked.RankedBoard",
+    "bytes": 316
+  },
+  {
+    "file": "2_978_RankedResult.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.Ranked.RankedResult",
+    "bytes": 317
+  },
+  {
+    "file": "2_979_SimonSays.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.WorldEvents.SimonSays",
+    "bytes": 323
+  },
+  {
+    "file": "2_980_GauntletStatue.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.NoneEffectServerSignals.WorldEvents.GauntletStatue",
+    "bytes": 347
+  },
+  {
+    "file": "2_1118_Run_Animation.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerGui.UCS.Game_Play.Animations.Run_Animation",
+    "bytes": 3264
+  },
+  {
+    "file": "2_1314_PC.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.Keycodes.Platforms.PC",
+    "bytes": 2003
+  },
+  {
+    "file": "2_1315_Gamepad.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.Keycodes.Platforms.Gamepad",
+    "bytes": 4043
+  },
+  {
+    "file": "2_1316_AxeAndMace-GroundDrag.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Scenarios.Actuate.Scenarios.AxeAndMace-GroundDrag",
+    "bytes": 6956
+  },
+  {
+    "file": "2_1482_LocalScript.lua",
+    "profile": "clients",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Components.VisibilityHandler.Sets.Billboards.LocalScript",
+    "bytes": 693
+  }
+]

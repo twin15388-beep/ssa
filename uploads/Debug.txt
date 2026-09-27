@@ -1,0 +1,262 @@
+== STEP 1: vm_opcodes self-test (expect 'Result: 9/9' + '[OK] ALL PASSED')
+[OK] T1 mini opcode trace runs steps=36 err=None
+[OK] T2 q=1 -> ADD got 'ADD'
+[OK] T3 q=2 -> MULV, q=3 -> SUBV got 'MULV' 'SUBV'
+[OK] T4 dispatch counts 3/1/1 got (3, 1, 1)
+[OK] T5 operand window captured first=(9, 1, 1, 'ADD', ['1', '1'], [1, 2, 1, 3])
+[OK] T6 report contains mapping 
+[OK] T7 dispatcher autodetected (q,t,E) vars=('q', 't', 'E') root=True
+[OK] T8 static leaves: q=1 -> ADD, q=2 -> MULV, q>=3 -> SUBV t1='L:ADD()' t2='L:MULV()' t5='L:SUBV()'
+[OK] T9 intervals exact ivs=[(0, 1), (2, 2), (3, 1073741824)]
+
+Result: 9/9
+[OK] ALL PASSED
+[OK] vm_opcodes self-test passed
+
+== STEP 2: static opcode map of the real sample (instant, pure AST)
+dispatcher vars: q=q t=t E=E; root_if=True; leaves=157
+[OK] static map written: out\v146map.json + out\v146map.txt
+
+== STEP 3: vm_lift self-test (expect 'Result: 9/9' + '[OK] ALL PASSED')
+[OK] T1 header + function wrapper 
+[OK] T2 FRAMEINIT + LOADK inlined 
+[OK] T3 MOV / ADD registers 
+[OK] T4 SETTABLE const operands 
+[OK] T5 JMP + label L7 + RET 
+[OK] T6 unknown opcode fallback with substitution 
+[OK] T7 no float register names 
+[OK] T8 lift_frames max_frames 
+[OK] T9 demo lift of real frames len=112605
+
+Result: 9/9
+[OK] ALL PASSED
+[OK] vm_lift self-test passed
+
+== STEP 4: lift real VM frames of the sample (instant; first 12 lines shown)
+lifted -> out\lifted.txt (112885 chars)
+-- VM function vmfn1: 287 instrs, 15 regs (dump @step 2197821)
+function vmfn1(...)
+L1:
+  goto L153  --[[#1 JMP]]
+  r12["B"] = "wrap"  --[[#2 SETTABLE]]
+  r12["wL"] = "next"  --[[#3 SETTABLE]]
+  r12["Gf"] = "Connected"  --[[#4 SETTABLE]]
+  r12["kv"] = "HHputHlo"  --[[#5 SETTABLE]]
+  goto L29  --[[#6 JMP]]
+  r39 = r225; r38 = r225[nil]  --[[#7 SELF]]
+L8:
+[OK] lifted code written: out\lifted.txt
+
+== STEP 5: dynamic_decrypt self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] dynamic_decrypt self-test passed
+
+== STEP 6: moonsec string_harvest self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] string_harvest self-test passed
+
+== STEP 7: moonveil vm_trace self-test (expect 'Result: 6/6' + '[OK] ALL PASSED')
+Result: 6/6
+[OK] ALL PASSED
+[OK] vm_trace self-test passed
+
+== STEP 8: moonveil vm_state self-test (expect 'Result: 6/6' + '[OK] ALL PASSED')
+Result: 6/6
+[OK] ALL PASSED
+[OK] vm_state self-test passed
+
+== STEP 9: moonveil stream_assemble self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] stream_assemble self-test passed
+
+== STEP 10: moonveil vm_phase self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] vm_phase self-test passed
+
+== STEP 11: moonveil vm_tables self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] vm_tables self-test passed
+
+== STEP 12: moonveil vm_lift self-test (expect 'Result: 6/6' + '[OK] ALL PASSED')
+Result: 6/6
+[OK] ALL PASSED
+[OK] moonveil vm_lift self-test passed
+
+== STEP 13: wearedevs array_trace self-test (expect 'Result: 5/5' + '[OK] ALL PASSED')
+Result: 5/5
+[OK] ALL PASSED
+[OK] array_trace self-test passed
+
+== STEP 14: sprint7 round-trip (emitters vs decoders, expect 'Result: 5/5')
+Result: 5/5
+[OK] ALL PASSED
+[OK] sprint7 round-trip passed
+
+== STEP 15: moonsec mirror self-test (bit mirror vs real Lua closure, expect 8/8)
+Result: 8/8
+[OK] ALL PASSED
+[OK] moonsec mirror self-test passed
+
+
+== STEP 16: wearedevs array_mirror self-test (dual-codec decrypt mirror, expect 6/6)
+Result: 6/6
+[OK] ALL PASSED
+[OK] wearedevs array_mirror self-test passed
+
+== STEP 17: moonveil opcode_semantics self-test (effect classes from trace, expect 8/8)
+Result: 8/8
+[OK] ALL PASSED
+[OK] moonveil opcode_semantics self-test passed
+
+== STEP 18: moonsec vm_model self-test (VM architecture anchors, expect 6/6)
+Result: 6/6
+[OK] ALL PASSED
+[OK] moonsec vm_model self-test passed
+
+== STEP 19: moonsec proto_decode self-test (proto-stream + blob seed, expect 8/8)
+Result: 8/8
+[OK] ALL PASSED
+[OK] moonsec proto_decode self-test passed
+
+== STEP 20: moonsec msvm_opcodes self-test (proto opcode operand-shape profiler, expect 4/4)
+Result: 4/4
+[OK] ALL PASSED
+[OK] moonsec msvm_opcodes self-test passed
+
+== STEP 21: moonsec msvm_lift self-test (proto-tree pseudo-Lua lifter, expect 4/4)
+Result: 4/4
+[OK] ALL PASSED
+[OK] moonsec msvm_lift self-test passed
+
+== STEP 22: moonsec msvm_dispatch self-test (VM dispatch extractor, expect 6/6)
+Result: 6/6
+[OK] ALL PASSED
+[OK] moonsec msvm_dispatch self-test passed
+
+== STEP 23: moonsec msvm_semantics self-test (opcode semantics, expect 6/6)
+Result: 6/6
+[OK] ALL PASSED
+[OK] moonsec msvm_semantics self-test passed
+
+== STEP 24: moonsec msvm_decomp self-test (proto decompiler, expect 6/6)
+Result: 6/6
+[OK] ALL PASSED
+[OK] moonsec msvm_decomp self-test passed
+== EXPECTED: STEP2 'leaves=157'; STEP4 lines like 'function vmfn1(...)' and r12[...]=...; STEP22 'duplicate-body opcode groups'; STEP24 self-test lines
+[OK] ALL STEPS PASSED
+
+PS C:\Users\Malin\AppData\Local\Temp\funsrc\Fun-7ac497a0c6ce005929745c1c73dc02de237985bf> py -m obfuscator.deobfuscator.moonsec.proto_decode --sample obfuscator\deobfuscator\samples\other\moonsec_v3.lua --outdir out
+blob chars=13702 alphabet=85
+seed f=252  STRUCTURAL ee parse: consumed 6843/6843 (100.0%)
+protos(total)=14 instrs=516 consts=97 opcodes=90 range=[1, 153]
+top opcodes: [(152, 37), (24, 27), (12, 25), (27, 21), (5, 20), (2, 19), (6, 15), (18, 12), (1, 12), (7, 12)]
+string consts: 54, first 24:
+  'b"z\\x8c\\x15]\'\\xcf"'
+  "b'}\\x11@\\xbe+\\xa9'"
+  'print'
+  '/../../luacfex/getinternalsyscall-loadstring/isoverwrittenat'
+  'eɭs'
+  'string'
+  "b'\\x9fL\\xb2\\xc2'"
+  "b'b\\xc5\\xef\\x856\\xcf\\x00\\xbe\\xbb\\xe9'"
+  'x3YfS_d5W9!.26#h'
+  "b':\\xb0P\\xfb'"
+  'char'
+  "b'P\\x898\\xb0'"
+  "b'\\x17\\x03d\\xbc'"
+  "b'E\\xa5@\\x8b\\xe1s'"
+  "b'\\x80\\x9bs\\x1bD\\xda'"
+  'sub'
+  'b",l\\xf7\\x85\\x1a\'y*\\xa3"'
+  "b'g\\x10\\xda\\xf5'"
+  "b'\\x86\\xc3\\xdb\\xa2f\\x95\\xc2k#\\xc8\\xbeD\\xe6\\x0b\\xa2q\\xcbF'"
+  "b'\\xb6V[\\xbd'"
+  "b'&\\xe4\\x19\\xc8\\xec\\xf8oZ\\xb8)'"
+  'pcall'
+  'IPOPlHREtCwqUoSt'
+  "b'[\\x1f\\x95\\xa4'"
+saved -> out\protos.json out\proto_stats.json out\blob_decoded.bin
+PS C:\Users\Malin\AppData\Local\Temp\funsrc\Fun-7ac497a0c6ce005929745c1c73dc02de237985bf> py -m obfuscator.deobfuscator.moonsec.msvm_decomp --sample obfuscator\deobfuscator\samples\other\moonsec_v3.lua --protos out\protos.json --outdir out --maxlines 60
+protos: 14 ; slots: 516 ; macros: 368 ; filler(op24): 6 ; dead/unresolved: 12 (2.3%)
+  proto 0        slots=284  macros=199  junk=8
+  proto 0.0      slots=9    macros=9    junk=0
+  proto 0.1      slots=86   macros=67   junk=3
+  proto 0.1.0    slots=4    macros=4    junk=0
+  proto 0.1.1    slots=3    macros=3    junk=0
+  proto 0.1.2    slots=3    macros=3    junk=0
+  proto 0.1.3    slots=4    macros=4    junk=0
+  proto 0.2      slots=5    macros=1    junk=0
+  proto 0.3      slots=64   macros=52   junk=1
+  proto 0.4      slots=5    macros=1    junk=0
+  proto 0.5      slots=5    macros=1    junk=0
+  proto 0.6      slots=32   macros=22   junk=0
+  proto 0.6.0    slots=5    macros=1    junk=0
+  proto 0.6.1    slots=7    macros=1    junk=0
+-- ===== proto 0 (nparams=0, consts=70, instrs=284) =====
+function proto_0(...)
+  r0 = (1 ~= 0)  --[[#1.1 op=18]]
+  U["MoonSec_StringsHiddenAttr"] = r0  --[[#1.2 op=18]]
+  r0 = U["r_kJYaiWUYrnkkJSdpcCCsZpqeALEYSe"]  --[[#1.3 op=18]]
+  r1 = {}  --[[#1.4 op=18]]
+  r2 = {}  --[[#1.5 op=18]]
+  r3 = {}  --[[#1.6 op=18]]
+  r4 = "x3YfS_d5W9!.26#h"  --[[#1.7 op=18]]
+L8:
+  r5 = 0  --[[#8.1 op=12]]
+  forloop: goto L256  --[[#9.1 op=6]]
+L10:
+  r7 = G[1]  --[[#10.1 op=25]]
+  r5 = G[19]  --[[#10.2 op=25]]
+  r9 = G["string"]  --[[#10.3 op=25]]
+  r9 = r9["char"]  --[[#10.4 op=25]]
+  return r10(varargs)  --[[#10.5 op=25]]
+  return r9, ...  --[[#10.6 op=25]]
+  return  --[[#10.7 op=25]]
+  if not r9 then goto L3 end  --[[#17.1 op=20]]
+  --[[slot #18 skipped by TEST]]
+L18:
+  r2 = G[9]  --[[#18.1 op=25]]
+  r5 = G[11]  --[[#18.2 op=25]]
+  r5 = G[1]  --[[#18.3 op=25]]
+  r6 = r16[nil]  --[[#18.4 op=25]]
+  return r7(varargs)  --[[#18.5 op=25]]
+  return r5, ...  --[[#18.6 op=25]]
+  return  --[[#18.7 op=25]]
+  r10 = r4  --[[#25.1 op=38]]
+  r12 = r8[r0]  --[[#26.1 op=22]]
+  return r13, ...  --[[#27.1 op=7]]
+  r10 = 13  --[[#28.1 op=16]]
+  r9 = G[4]  --[[#30.1 op=25]]
+  r11 = G[8]  --[[#30.2 op=25]]
+  r12 = G[8]  --[[#30.3 op=25]]
+  r9 = r12[r2]  --[[#30.4 op=25]]
+  return r10(varargs)  --[[#30.5 op=25]]
+  return r3, ...  --[[#30.6 op=25]]
+  return  --[[#30.7 op=25]]
+  r5 = closure(<descriptors>)  --[[#37.1 op=123]]
+  --[[dead slot #42 op=20 A=6 B='getfenv' C=None]]
+  --[[unresolved slot #43 op=14 A=6 B=49 C=0]]
+  goto L50  --[[#44.1 op=152]]
+  r6 = U["getfenv"]  --[[#45.1 op=2]]
+  if not r6 then goto L2 end  --[[#46.1 op=99]]
+  --[[slot #47 skipped by TEST]]
+  r6 = r49  --[[#47.1 op=9]]
+  goto L50  --[[#48.1 op=152]]
+  goto L51  --[[#49.1 op=152]]
+L50:
+  r6 = U["IPOPlHREtCwqUoSt"]  --[[#50.1 op=2]]
+L51:
+  r7 = r5  --[[#51.1 op=5]]
+  r8 = "eɭs"  --[[#52.1 op=106]]
+  G[1] = r9  --[[#53.1 op=27]]
+  if nil then r10 = nil; goto L8 end  --[[#54.1 op=11]]
+  --[[slot #55 skipped by TESTSET]]
+  r11.. = varargs  --[[#55.1 op=19]]
+... (556 more lines -> out\msvm_decompiled.lua)
+saved -> out\msvm_decompiled.lua
+

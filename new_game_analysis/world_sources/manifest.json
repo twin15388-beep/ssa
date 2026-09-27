@@ -1,0 +1,1357 @@
+[
+  {
+    "file": "new_game_analysis/world_sources/000_gameSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.gameSettings",
+    "bytes": 9331
+  },
+  {
+    "file": "new_game_analysis/world_sources/001_Windy_Peak.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak",
+    "bytes": 1800
+  },
+  {
+    "file": "new_game_analysis/world_sources/002_Bamboo_Grove.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove",
+    "bytes": 1934
+  },
+  {
+    "file": "new_game_analysis/world_sources/003_Mistfall_Harbor.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor",
+    "bytes": 2453
+  },
+  {
+    "file": "new_game_analysis/world_sources/004_Hidden_Mist_Village.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village",
+    "bytes": 1549
+  },
+  {
+    "file": "new_game_analysis/world_sources/005_Misc.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc",
+    "bytes": 877
+  },
+  {
+    "file": "new_game_analysis/world_sources/006_Butterfly_Estate.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate",
+    "bytes": 1991
+  },
+  {
+    "file": "new_game_analysis/world_sources/007_Iceveil_Valley.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley",
+    "bytes": 2360
+  },
+  {
+    "file": "new_game_analysis/world_sources/008_Final_Selection_Plains.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains",
+    "bytes": 2457
+  },
+  {
+    "file": "new_game_analysis/world_sources/009_Verdant_Cliffs.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Verdant Cliffs",
+    "bytes": 1042
+  },
+  {
+    "file": "new_game_analysis/world_sources/010_Stone_Sanctuary.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Stone Sanctuary",
+    "bytes": 1009
+  },
+  {
+    "file": "new_game_analysis/world_sources/011_Forgotten_Ruins.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Forgotten Ruins",
+    "bytes": 1123
+  },
+  {
+    "file": "new_game_analysis/world_sources/012_BanditSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcShared.BanditSettings",
+    "bytes": 575
+  },
+  {
+    "file": "new_game_analysis/world_sources/013_CivilianSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcShared.CivilianSettings",
+    "bytes": 981
+  },
+  {
+    "file": "new_game_analysis/world_sources/014_Krue.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Krue",
+    "bytes": 553
+  },
+  {
+    "file": "new_game_analysis/world_sources/015_Raze.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Raze",
+    "bytes": 615
+  },
+  {
+    "file": "new_game_analysis/world_sources/016_Rika.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Rika",
+    "bytes": 1017
+  },
+  {
+    "file": "new_game_analysis/world_sources/017_Kazu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Kazu",
+    "bytes": 437
+  },
+  {
+    "file": "new_game_analysis/world_sources/018_Noote.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Noote",
+    "bytes": 542
+  },
+  {
+    "file": "new_game_analysis/world_sources/019_MoldySugar.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.MoldySugar",
+    "bytes": 626
+  },
+  {
+    "file": "new_game_analysis/world_sources/020_Lucy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Lucy",
+    "bytes": 488
+  },
+  {
+    "file": "new_game_analysis/world_sources/021_Kona.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Kona",
+    "bytes": 519
+  },
+  {
+    "file": "new_game_analysis/world_sources/022_Wagasa_Maker_Genzo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.Npcs.Wagasa Maker Genzo",
+    "bytes": 732
+  },
+  {
+    "file": "new_game_analysis/world_sources/023_Bandit.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.ActiveNpcs.Bandit",
+    "bytes": 876
+  },
+  {
+    "file": "new_game_analysis/world_sources/024_Civilian.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.ActiveNpcs.Civilian",
+    "bytes": 987
+  },
+  {
+    "file": "new_game_analysis/world_sources/025_Spy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.ActiveNpcs.Spy",
+    "bytes": 902
+  },
+  {
+    "file": "new_game_analysis/world_sources/026_Zuko.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.ActiveNpcs.Zuko",
+    "bytes": 905
+  },
+  {
+    "file": "new_game_analysis/world_sources/027_Tom.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Tom",
+    "bytes": 586
+  },
+  {
+    "file": "new_game_analysis/world_sources/028_Chaka.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Chaka",
+    "bytes": 477
+  },
+  {
+    "file": "new_game_analysis/world_sources/029_Betty.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Betty",
+    "bytes": 508
+  },
+  {
+    "file": "new_game_analysis/world_sources/030_Wagwan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Wagwan",
+    "bytes": 509
+  },
+  {
+    "file": "new_game_analysis/world_sources/031_Kuro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Kuro",
+    "bytes": 1080
+  },
+  {
+    "file": "new_game_analysis/world_sources/032_BearSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcShared.BearSettings",
+    "bytes": 412
+  },
+  {
+    "file": "new_game_analysis/world_sources/033_Bear_Cub.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Bear Cub",
+    "bytes": 869
+  },
+  {
+    "file": "new_game_analysis/world_sources/034_Hoyuzo_Subordinate.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Hoyuzo Subordinate",
+    "bytes": 913
+  },
+  {
+    "file": "new_game_analysis/world_sources/035_Hoyuzo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Hoyuzo",
+    "bytes": 820
+  },
+  {
+    "file": "new_game_analysis/world_sources/036_Kaiden_Subordinate.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Kaiden Subordinate",
+    "bytes": 897
+  },
+  {
+    "file": "new_game_analysis/world_sources/037_Kaiden.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Kaiden",
+    "bytes": 837
+  },
+  {
+    "file": "new_game_analysis/world_sources/038_Mother_Bear.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.ActiveNpcs.Mother Bear",
+    "bytes": 983
+  },
+  {
+    "file": "new_game_analysis/world_sources/039_MizunotoSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcShared.MizunotoSettings",
+    "bytes": 585
+  },
+  {
+    "file": "new_game_analysis/world_sources/040_BloodHoundedDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcShared.BloodHoundedDemonSettings",
+    "bytes": 687
+  },
+  {
+    "file": "new_game_analysis/world_sources/041_BeastBornSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcShared.BeastBornSettings",
+    "bytes": 309
+  },
+  {
+    "file": "new_game_analysis/world_sources/042_CivilianSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcShared.CivilianSettings",
+    "bytes": 631
+  },
+  {
+    "file": "new_game_analysis/world_sources/043_Elara.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Elara",
+    "bytes": 1765
+  },
+  {
+    "file": "new_game_analysis/world_sources/044_Ginzo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Ginzo",
+    "bytes": 829
+  },
+  {
+    "file": "new_game_analysis/world_sources/045_Rin.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Rin",
+    "bytes": 634
+  },
+  {
+    "file": "new_game_analysis/world_sources/046_Meku.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Meku",
+    "bytes": 972
+  },
+  {
+    "file": "new_game_analysis/world_sources/047_Sofen.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Sofen",
+    "bytes": 724
+  },
+  {
+    "file": "new_game_analysis/world_sources/048_Fisherman_Jeso.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Fisherman Jeso",
+    "bytes": 1405
+  },
+  {
+    "file": "new_game_analysis/world_sources/049_Angler_Runo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Angler Runo",
+    "bytes": 646
+  },
+  {
+    "file": "new_game_analysis/world_sources/050_Drowned_Line.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Drowned Line",
+    "bytes": 244
+  },
+  {
+    "file": "new_game_analysis/world_sources/051_Isao.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Isao",
+    "bytes": 626
+  },
+  {
+    "file": "new_game_analysis/world_sources/052_Niko.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Niko",
+    "bytes": 592
+  },
+  {
+    "file": "new_game_analysis/world_sources/053_Beast_Born_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.ActiveNpcs.Beast Born Demon",
+    "bytes": 923
+  },
+  {
+    "file": "new_game_analysis/world_sources/054_Civilian.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.ActiveNpcs.Civilian",
+    "bytes": 1239
+  },
+  {
+    "file": "new_game_analysis/world_sources/055_Baitmonger_Nori.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.Npcs.Baitmonger Nori",
+    "bytes": 782
+  },
+  {
+    "file": "new_game_analysis/world_sources/056_Refiner_Hagane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.Npcs.Refiner Hagane",
+    "bytes": 704
+  },
+  {
+    "file": "new_game_analysis/world_sources/057_Blacksmith_Togane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.Npcs.Blacksmith Togane",
+    "bytes": 708
+  },
+  {
+    "file": "new_game_analysis/world_sources/058_Yagane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.Npcs.Yagane",
+    "bytes": 561
+  },
+  {
+    "file": "new_game_analysis/world_sources/059_Stonemason_Tobei.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.Npcs.Stonemason Tobei",
+    "bytes": 501
+  },
+  {
+    "file": "new_game_analysis/world_sources/060_Black_Marketer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Black Marketer",
+    "bytes": 2387
+  },
+  {
+    "file": "new_game_analysis/world_sources/061_Horse.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Horse",
+    "bytes": 1223
+  },
+  {
+    "file": "new_game_analysis/world_sources/062_Sealed_Chest_T2.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Sealed Chest T2",
+    "bytes": 1298
+  },
+  {
+    "file": "new_game_analysis/world_sources/063_Sealed_Chest_T1.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Sealed Chest T1",
+    "bytes": 1162
+  },
+  {
+    "file": "new_game_analysis/world_sources/064_Flame_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Flame Trainer",
+    "bytes": 650
+  },
+  {
+    "file": "new_game_analysis/world_sources/065_Thunder_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Thunder Trainer",
+    "bytes": 650
+  },
+  {
+    "file": "new_game_analysis/world_sources/066_Harvester_of_Souls_Zurinyz.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Harvester of Souls Zurinyz",
+    "bytes": 690
+  },
+  {
+    "file": "new_game_analysis/world_sources/067_Yeti_Summon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Yeti Summon",
+    "bytes": 242
+  },
+  {
+    "file": "new_game_analysis/world_sources/068_Sealed_Chest_T3.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Sealed Chest T3",
+    "bytes": 1231
+  },
+  {
+    "file": "new_game_analysis/world_sources/069_Tai_Chi_Expert_Renjiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Tai Chi Expert Renjiro",
+    "bytes": 684
+  },
+  {
+    "file": "new_game_analysis/world_sources/070_Water_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Water Trainer",
+    "bytes": 653
+  },
+  {
+    "file": "new_game_analysis/world_sources/071_Insect_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Insect Trainer",
+    "bytes": 573
+  },
+  {
+    "file": "new_game_analysis/world_sources/072_Soryu_Expert_Kazuma.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Soryu Expert Kazuma",
+    "bytes": 750
+  },
+  {
+    "file": "new_game_analysis/world_sources/073_Wind_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Wind Trainer",
+    "bytes": 651
+  },
+  {
+    "file": "new_game_analysis/world_sources/074_Sound_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Sound Trainer",
+    "bytes": 635
+  },
+  {
+    "file": "new_game_analysis/world_sources/075_Serpent_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Serpent Trainer",
+    "bytes": 649
+  },
+  {
+    "file": "new_game_analysis/world_sources/076_Stone_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Stone Trainer",
+    "bytes": 650
+  },
+  {
+    "file": "new_game_analysis/world_sources/077_Boss_Hunts.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Boss Hunts",
+    "bytes": 261
+  },
+  {
+    "file": "new_game_analysis/world_sources/078_Muzan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Muzan",
+    "bytes": 4093
+  },
+  {
+    "file": "new_game_analysis/world_sources/079_Lamplighter_Isamu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Lamplighter Isamu",
+    "bytes": 647
+  },
+  {
+    "file": "new_game_analysis/world_sources/080_Weaver_Hatsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Weaver Hatsu",
+    "bytes": 614
+  },
+  {
+    "file": "new_game_analysis/world_sources/081_Tailor_Omi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Tailor Omi",
+    "bytes": 616
+  },
+  {
+    "file": "new_game_analysis/world_sources/082_Study_Props.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Study Props",
+    "bytes": 236
+  },
+  {
+    "file": "new_game_analysis/world_sources/083_Serpent_Box.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Serpent Box",
+    "bytes": 237
+  },
+  {
+    "file": "new_game_analysis/world_sources/084_Duelist_Hibiki.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.Npcs.Duelist Hibiki",
+    "bytes": 549
+  },
+  {
+    "file": "new_game_analysis/world_sources/085_Akazo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Akazo",
+    "bytes": 866
+  },
+  {
+    "file": "new_game_analysis/world_sources/086_Datai.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Datai",
+    "bytes": 849
+  },
+  {
+    "file": "new_game_analysis/world_sources/087_Domae.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Domae",
+    "bytes": 860
+  },
+  {
+    "file": "new_game_analysis/world_sources/088_Enru.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Enru",
+    "bytes": 845
+  },
+  {
+    "file": "new_game_analysis/world_sources/089_Flame_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Flame Trainee",
+    "bytes": 875
+  },
+  {
+    "file": "new_game_analysis/world_sources/090_Giyen.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Giyen",
+    "bytes": 845
+  },
+  {
+    "file": "new_game_analysis/world_sources/091_Gyorei.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Gyorei",
+    "bytes": 850
+  },
+  {
+    "file": "new_game_analysis/world_sources/092_Gyutai.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Gyutai",
+    "bytes": 868
+  },
+  {
+    "file": "new_game_analysis/world_sources/093_Insect_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Insect Trainee",
+    "bytes": 806
+  },
+  {
+    "file": "new_game_analysis/world_sources/094_Nezura.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Nezura",
+    "bytes": 864
+  },
+  {
+    "file": "new_game_analysis/world_sources/095_Obari.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Obari",
+    "bytes": 849
+  },
+  {
+    "file": "new_game_analysis/world_sources/096_Reaper_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Reaper Trainee",
+    "bytes": 891
+  },
+  {
+    "file": "new_game_analysis/world_sources/097_Reaper.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Reaper",
+    "bytes": 854
+  },
+  {
+    "file": "new_game_analysis/world_sources/098_Rengu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Rengu",
+    "bytes": 845
+  },
+  {
+    "file": "new_game_analysis/world_sources/099_Saneri.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Saneri",
+    "bytes": 860
+  },
+  {
+    "file": "new_game_analysis/world_sources/100_Serpent_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Serpent Trainee",
+    "bytes": 814
+  },
+  {
+    "file": "new_game_analysis/world_sources/101_Shinora.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Shinora",
+    "bytes": 856
+  },
+  {
+    "file": "new_game_analysis/world_sources/102_Soryu_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Soryu Trainee",
+    "bytes": 878
+  },
+  {
+    "file": "new_game_analysis/world_sources/103_Sound_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Sound Trainee",
+    "bytes": 802
+  },
+  {
+    "file": "new_game_analysis/world_sources/104_Stone_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Stone Trainee",
+    "bytes": 810
+  },
+  {
+    "file": "new_game_analysis/world_sources/105_Sumari.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Sumari",
+    "bytes": 856
+  },
+  {
+    "file": "new_game_analysis/world_sources/106_Tai_Chi_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Tai Chi Trainee",
+    "bytes": 885
+  },
+  {
+    "file": "new_game_analysis/world_sources/107_Tengai.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Tengai",
+    "bytes": 854
+  },
+  {
+    "file": "new_game_analysis/world_sources/108_Thunder_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Thunder Trainee",
+    "bytes": 884
+  },
+  {
+    "file": "new_game_analysis/world_sources/109_Water_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Water Trainee",
+    "bytes": 881
+  },
+  {
+    "file": "new_game_analysis/world_sources/110_Wind_Trainee.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Wind Trainee",
+    "bytes": 804
+  },
+  {
+    "file": "new_game_analysis/world_sources/111_Yahari.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Yahari",
+    "bytes": 859
+  },
+  {
+    "file": "new_game_analysis/world_sources/112_Zentaro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.ActiveNpcs.Zentaro",
+    "bytes": 859
+  },
+  {
+    "file": "new_game_analysis/world_sources/113_Shiori.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.Npcs.Shiori",
+    "bytes": 605
+  },
+  {
+    "file": "new_game_analysis/world_sources/114_Ren.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.Npcs.Ren",
+    "bytes": 1710
+  },
+  {
+    "file": "new_game_analysis/world_sources/115_LesserDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcShared.LesserDemonSettings",
+    "bytes": 417
+  },
+  {
+    "file": "new_game_analysis/world_sources/116_GreaterDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcShared.GreaterDemonSettings",
+    "bytes": 423
+  },
+  {
+    "file": "new_game_analysis/world_sources/117_Old_Trapper_Retsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Old Trapper Retsu",
+    "bytes": 572
+  },
+  {
+    "file": "new_game_analysis/world_sources/118_Wounded_Slayer_Tomoi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Wounded Slayer Tomoi",
+    "bytes": 730
+  },
+  {
+    "file": "new_game_analysis/world_sources/119_Demon_Slayer_Mitsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Demon Slayer Mitsu",
+    "bytes": 656
+  },
+  {
+    "file": "new_game_analysis/world_sources/120_Demon_Delroy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Demon Delroy",
+    "bytes": 688
+  },
+  {
+    "file": "new_game_analysis/world_sources/121_Foxfire.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Foxfire",
+    "bytes": 235
+  },
+  {
+    "file": "new_game_analysis/world_sources/122_Chest_Mounds.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Chest Mounds",
+    "bytes": 2068
+  },
+  {
+    "file": "new_game_analysis/world_sources/123_HighDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcShared.HighDemonSettings",
+    "bytes": 416
+  },
+  {
+    "file": "new_game_analysis/world_sources/124_IceProfoundDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcShared.IceProfoundDemonSettings",
+    "bytes": 555
+  },
+  {
+    "file": "new_game_analysis/world_sources/125_FireProfoundDemonSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcShared.FireProfoundDemonSettings",
+    "bytes": 472
+  },
+  {
+    "file": "new_game_analysis/world_sources/126_KanoeDemonSlayerSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcShared.KanoeDemonSlayerSettings",
+    "bytes": 439
+  },
+  {
+    "file": "new_game_analysis/world_sources/127_Fire_Profound_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.ActiveNpcs.Fire Profound Demon",
+    "bytes": 955
+  },
+  {
+    "file": "new_game_analysis/world_sources/128_High_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.ActiveNpcs.High Demon",
+    "bytes": 896
+  },
+  {
+    "file": "new_game_analysis/world_sources/129_Ice_Profound_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.ActiveNpcs.Ice Profound Demon",
+    "bytes": 946
+  },
+  {
+    "file": "new_game_analysis/world_sources/130_Kanoe_Demon_Slayer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.ActiveNpcs.Kanoe Demon Slayer",
+    "bytes": 987
+  },
+  {
+    "file": "new_game_analysis/world_sources/131_UbuSister1.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.Npcs.UbuSister1",
+    "bytes": 575
+  },
+  {
+    "file": "new_game_analysis/world_sources/132_UbuSister2.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.Npcs.UbuSister2",
+    "bytes": 575
+  },
+  {
+    "file": "new_game_analysis/world_sources/133_MizunoeDemonSlayerSettings.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.NpcShared.MizunoeDemonSlayerSettings",
+    "bytes": 408
+  },
+  {
+    "file": "new_game_analysis/world_sources/134_Fujiko.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.ActiveNpcs.Fujiko",
+    "bytes": 845
+  },
+  {
+    "file": "new_game_analysis/world_sources/135_Liv.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.Npcs.Bamboo Grove Sanctuary.Liv",
+    "bytes": 542
+  },
+  {
+    "file": "new_game_analysis/world_sources/136_Rooyi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Seasons Crossing.Rooyi",
+    "bytes": 539
+  },
+  {
+    "file": "new_game_analysis/world_sources/137_Jugg.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.Npcs.Dreamfall Hollow.Jugg",
+    "bytes": 749
+  },
+  {
+    "file": "new_game_analysis/world_sources/138_Blood_Hounded_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.ActiveNpcs.Dreamfall Hollow.Blood Hounded Demon",
+    "bytes": 1013
+  },
+  {
+    "file": "new_game_analysis/world_sources/139_Mizunoto.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.ActiveNpcs.Seasons Crossing.Mizunoto",
+    "bytes": 908
+  },
+  {
+    "file": "new_game_analysis/world_sources/140_Demon_Slayer_Goro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.Npcs.Veilfall Cavern.Demon Slayer Goro",
+    "bytes": 686
+  },
+  {
+    "file": "new_game_analysis/world_sources/141_Greater_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.ActiveNpcs.Veilfall Cavern.Greater Demon",
+    "bytes": 969
+  },
+  {
+    "file": "new_game_analysis/world_sources/142_Lesser_Demon.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.ActiveNpcs.Veilfall Cavern.Lesser Demon",
+    "bytes": 940
+  },
+  {
+    "file": "new_game_analysis/world_sources/143_Iceveil_Guard_Shiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Iceveil Settlement.Iceveil Guard Shiro",
+    "bytes": 670
+  },
+  {
+    "file": "new_game_analysis/world_sources/144_Shrine_Messenger_Akio.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Iceveil Settlement.Shrine Messenger Akio",
+    "bytes": 599
+  },
+  {
+    "file": "new_game_analysis/world_sources/145_Winter_Store_Rep_Lynx.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.Npcs.Iceveil Settlement.Winter Store Rep Lynx",
+    "bytes": 2185
+  },
+  {
+    "file": "new_game_analysis/world_sources/146_Demon_Mokuro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.Npcs.The White Terror Lair.Demon Mokuro",
+    "bytes": 684
+  },
+  {
+    "file": "new_game_analysis/world_sources/147_Mizunoe_Demon_Slayer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.ActiveNpcs.The White Terror Lair.Mizunoe Demon Slayer",
+    "bytes": 1010
+  },
+  {
+    "file": "new_game_analysis/world_sources/148_Krue.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Krue",
+    "bytes": 272
+  },
+  {
+    "file": "new_game_analysis/world_sources/149_Raze.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Raze",
+    "bytes": 145
+  },
+  {
+    "file": "new_game_analysis/world_sources/150_Rika.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Rika",
+    "bytes": 426
+  },
+  {
+    "file": "new_game_analysis/world_sources/151_Kazu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Kazu",
+    "bytes": 2174
+  },
+  {
+    "file": "new_game_analysis/world_sources/152_Noote.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Noote",
+    "bytes": 2855
+  },
+  {
+    "file": "new_game_analysis/world_sources/153_MoldySugar.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.MoldySugar",
+    "bytes": 1463
+  },
+  {
+    "file": "new_game_analysis/world_sources/154_Lucy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Lucy",
+    "bytes": 1423
+  },
+  {
+    "file": "new_game_analysis/world_sources/155_Kona.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Kona",
+    "bytes": 2040
+  },
+  {
+    "file": "new_game_analysis/world_sources/156_Firstlight_Wagasa_NPC.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Yap.Firstlight Wagasa NPC",
+    "bytes": 2686
+  },
+  {
+    "file": "new_game_analysis/world_sources/157_Krue.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.Krue",
+    "bytes": 926
+  },
+  {
+    "file": "new_game_analysis/world_sources/158_Kazu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.Kazu",
+    "bytes": 1121
+  },
+  {
+    "file": "new_game_analysis/world_sources/159_Noote.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.Noote",
+    "bytes": 847
+  },
+  {
+    "file": "new_game_analysis/world_sources/160_MoldySugar.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.MoldySugar",
+    "bytes": 765
+  },
+  {
+    "file": "new_game_analysis/world_sources/161_Lucy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.Lucy",
+    "bytes": 933
+  },
+  {
+    "file": "new_game_analysis/world_sources/162_Kona.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Quests.Kona",
+    "bytes": 908
+  },
+  {
+    "file": "new_game_analysis/world_sources/163_QuestActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Functions.QuestActions",
+    "bytes": 472
+  },
+  {
+    "file": "new_game_analysis/world_sources/164_WagasaActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Windy Peak.NpcContents.Dialogues.Functions.WagasaActions",
+    "bytes": 833
+  },
+  {
+    "file": "new_game_analysis/world_sources/165_Tom.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Tom",
+    "bytes": 1491
+  },
+  {
+    "file": "new_game_analysis/world_sources/166_Chaka.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Chaka",
+    "bytes": 2237
+  },
+  {
+    "file": "new_game_analysis/world_sources/167_Betty.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Betty",
+    "bytes": 1308
+  },
+  {
+    "file": "new_game_analysis/world_sources/168_Wagwan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Wagwan",
+    "bytes": 1693
+  },
+  {
+    "file": "new_game_analysis/world_sources/169_Kuro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Kuro",
+    "bytes": 1388
+  },
+  {
+    "file": "new_game_analysis/world_sources/170_Liv.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Yap.Liv",
+    "bytes": 2754
+  },
+  {
+    "file": "new_game_analysis/world_sources/171_Tom.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Quests.Tom",
+    "bytes": 1422
+  },
+  {
+    "file": "new_game_analysis/world_sources/172_Chaka.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Quests.Chaka",
+    "bytes": 1038
+  },
+  {
+    "file": "new_game_analysis/world_sources/173_Betty.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Quests.Betty",
+    "bytes": 871
+  },
+  {
+    "file": "new_game_analysis/world_sources/174_Wagwan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Quests.Wagwan",
+    "bytes": 1020
+  },
+  {
+    "file": "new_game_analysis/world_sources/175_Liv.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Quests.Liv",
+    "bytes": 2328
+  },
+  {
+    "file": "new_game_analysis/world_sources/176_LivActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Functions.LivActions",
+    "bytes": 634
+  },
+  {
+    "file": "new_game_analysis/world_sources/177_QuestActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Bamboo Grove.NpcContents.Dialogues.Functions.QuestActions",
+    "bytes": 318
+  },
+  {
+    "file": "new_game_analysis/world_sources/178_MerchantActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Functions.MerchantActions",
+    "bytes": 2337
+  },
+  {
+    "file": "new_game_analysis/world_sources/179_DockActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Functions.DockActions",
+    "bytes": 1666
+  },
+  {
+    "file": "new_game_analysis/world_sources/180_WarFansActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Functions.WarFansActions",
+    "bytes": 387
+  },
+  {
+    "file": "new_game_analysis/world_sources/181_Ginzo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Ginzo",
+    "bytes": 1129
+  },
+  {
+    "file": "new_game_analysis/world_sources/182_Rin.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Rin",
+    "bytes": 874
+  },
+  {
+    "file": "new_game_analysis/world_sources/183_Sofen.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Sofen",
+    "bytes": 1229
+  },
+  {
+    "file": "new_game_analysis/world_sources/184_Angler_Runo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Angler Runo",
+    "bytes": 3170
+  },
+  {
+    "file": "new_game_analysis/world_sources/185_Niko.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Niko",
+    "bytes": 1069
+  },
+  {
+    "file": "new_game_analysis/world_sources/186_Elara.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Elara",
+    "bytes": 1779
+  },
+  {
+    "file": "new_game_analysis/world_sources/187_Ginzo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Ginzo",
+    "bytes": 3876
+  },
+  {
+    "file": "new_game_analysis/world_sources/188_Rin.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Rin",
+    "bytes": 1202
+  },
+  {
+    "file": "new_game_analysis/world_sources/189_Meku.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Meku",
+    "bytes": 934
+  },
+  {
+    "file": "new_game_analysis/world_sources/190_Sofen.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Sofen",
+    "bytes": 6614
+  },
+  {
+    "file": "new_game_analysis/world_sources/191_Fisherman_Jeso.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Fisherman Jeso",
+    "bytes": 8256
+  },
+  {
+    "file": "new_game_analysis/world_sources/192_Angler_Runo.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Angler Runo",
+    "bytes": 6288
+  },
+  {
+    "file": "new_game_analysis/world_sources/193_Isao.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Isao",
+    "bytes": 3896
+  },
+  {
+    "file": "new_game_analysis/world_sources/194_Niko.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Niko",
+    "bytes": 2419
+  },
+  {
+    "file": "new_game_analysis/world_sources/195_Baitmonger_Nori.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Yap.Baitmonger Nori",
+    "bytes": 2582
+  },
+  {
+    "file": "new_game_analysis/world_sources/196_Refiner_Hagane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Yap.Refiner Hagane",
+    "bytes": 711
+  },
+  {
+    "file": "new_game_analysis/world_sources/197_Blacksmith_Togane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Yap.Blacksmith Togane",
+    "bytes": 4159
+  },
+  {
+    "file": "new_game_analysis/world_sources/198_Yagane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Yap.Yagane",
+    "bytes": 1510
+  },
+  {
+    "file": "new_game_analysis/world_sources/199_Stonemason_Tobei.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Yap.Stonemason Tobei",
+    "bytes": 1887
+  },
+  {
+    "file": "new_game_analysis/world_sources/200_StatueActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Functions.StatueActions",
+    "bytes": 914
+  },
+  {
+    "file": "new_game_analysis/world_sources/201_SeriesCapstoneActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Functions.SeriesCapstoneActions",
+    "bytes": 1337
+  },
+  {
+    "file": "new_game_analysis/world_sources/202_MaterialExchangeActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Functions.MaterialExchangeActions",
+    "bytes": 2109
+  },
+  {
+    "file": "new_game_analysis/world_sources/203_Blacksmith_Togane.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Hidden Mist Village.NpcContents.Dialogues.Quests.Blacksmith Togane",
+    "bytes": 859
+  },
+  {
+    "file": "new_game_analysis/world_sources/204_MuzanActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Functions.MuzanActions",
+    "bytes": 685
+  },
+  {
+    "file": "new_game_analysis/world_sources/205_StyleTrialActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Functions.StyleTrialActions",
+    "bytes": 593
+  },
+  {
+    "file": "new_game_analysis/world_sources/206_SeriesTradeActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Functions.SeriesTradeActions",
+    "bytes": 1183
+  },
+  {
+    "file": "new_game_analysis/world_sources/207_CleaverDuelActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Functions.CleaverDuelActions",
+    "bytes": 379
+  },
+  {
+    "file": "new_game_analysis/world_sources/208_Muzan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Muzan",
+    "bytes": 764
+  },
+  {
+    "file": "new_game_analysis/world_sources/209_Flame_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Flame Trainer",
+    "bytes": 1727
+  },
+  {
+    "file": "new_game_analysis/world_sources/210_Thunder_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Thunder Trainer",
+    "bytes": 1738
+  },
+  {
+    "file": "new_game_analysis/world_sources/211_Water_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Water Trainer",
+    "bytes": 2010
+  },
+  {
+    "file": "new_game_analysis/world_sources/212_Wind_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Wind Trainer",
+    "bytes": 1742
+  },
+  {
+    "file": "new_game_analysis/world_sources/213_Stone_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Stone Trainer",
+    "bytes": 1955
+  },
+  {
+    "file": "new_game_analysis/world_sources/214_Serpent_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Serpent Trainer",
+    "bytes": 1802
+  },
+  {
+    "file": "new_game_analysis/world_sources/215_Insect_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Insect Trainer",
+    "bytes": 1791
+  },
+  {
+    "file": "new_game_analysis/world_sources/216_Sound_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Sound Trainer",
+    "bytes": 1927
+  },
+  {
+    "file": "new_game_analysis/world_sources/217_Evil_Art_Cores.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Evil Art Cores",
+    "bytes": 205
+  },
+  {
+    "file": "new_game_analysis/world_sources/218_Soryu_Expert_Kazuma.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Soryu Expert Kazuma",
+    "bytes": 1593
+  },
+  {
+    "file": "new_game_analysis/world_sources/219_Tai_Chi_Expert_Renjiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Tai Chi Expert Renjiro",
+    "bytes": 1641
+  },
+  {
+    "file": "new_game_analysis/world_sources/220_Harvester_of_Souls_Zurinyz.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Harvester of Souls Zurinyz",
+    "bytes": 1681
+  },
+  {
+    "file": "new_game_analysis/world_sources/221_Boss_Hunts.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Boss Hunts",
+    "bytes": 202
+  },
+  {
+    "file": "new_game_analysis/world_sources/222_Lamplighter_Isamu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Quests.Lamplighter Isamu",
+    "bytes": 602
+  },
+  {
+    "file": "new_game_analysis/world_sources/223_Muzan.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Muzan",
+    "bytes": 2243
+  },
+  {
+    "file": "new_game_analysis/world_sources/224_Black_Marketer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Black Marketer",
+    "bytes": 1347
+  },
+  {
+    "file": "new_game_analysis/world_sources/225_Flame_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Flame Trainer",
+    "bytes": 2028
+  },
+  {
+    "file": "new_game_analysis/world_sources/226_Thunder_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Thunder Trainer",
+    "bytes": 2286
+  },
+  {
+    "file": "new_game_analysis/world_sources/227_Water_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Water Trainer",
+    "bytes": 2075
+  },
+  {
+    "file": "new_game_analysis/world_sources/228_Wind_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Wind Trainer",
+    "bytes": 2047
+  },
+  {
+    "file": "new_game_analysis/world_sources/229_Stone_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Stone Trainer",
+    "bytes": 2833
+  },
+  {
+    "file": "new_game_analysis/world_sources/230_Serpent_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Serpent Trainer",
+    "bytes": 2145
+  },
+  {
+    "file": "new_game_analysis/world_sources/231_Insect_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Insect Trainer",
+    "bytes": 2078
+  },
+  {
+    "file": "new_game_analysis/world_sources/232_Sound_Trainer.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Sound Trainer",
+    "bytes": 2128
+  },
+  {
+    "file": "new_game_analysis/world_sources/233_Soryu_Expert_Kazuma.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Soryu Expert Kazuma",
+    "bytes": 2295
+  },
+  {
+    "file": "new_game_analysis/world_sources/234_Tai_Chi_Expert_Renjiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Tai Chi Expert Renjiro",
+    "bytes": 2431
+  },
+  {
+    "file": "new_game_analysis/world_sources/235_Harvester_of_Souls_Zurinyz.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Harvester of Souls Zurinyz",
+    "bytes": 2635
+  },
+  {
+    "file": "new_game_analysis/world_sources/236_Lamplighter_Isamu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Lamplighter Isamu",
+    "bytes": 1613
+  },
+  {
+    "file": "new_game_analysis/world_sources/237_Weaver_Hatsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Weaver Hatsu",
+    "bytes": 1553
+  },
+  {
+    "file": "new_game_analysis/world_sources/238_Tailor_Omi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Tailor Omi",
+    "bytes": 1570
+  },
+  {
+    "file": "new_game_analysis/world_sources/239_Duelist_Hibiki.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Misc.NpcContents.Dialogues.Yap.Duelist Hibiki",
+    "bytes": 1181
+  },
+  {
+    "file": "new_game_analysis/world_sources/240_Shiori.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Quests.Shiori",
+    "bytes": 2614
+  },
+  {
+    "file": "new_game_analysis/world_sources/241_Ren.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Quests.Ren",
+    "bytes": 863
+  },
+  {
+    "file": "new_game_analysis/world_sources/242_Shiori.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Yap.Shiori",
+    "bytes": 8783
+  },
+  {
+    "file": "new_game_analysis/world_sources/243_Ren.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Yap.Ren",
+    "bytes": 4171
+  },
+  {
+    "file": "new_game_analysis/world_sources/244_InfirmaryActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Functions.InfirmaryActions",
+    "bytes": 617
+  },
+  {
+    "file": "new_game_analysis/world_sources/245_RenActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Functions.RenActions",
+    "bytes": 299
+  },
+  {
+    "file": "new_game_analysis/world_sources/246_WarFansActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Functions.WarFansActions",
+    "bytes": 388
+  },
+  {
+    "file": "new_game_analysis/world_sources/247_Old_Trapper_Retsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Old Trapper Retsu",
+    "bytes": 5160
+  },
+  {
+    "file": "new_game_analysis/world_sources/248_Wounded_Slayer_Tomoi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Wounded Slayer Tomoi",
+    "bytes": 959
+  },
+  {
+    "file": "new_game_analysis/world_sources/249_Demon_Slayer_Mitsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Demon Slayer Mitsu",
+    "bytes": 2043
+  },
+  {
+    "file": "new_game_analysis/world_sources/250_Demon_Delroy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Demon Delroy",
+    "bytes": 1015
+  },
+  {
+    "file": "new_game_analysis/world_sources/251_Wounded_Slayer_Tomoi.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Quests.Wounded Slayer Tomoi",
+    "bytes": 914
+  },
+  {
+    "file": "new_game_analysis/world_sources/252_Demon_Slayer_Mitsu.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Quests.Demon Slayer Mitsu",
+    "bytes": 1598
+  },
+  {
+    "file": "new_game_analysis/world_sources/253_Demon_Delroy.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Quests.Demon Delroy",
+    "bytes": 948
+  },
+  {
+    "file": "new_game_analysis/world_sources/254_FoxfireActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Functions.FoxfireActions",
+    "bytes": 1957
+  },
+  {
+    "file": "new_game_analysis/world_sources/255_WarFansActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Functions.WarFansActions",
+    "bytes": 558
+  },
+  {
+    "file": "new_game_analysis/world_sources/256_QuestActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Functions.Seasons Crossing.QuestActions",
+    "bytes": 356
+  },
+  {
+    "file": "new_game_analysis/world_sources/257_Shady_Individual.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Seasons Crossing.Shady Individual",
+    "bytes": 1408
+  },
+  {
+    "file": "new_game_analysis/world_sources/258_Jugg.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Quests.Dreamfall Hollow.Jugg",
+    "bytes": 946
+  },
+  {
+    "file": "new_game_analysis/world_sources/259_Shady_Individual.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Seasons Crossing.Shady Individual",
+    "bytes": 1488
+  },
+  {
+    "file": "new_game_analysis/world_sources/260_Jugg.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Mistfall Harbor.NpcContents.Dialogues.Yap.Dreamfall Hollow.Jugg",
+    "bytes": 872
+  },
+  {
+    "file": "new_game_analysis/world_sources/261_Demon_Slayer_Goro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Quests.Veilfall Cavern.Demon Slayer Goro",
+    "bytes": 1664
+  },
+  {
+    "file": "new_game_analysis/world_sources/262_Demon_Slayer_Goro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Butterfly Estate.NpcContents.Dialogues.Yap.Veilfall Cavern.Demon Slayer Goro",
+    "bytes": 2698
+  },
+  {
+    "file": "new_game_analysis/world_sources/263_Iceveil_Guard_Shiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Iceveil Settlement.Iceveil Guard Shiro",
+    "bytes": 5556
+  },
+  {
+    "file": "new_game_analysis/world_sources/264_Shrine_Messenger_Akio.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Iceveil Settlement.Shrine Messenger Akio",
+    "bytes": 4279
+  },
+  {
+    "file": "new_game_analysis/world_sources/265_Winter_Store_Rep_Lynx.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Yap.Iceveil Settlement.Winter Store Rep Lynx",
+    "bytes": 2739
+  },
+  {
+    "file": "new_game_analysis/world_sources/266_Iceveil_Guard_Shiro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Quests.Iceveil Settlement.Iceveil Guard Shiro",
+    "bytes": 2885
+  },
+  {
+    "file": "new_game_analysis/world_sources/267_Shrine_Messenger_Akio.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Quests.Iceveil Settlement.Shrine Messenger Akio",
+    "bytes": 1794
+  },
+  {
+    "file": "new_game_analysis/world_sources/268_GateActions.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Iceveil Valley.NpcContents.Dialogues.Functions.Iceveil Settlement.GateActions",
+    "bytes": 623
+  },
+  {
+    "file": "new_game_analysis/world_sources/269_Demon_Mokuro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.NpcContents.Dialogues.Quests.The White Terror Lair.Demon Mokuro",
+    "bytes": 962
+  },
+  {
+    "file": "new_game_analysis/world_sources/270_Demon_Mokuro.lua",
+    "path": "ReplicatedStorage.Ouwland.Content.Final Selection Plains.NpcContents.Dialogues.Yap.The White Terror Lair.Demon Mokuro",
+    "bytes": 1847
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "file": "new_game_analysis/oneclick_sources/000_Dialogue.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dialogue",
+    "bytes": 10272
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/001_Regions.lua",
+    "path": "ReplicatedStorage.Regions",
+    "bytes": 22953
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/002_Quests.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests",
+    "bytes": 11881
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/003_RecommendedQuest.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.RecommendedQuest",
+    "bytes": 4433
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/004_ToolbarItemRestrictions.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.ToolbarItemRestrictions",
+    "bytes": 6311
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/005_ItemRequirements.lua",
+    "path": "ReplicatedStorage.CAM.Global.Collectibles.ItemRequirements",
+    "bytes": 3838
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/006_Dash_Handler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dash_Handler",
+    "bytes": 1581
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/007_Shop.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop",
+    "bytes": 43511
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/008_InputHandler.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Client.InputHandler",
+    "bytes": 29256
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/009_Skills_Provider.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skills_Provider",
+    "bytes": 17186
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/010_Skill_Controller.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skill_Controller",
+    "bytes": 19458
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/011_Toolbar.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame.EquippedOptions.Toolbar",
+    "bytes": 9226
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/012_Skills.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.Skills",
+    "bytes": 16658
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/013_Toolbar.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.Toolbar",
+    "bytes": 20644
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/014_Toolbar.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.Mobile.Toolbar",
+    "bytes": 4553
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/015_Skills.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.Mobile.Skills",
+    "bytes": 7014
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/016_Combat.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.Mobile.Combat",
+    "bytes": 10245
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/017_Combat.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Combat",
+    "bytes": 7007
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/018_TextPlusIDs.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dialogue.TextPlusIDs",
+    "bytes": 627
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/019_FianlSelection.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dialogue.FianlSelection",
+    "bytes": 6214
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/020_MuzanLair.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dialogue.MuzanLair",
+    "bytes": 5390
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/021_CrowTasks.lua",
+    "path": "ReplicatedStorage.CAM.Client.Modules.GamePlay.Dialogue.CrowTasks",
+    "bytes": 2043
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/022_RewardsStyling.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.RewardsStyling",
+    "bytes": 1553
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/023_PickupState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.PickupState",
+    "bytes": 3903
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/024_CollectState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.CollectState",
+    "bytes": 2027
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/025_DeliverAction.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.DeliverAction",
+    "bytes": 2231
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/026_DepositState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.DepositState",
+    "bytes": 8320
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/027_EscortState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.EscortState",
+    "bytes": 2544
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/028_AcceptCost.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.AcceptCost",
+    "bytes": 2075
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/029_UnderwaterRocksState.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.UnderwaterRocksState",
+    "bytes": 520
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/030_EvilArtCores.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.EvilArtCores",
+    "bytes": 2857
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/031_BossHunts.lua",
+    "path": "ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests.BossHunts",
+    "bytes": 8114
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/032_Recover_the_Lost_Pages.lua",
+    "path": "ReplicatedStorage.QuestStates.Recover the Lost Pages",
+    "bytes": 311
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/033_Find_Betty_s_Gemstone.lua",
+    "path": "ReplicatedStorage.QuestStates.Find Betty's Gemstone",
+    "bytes": 316
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/034_Find_the_Lucky_Penny.lua",
+    "path": "ReplicatedStorage.QuestStates.Find the Lucky Penny",
+    "bytes": 337
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/035_Five_Hundred_Pennies.lua",
+    "path": "ReplicatedStorage.QuestStates.Five Hundred Pennies",
+    "bytes": 324
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/036_Five_Broken_Blades.lua",
+    "path": "ReplicatedStorage.QuestStates.Five Broken Blades",
+    "bytes": 263
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/037_Retrieve_Ginzo_s_Jewelry_Box.lua",
+    "path": "ReplicatedStorage.QuestStates.Retrieve Ginzo's Jewelry Box",
+    "bytes": 340
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/038_Muzan_Quest.lua",
+    "path": "ReplicatedStorage.QuestStates.Muzan Quest",
+    "bytes": 2597
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/039_Restock_the_Infirmary.lua",
+    "path": "ReplicatedStorage.QuestStates.Restock the Infirmary",
+    "bytes": 573
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/040_Earn_a_Fishing_Permit.lua",
+    "path": "ReplicatedStorage.QuestStates.Earn a Fishing Permit",
+    "bytes": 348
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/041_The_Morning_Haul.lua",
+    "path": "ReplicatedStorage.QuestStates.The Morning Haul",
+    "bytes": 547
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/042_The_Good_Catch.lua",
+    "path": "ReplicatedStorage.QuestStates.The Good Catch",
+    "bytes": 590
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/043_The_Full_Pantry.lua",
+    "path": "ReplicatedStorage.QuestStates.The Full Pantry",
+    "bytes": 541
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/044_Supply_the_Settlement.lua",
+    "path": "ReplicatedStorage.QuestStates.Supply the Settlement",
+    "bytes": 543
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/045_Escort_Akio_to_Windy_Peak.lua",
+    "path": "ReplicatedStorage.QuestStates.Escort Akio to Windy Peak",
+    "bytes": 228
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/046_Locate_Ren_s_Lost_Nichirin.lua",
+    "path": "ReplicatedStorage.QuestStates.Locate Ren's Lost Nichirin",
+    "bytes": 352
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/047_The_Winter_Catch.lua",
+    "path": "ReplicatedStorage.QuestStates.The Winter Catch",
+    "bytes": 588
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/048_The_Deep_Catch.lua",
+    "path": "ReplicatedStorage.QuestStates.The Deep Catch",
+    "bytes": 541
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/049_Sound_Breathing_Training.lua",
+    "path": "ReplicatedStorage.QuestStates.Sound Breathing Training",
+    "bytes": 235
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/050_Water_Breathing_Training.lua",
+    "path": "ReplicatedStorage.QuestStates.Water Breathing Training",
+    "bytes": 235
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/051_Cryokinesis_Core_Training.lua",
+    "path": "ReplicatedStorage.QuestStates.Cryokinesis Core Training",
+    "bytes": 329
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/052_The_Soryu_Trial.lua",
+    "path": "ReplicatedStorage.QuestStates.The Soryu Trial",
+    "bytes": 407
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/053_The_Tai_Chi_Trial.lua",
+    "path": "ReplicatedStorage.QuestStates.The Tai Chi Trial",
+    "bytes": 413
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/054_The_Reaper_s_Trial.lua",
+    "path": "ReplicatedStorage.QuestStates.The Reaper's Trial",
+    "bytes": 419
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/055_Settings.lua",
+    "path": "ReplicatedStorage.CAM.Client.Controllers.Skill_Controller.Settings",
+    "bytes": 136
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/056_Slot.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.NoneResetting.Menu.Pages.Inventory.ItemEquipepdFrame.EquippedOptions.Toolbar.Slot",
+    "bytes": 3501
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/057_Skill.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.Skills.Skill",
+    "bytes": 9615
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/058_MasteryItem.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.Toolbar.MasteryItem",
+    "bytes": 7568
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/059_Tool.lua",
+    "path": "ReplicatedStorage.CAM.Client.Components.Layout.ResetOnSpawn.HUD.CenterBottomContent.Toolbar.Tool",
+    "bytes": 4901
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/060_Main_Combat_Script_Client.lua",
+    "path": "Players.Kokakoka20.PlayerScripts.CU.Combat.Main_Combat_Script_Client",
+    "bytes": 6319
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/061_Wen.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Wen",
+    "bytes": 1561
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/062_Product.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Product",
+    "bytes": 2895
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/063_Gamepass.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Gamepass",
+    "bytes": 3109
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/064_Demon_Horns.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Demon Horns",
+    "bytes": 1326
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/065_Golden_Fish.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Golden Fish",
+    "bytes": 1341
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/066_Mythic_Refinement_Ore.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Mythic Refinement Ore",
+    "bytes": 1352
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/067_Metal_Scraps.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Metal Scraps",
+    "bytes": 1329
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/068_Silk_Thread.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Silk Thread",
+    "bytes": 1324
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/069_Refinement_Ore.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Refinement Ore",
+    "bytes": 1334
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/070_Spins.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.Spins",
+    "bytes": 1778
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/071_RunPoints.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Cashiers.RunPoints",
+    "bytes": 2680
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/072_Item.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.OrderProcessers.Item",
+    "bytes": 1386
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/073_Spins.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.OrderProcessers.Spins",
+    "bytes": 972
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/074_Product.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.OrderProcessers.Product",
+    "bytes": 1463
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/075_Clan.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.OrderProcessers.Clan",
+    "bytes": 1072
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/076_Grant.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.OrderProcessers.Grant",
+    "bytes": 1483
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/077_Spins.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Content.Spins.Spins",
+    "bytes": 1053
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/078_Evil_Art_Orbs.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Content.Evil Art Orbs.Evil Art Orbs",
+    "bytes": 824
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/079_ShopSettings.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Content.ShopSettings.ShopSettings",
+    "bytes": 719
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/080_Clans.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Content.Clans.Clans",
+    "bytes": 480
+  },
+  {
+    "file": "new_game_analysis/oneclick_sources/081_Gamepasses.lua",
+    "path": "ReplicatedStorage.CAM.Global.Shop.Content.Gamepasses.Gamepasses",
+    "bytes": 778
+  }
+]

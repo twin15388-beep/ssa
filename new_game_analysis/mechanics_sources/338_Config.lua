@@ -1,0 +1,18 @@
+-- Decompiled with Potassium's decompiler.
+
+return {
+    MOUSE_RANGE = 1500,
+    DASH_START_DELAY = 0.3,
+    DASH_SPEED = 75,
+    RELEASE_ANIM_TIME = 0.8,
+    DASH_HITBOX_OFFSET = CFrame.new(0, 0, -9),
+    DASH_HITBOX_SIZE = Vector3.new(7, 7, 19),
+    SLASH_HITBOX_OFFSET = CFrame.new(0, 0, -14),
+    SLASH_HITBOX_SIZE = Vector3.new(15, 12, 30),
+    SLASH_DAMAGE = 15,
+    SLASH_STUN = 1,
+    SLASH_RAGDOLL = 1,
+    SLASH_KNOCKBACK = 30,
+    SLASH_KNOCKBACK_DURATION = 0.35,
+    SLASH_BLOCK_BREAK = 3
+};

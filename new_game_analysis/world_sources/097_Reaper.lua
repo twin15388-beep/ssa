@@ -1,0 +1,36 @@
+-- Decompiled with Potassium's decompiler.
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Menum = require(ReplicatedStorage:WaitForChild("CAM"):WaitForChild("Global"):WaitForChild("Menum"));
+require(ReplicatedStorage.CAM.Global.Types.NpcTypes);
+
+return {
+ Name = "Reaper",
+ Icon = "rbxassetid://138406794828849",
+ Quantity = 1,
+ Type = Menum.npcType.Active,
+ SendOver = {
+ Boss = {
+ SpawnCountdown = true,
+ DamageLeaderboard = true,
+ HealthEvents = "SecondPhase"
+ },
+ Spawning = {
+ SpawnTime = 300,
+ DespawnDistance = 250,
+ Center = Vector3.new(98.468, 1043, -573.911),
+ Locations = { Vector3.new(98.468, 1043, -573.911) },
+ Appearance = ReplicatedStorage.Assets.Npcs.EvilArtDemons.Reaper
+ },
+ Idling = {
+ Enabled = false
+ },
+ Following = {
+ CaptureDistance = 0,
+ LetGoDistance = 140
+ },
+ Settings = {
+ NpcCode = "Reaper"
+ }
+ }
+};

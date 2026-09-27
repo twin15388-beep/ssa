@@ -1,0 +1,3 @@
+-- Decompiled with Potassium's decompiler.
+
+return require(script.Parent._Index["ouw2204_data-serializer@1.0.4"]["data-serializer"]);

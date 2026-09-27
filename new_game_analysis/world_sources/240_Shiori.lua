@@ -1,0 +1,106 @@
+-- Decompiled with Potassium's decompiler.
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Quests = require(ReplicatedStorage.CAM.Global.Subsets.Gameplay.Quests);
+require(ReplicatedStorage.CAM.Global.Types.MiscTypes);
+
+return {
+ ["Ill restock the infirmary(Lv 70)"] = {
+ Category = "Dialogue",
+ LogCompletion = true,
+ QuestInstance = Quests.Quest("Restock the Infirmary", {
+ Quests.QuestTask("Health Elixirs stocked", 10),
+ Quests.QuestTask("Health Regen Elixirs stocked", 10),
+ Quests.QuestTask("Stamina Regen Elixirs stocked", 10),
+ Quests.QuestTask("Return to Shiori", 1)
+ }),
+ Rewards = {
+ Exp = 7200,
+ Wen = 810,
+ Ore = {
+ Quantity = 1
+ }
+ },
+ Requirements = {
+ Level = 70
+ },
+ TaskSpecs = {
+ ["Health Elixirs stocked"] = {
+ Type = "Deposit",
+ RequiredItem = "Health Elixir",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Health Regen Elixirs stocked"] = {
+ Type = "Deposit",
+ RequiredItem = "Health Regen Elixir",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Stamina Regen Elixirs stocked"] = {
+ Type = "Deposit",
+ RequiredItem = "Stamina Regen Elixir",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Return to Shiori"] = {
+ Type = "Deliver",
+ TargetNpc = "Shiori"
+ }
+ },
+ Markers = {
+ ["Stamina Regen Elixirs stocked"] = {
+ Icon = "",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Return to Shiori"] = {
+ Npc = "Shiori",
+ After = { "Health Elixirs stocked", "Health Regen Elixirs stocked", "Stamina Regen Elixirs stocked" }
+ }
+ }
+ },
+ ["Ill stock the reserves(Lv 75)"] = {
+ Category = "Fishing",
+ QuestInstance = Quests.Quest("The Full Pantry", {
+ Quests.QuestTask("Golden Fish crated", 9),
+ Quests.QuestTask("Clown Fish crated", 9),
+ Quests.QuestTask("Zebra Fish crated", 9),
+ Quests.QuestTask("Return to Shiori", 1)
+ }),
+ Rewards = {
+ Exp = 2900,
+ Wen = 2250
+ },
+ Requirements = {
+ Level = 75
+ },
+ TaskSpecs = {
+ ["Golden Fish crated"] = {
+ Type = "Deposit",
+ RequiredItem = "Golden Fish",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Clown Fish crated"] = {
+ Type = "Deposit",
+ RequiredItem = "Clown Fish",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Zebra Fish crated"] = {
+ Type = "Deposit",
+ RequiredItem = "Zebra Fish",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Return to Shiori"] = {
+ Type = "Deliver",
+ TargetNpc = "Shiori"
+ }
+ },
+ Markers = {
+ ["Zebra Fish crated"] = {
+ Icon = "",
+ Position = Vector3.new(-1848.23, 315.086, -119.539)
+ },
+ ["Return to Shiori"] = {
+ Npc = "Shiori",
+ After = { "Golden Fish crated", "Clown Fish crated", "Zebra Fish crated" }
+ }
+ }
+ }
+};
